@@ -16,5 +16,15 @@ namespace DevyClass
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("hola");
+
+            MessageBox.Show("hola");
+            MessageBox.Show("hola");
+            //cambios
+        }
     }
 }
