@@ -60,19 +60,46 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formAjustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAjustes.Designer.cs">
+      <DependentUpon>formAjustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogros.Designer.cs">
+      <DependentUpon>formLogros.cs</DependentUpon>
+    </Compile>
     <Compile Include="formRendimiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formRendimiento.Designer.cs">
       <DependentUpon>formRendimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="formTemario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTemario.Designer.cs">
+      <DependentUpon>formTemario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formAjustes.resx">
+      <DependentUpon>formAjustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogros.resx">
+      <DependentUpon>formLogros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formRendimiento.resx">
       <DependentUpon>formRendimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTemario.resx">
+      <DependentUpon>formTemario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DevyPngSinFondo.fondopng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

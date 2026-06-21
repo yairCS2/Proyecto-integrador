@@ -53,6 +53,9 @@ namespace DevyClass
 
         private void btnTemario_Click(object sender, EventArgs e)
         {
+            formTemario accederformTemario = new formTemario();
+            accederformTemario.Show();
+            this.Hide();
 
         }
 
@@ -60,10 +63,14 @@ namespace DevyClass
         {
             
         }
+        
+
 
         private void btnRendimiento_Click(object sender, EventArgs e)
         {
+
             formRendimiento accederformRendimiento = new formRendimiento();
+
 
             accederformRendimiento.Show();
             // hide me permite cambiar de formulario
@@ -71,6 +78,47 @@ namespace DevyClass
             this.Hide();
 
     
+        }
+
+        private void btnregresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLogros_Click(object sender, EventArgs e)
+        {
+            formLogros accederformLogros = new formLogros();
+            accederformLogros.Show();
+            this.Hide();
+
+        }
+
+        private void btnAjustes_Click(object sender, EventArgs e)
+        {
+            formAjustes accedeerformAjustes = new formAjustes();
+
+            accedeerformAjustes.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

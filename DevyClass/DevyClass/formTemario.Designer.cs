@@ -1,6 +1,6 @@
 ﻿namespace DevyClass
 {
-    partial class formRendimiento
+    partial class formTemario
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(938, 530);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 2;
             // 
             // btnregresar
             // 
@@ -59,7 +59,7 @@
             this.btnregresar.ForeColor = System.Drawing.Color.White;
             this.btnregresar.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
             this.btnregresar.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnregresar.Location = new System.Drawing.Point(830, 548);
+            this.btnregresar.Location = new System.Drawing.Point(830, 542);
             this.btnregresar.Name = "btnregresar";
             this.btnregresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnregresar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -68,20 +68,20 @@
             this.btnregresar.OnPressedColor = System.Drawing.Color.Black;
             this.btnregresar.Radius = 20;
             this.btnregresar.Size = new System.Drawing.Size(120, 44);
-            this.btnregresar.TabIndex = 1;
+            this.btnregresar.TabIndex = 3;
             this.btnregresar.Text = "Regresar";
             this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
-            // formRendimiento
+            // formTemario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 592);
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "formRendimiento";
+            this.Name = "formTemario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "formRendimiento";
+            this.Text = "formTemario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -89,7 +89,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI.WinForms.GunaButton btnregresar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

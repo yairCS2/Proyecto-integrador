@@ -12,3 +12,6 @@ C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\Guna.UI.dll
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.Up2Date
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formRendimiento.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formAjustes.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formLogros.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formTemario.resources
