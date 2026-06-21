@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\devyclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\formajustes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formajustes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\devyclass\\formrendimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formrendimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\formajustes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formajustes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +22,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "formRendimiento.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formRendimiento.cs",
-              "RelativeDocumentMoniker": "DevyClass\\formRendimiento.cs",
-              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formRendimiento.cs [Dise\u00F1o]",
-              "RelativeToolTip": "DevyClass\\formRendimiento.cs [Dise\u00F1o]",
+              "Title": "formAjustes.cs",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formAjustes.cs",
+              "RelativeDocumentMoniker": "DevyClass\\formAjustes.cs",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formAjustes.cs*",
+              "RelativeToolTip": "DevyClass\\formAjustes.cs*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-21T02:07:09.017Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Form1.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Form1.cs",
-              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Form1.cs",
-              "RelativeToolTip": "DevyClass\\Form1.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAswIsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-16T03:50:49.477Z",
+              "WhenOpened": "2026-06-21T18:11:17.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "formAjustes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formAjustes.cs",
+              "RelativeDocumentMoniker": "DevyClass\\formAjustes.cs",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\formAjustes.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "DevyClass\\formAjustes.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T18:03:31.449Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Form1.cs",
               "RelativeDocumentMoniker": "DevyClass\\Form1.cs",

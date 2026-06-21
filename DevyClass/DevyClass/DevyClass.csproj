@@ -166,5 +166,32 @@
   <ItemGroup>
     <None Include="Resources\candado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.Tarjeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo.ICONO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.ICONO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boligrafo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boligrafo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

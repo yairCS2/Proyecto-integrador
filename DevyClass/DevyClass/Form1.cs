@@ -32,7 +32,6 @@ namespace DevyClass
 
         }
 
-        bool menuExpandido = false;
 
     
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -59,12 +58,6 @@ namespace DevyClass
 
         }
 
-        private void transicionMenu_AllAnimationsCompleted(object sender, EventArgs e)
-        {
-            
-        }
-        
-
 
         private void btnRendimiento_Click(object sender, EventArgs e)
         {
@@ -85,10 +78,6 @@ namespace DevyClass
             this.Hide();
         }
 
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -109,31 +98,25 @@ namespace DevyClass
 
             accedeerformAjustes.Show();
             this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        } 
+        
+        private void paP3_MouseLeave(object sender, EventArgs e)
         {
+            paP3.BackgroundImage=null;
+            label11.Visible = true;
+            label12.Visible = true;
+            label13.Visible = true;
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_DragEnter(object sender, DragEventArgs e)
-        {
 
         }
 
-        private void pnP1_MouseLeave(object sender, EventArgs e)
+        private void paP3_MouseEnter(object sender, EventArgs e)
         {
-            pnP1.BackgroundImage =null;
-        }
+            paP3.BackgroundImage = Properties.Resources.candado_Tarjeta;
 
-        private void pnP1_MouseEnter(object sender, EventArgs e)
-        {
-            pnP1.BackgroundImage = Properties.Resources.candado;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
         }
     }
 }
