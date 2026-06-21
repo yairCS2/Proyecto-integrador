@@ -33,8 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Librerías para formularios\Libreria\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Librerías para formularios\Libreria\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,10 +60,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formRendimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRendimiento.Designer.cs">
+      <DependentUpon>formRendimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRendimiento.resx">
+      <DependentUpon>formRendimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +82,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +96,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo.botones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro-abierto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trofeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crecimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuraciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo.fondopng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyPngSinFondo.fondopng1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

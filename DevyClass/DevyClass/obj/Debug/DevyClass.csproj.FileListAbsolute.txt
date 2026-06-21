@@ -1,0 +1,14 @@
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\DevyClass.exe.config
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\DevyClass.exe
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\DevyClass.pdb
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.AssemblyReference.cache
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Form1.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Properties.Resources.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.GenerateResource.cache
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.CoreCompileInputs.cache
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.exe
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\Guna.UI.dll
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.Up2Date
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formRendimiento.resources
