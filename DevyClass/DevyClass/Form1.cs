@@ -120,5 +120,20 @@ namespace DevyClass
         {
 
         }
+
+        private void panel2_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void pnP1_MouseLeave(object sender, EventArgs e)
+        {
+            pnP1.BackgroundImage =null;
+        }
+
+        private void pnP1_MouseEnter(object sender, EventArgs e)
+        {
+            pnP1.BackgroundImage = Properties.Resources.candado;
+        }
     }
 }
