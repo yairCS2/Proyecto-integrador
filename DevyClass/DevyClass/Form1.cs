@@ -52,9 +52,6 @@ namespace DevyClass
 
         private void btnTemario_Click(object sender, EventArgs e)
         {
-            formTemario accederformTemario = new formTemario();
-            accederformTemario.Show();
-            this.Hide();
 
         }
 
