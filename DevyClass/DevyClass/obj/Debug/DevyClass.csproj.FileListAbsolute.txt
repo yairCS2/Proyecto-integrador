@@ -15,3 +15,4 @@ C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.f
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formAjustes.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formLogros.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.formTemario.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_InicioSesion.resources

@@ -75,7 +75,11 @@ namespace DevyClass
 
         private void btnregresar_Click(object sender, EventArgs e)
         {
+            UI_InicioSesion accederUI = new UI_InicioSesion();
+
             this.Hide();
+            accederUI.Show();
+            
         }
 
 
@@ -117,6 +121,11 @@ namespace DevyClass
             label11.Visible = false;
             label12.Visible = false;
             label13.Visible = false;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

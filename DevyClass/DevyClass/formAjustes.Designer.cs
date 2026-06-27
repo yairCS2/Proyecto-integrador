@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnregresar = new Guna.UI.WinForms.GunaButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnregresar = new Guna.UI.WinForms.GunaButton();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,83 +66,6 @@
             this.panel1.Size = new System.Drawing.Size(791, 406);
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(69, 139);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(324, 169);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(48, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 33);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Configuracion del sistema";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(66, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Perfir de usuario";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(46, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nombre de usuario";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(46, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Correo electronico";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(46, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 13);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(46, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 13);
-            this.textBox2.TabIndex = 7;
             // 
             // panel3
             // 
@@ -159,28 +83,15 @@
             this.panel3.TabIndex = 8;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label6
+            // pictureBox1
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Location = new System.Drawing.Point(46, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Salir del sistema en este dispositivo";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(54, 14);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 20);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Seguridad y Cuenta";
+            this.pictureBox1.Image = global::DevyClass.Properties.Resources.escudo_ICONO;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
@@ -192,45 +103,6 @@
             this.label5.Size = new System.Drawing.Size(143, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Zona de peligro de la cuenta";
-            // 
-            // btnregresar
-            // 
-            this.btnregresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnregresar.Animated = true;
-            this.btnregresar.AnimationHoverSpeed = 0.07F;
-            this.btnregresar.AnimationSpeed = 0.03F;
-            this.btnregresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnregresar.BaseColor = System.Drawing.Color.Black;
-            this.btnregresar.BorderColor = System.Drawing.Color.Transparent;
-            this.btnregresar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnregresar.FocusedColor = System.Drawing.Color.White;
-            this.btnregresar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnregresar.ForeColor = System.Drawing.Color.White;
-            this.btnregresar.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.btnregresar.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnregresar.Location = new System.Drawing.Point(659, 356);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnregresar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnregresar.OnHoverForeColor = System.Drawing.Color.Transparent;
-            this.btnregresar.OnHoverImage = null;
-            this.btnregresar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnregresar.Radius = 15;
-            this.btnregresar.Size = new System.Drawing.Size(120, 44);
-            this.btnregresar.TabIndex = 5;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.UseTransfarantBackground = true;
-            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DevyClass.Properties.Resources.escudo_ICONO;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // gunaButton2
             // 
@@ -282,15 +154,45 @@
             this.gunaButton1.TabIndex = 7;
             this.gunaButton1.Text = "Cerrar Sesion";
             // 
-            // pictureBox2
+            // label6
             // 
-            this.pictureBox2.Image = global::DevyClass.Properties.Resources.agregar_usuario_ICONO;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label6.Location = new System.Drawing.Point(46, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Salir del sistema en este dispositivo";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(54, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(167, 20);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Seguridad y Cuenta";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(69, 139);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(324, 169);
+            this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label8
             // 
@@ -305,6 +207,119 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Modificar";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DevyClass.Properties.Resources.agregar_usuario_ICONO;
+            this.pictureBox2.Location = new System.Drawing.Point(35, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(46, 119);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(192, 13);
+            this.textBox2.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(46, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(207, 13);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Location = new System.Drawing.Point(46, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Correo electronico";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Location = new System.Drawing.Point(46, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Nombre de usuario";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(66, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 20);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Perfir de usuario";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(48, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(377, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Configuracion del sistema";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnregresar
+            // 
+            this.btnregresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnregresar.Animated = true;
+            this.btnregresar.AnimationHoverSpeed = 0.07F;
+            this.btnregresar.AnimationSpeed = 0.03F;
+            this.btnregresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnregresar.BaseColor = System.Drawing.Color.Black;
+            this.btnregresar.BorderColor = System.Drawing.Color.Transparent;
+            this.btnregresar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnregresar.FocusedColor = System.Drawing.Color.White;
+            this.btnregresar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnregresar.ForeColor = System.Drawing.Color.White;
+            this.btnregresar.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
+            this.btnregresar.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnregresar.Location = new System.Drawing.Point(659, 356);
+            this.btnregresar.Name = "btnregresar";
+            this.btnregresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnregresar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnregresar.OnHoverForeColor = System.Drawing.Color.Transparent;
+            this.btnregresar.OnHoverImage = null;
+            this.btnregresar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnregresar.Radius = 15;
+            this.btnregresar.Size = new System.Drawing.Size(120, 44);
+            this.btnregresar.TabIndex = 5;
+            this.btnregresar.Text = "Regresar";
+            this.btnregresar.UseTransfarantBackground = true;
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label9.Location = new System.Drawing.Point(259, 63);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 18);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Editar";
+            // 
             // formAjustes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,11 +332,11 @@
             this.Text = "formAjustes";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -347,5 +362,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

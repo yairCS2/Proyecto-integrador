@@ -29,64 +29,64 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation3 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation5 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnRendimiento = new Guna.UI.WinForms.GunaButton();
-            this.btnTemario = new Guna.UI.WinForms.GunaButton();
-            this.btnLogros = new Guna.UI.WinForms.GunaButton();
-            this.btnAjustes = new Guna.UI.WinForms.GunaButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lbmenu = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnregresar = new Guna.UI.WinForms.GunaButton();
             this.paP6 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.paP5 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.paP4 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.paP3 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pnP2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pnP1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnContinuarP1 = new Guna.UI.WinForms.GunaButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSalir = new Guna.UI.WinForms.GunaButton();
             this.transicionMenu = new Guna.UI.WinForms.GunaTransition(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.labelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnregresar = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btnContinuarP1 = new Guna.UI.WinForms.GunaButton();
+            this.btnSalir = new Guna.UI.WinForms.GunaButton();
+            this.btnRendimiento = new Guna.UI.WinForms.GunaButton();
+            this.btnTemario = new Guna.UI.WinForms.GunaButton();
+            this.btnLogros = new Guna.UI.WinForms.GunaButton();
+            this.btnAjustes = new Guna.UI.WinForms.GunaButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.paP6.SuspendLayout();
             this.paP5.SuspendLayout();
@@ -95,6 +95,7 @@
             this.pnP2.SuspendLayout();
             this.pnP1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -126,120 +127,8 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 76);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(185, 213);
+            this.panelMenu.Size = new System.Drawing.Size(185, 266);
             this.panelMenu.TabIndex = 8;
-            // 
-            // btnRendimiento
-            // 
-            this.btnRendimiento.AnimationHoverSpeed = 0.07F;
-            this.btnRendimiento.AnimationSpeed = 0.03F;
-            this.btnRendimiento.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRendimiento.BaseColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRendimiento.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.btnRendimiento, Guna.UI.Animation.DecorationType.None);
-            this.btnRendimiento.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRendimiento.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRendimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRendimiento.ForeColor = System.Drawing.Color.Black;
-            this.btnRendimiento.Image = global::DevyClass.Properties.Resources.crecimiento;
-            this.btnRendimiento.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnRendimiento.Location = new System.Drawing.Point(0, 13);
-            this.btnRendimiento.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRendimiento.Name = "btnRendimiento";
-            this.btnRendimiento.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnRendimiento.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnRendimiento.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnRendimiento.OnHoverImage = null;
-            this.btnRendimiento.OnPressedColor = System.Drawing.Color.Black;
-            this.btnRendimiento.Radius = 20;
-            this.btnRendimiento.Size = new System.Drawing.Size(185, 50);
-            this.btnRendimiento.TabIndex = 6;
-            this.btnRendimiento.Text = " Rendimiento";
-            this.btnRendimiento.Click += new System.EventHandler(this.btnRendimiento_Click);
-            // 
-            // btnTemario
-            // 
-            this.btnTemario.AnimationHoverSpeed = 0.07F;
-            this.btnTemario.AnimationSpeed = 0.03F;
-            this.btnTemario.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTemario.BaseColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTemario.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.btnTemario, Guna.UI.Animation.DecorationType.None);
-            this.btnTemario.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnTemario.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTemario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTemario.ForeColor = System.Drawing.Color.Black;
-            this.btnTemario.Image = global::DevyClass.Properties.Resources.libro_abierto;
-            this.btnTemario.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnTemario.Location = new System.Drawing.Point(0, 63);
-            this.btnTemario.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTemario.Name = "btnTemario";
-            this.btnTemario.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnTemario.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTemario.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnTemario.OnHoverImage = null;
-            this.btnTemario.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTemario.Radius = 20;
-            this.btnTemario.Size = new System.Drawing.Size(185, 50);
-            this.btnTemario.TabIndex = 1;
-            this.btnTemario.Text = "    Temario";
-            this.btnTemario.Click += new System.EventHandler(this.btnTemario_Click);
-            // 
-            // btnLogros
-            // 
-            this.btnLogros.AnimationHoverSpeed = 0.07F;
-            this.btnLogros.AnimationSpeed = 0.03F;
-            this.btnLogros.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLogros.BaseColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnLogros.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.btnLogros, Guna.UI.Animation.DecorationType.None);
-            this.btnLogros.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLogros.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLogros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogros.ForeColor = System.Drawing.Color.Black;
-            this.btnLogros.Image = global::DevyClass.Properties.Resources.trofeo;
-            this.btnLogros.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogros.Location = new System.Drawing.Point(0, 113);
-            this.btnLogros.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogros.Name = "btnLogros";
-            this.btnLogros.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnLogros.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLogros.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnLogros.OnHoverImage = null;
-            this.btnLogros.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLogros.Radius = 20;
-            this.btnLogros.Size = new System.Drawing.Size(185, 50);
-            this.btnLogros.TabIndex = 5;
-            this.btnLogros.Text = "    Logros";
-            this.btnLogros.Click += new System.EventHandler(this.btnLogros_Click);
-            // 
-            // btnAjustes
-            // 
-            this.btnAjustes.AnimationHoverSpeed = 0.07F;
-            this.btnAjustes.AnimationSpeed = 0.03F;
-            this.btnAjustes.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAjustes.BaseColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAjustes.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.btnAjustes, Guna.UI.Animation.DecorationType.None);
-            this.btnAjustes.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAjustes.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjustes.ForeColor = System.Drawing.Color.Black;
-            this.btnAjustes.Image = global::DevyClass.Properties.Resources.configuraciones;
-            this.btnAjustes.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnAjustes.Location = new System.Drawing.Point(0, 163);
-            this.btnAjustes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.btnAjustes.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAjustes.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnAjustes.OnHoverImage = null;
-            this.btnAjustes.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAjustes.Radius = 20;
-            this.btnAjustes.Size = new System.Drawing.Size(185, 50);
-            this.btnAjustes.TabIndex = 7;
-            this.btnAjustes.Text = "    Ajustes";
-            this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
             // 
             // panelLogo
             // 
@@ -265,18 +154,6 @@
             this.lbmenu.Size = new System.Drawing.Size(88, 18);
             this.lbmenu.TabIndex = 0;
             this.lbmenu.Text = "DevyClass";
-            // 
-            // pictureBox2
-            // 
-            this.transicionMenu.SetDecoration(this.pictureBox2, Guna.UI.Animation.DecorationType.None);
-            this.pictureBox2.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo1;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 51);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -312,44 +189,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(788, 665);
             this.panel2.TabIndex = 3;
-            // 
-            // btnregresar
-            // 
-            this.btnregresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnregresar.Animated = true;
-            this.btnregresar.AnimationHoverSpeed = 0.07F;
-            this.btnregresar.AnimationSpeed = 0.03F;
-            this.btnregresar.BackColor = System.Drawing.Color.Transparent;
-            this.btnregresar.BaseColor = System.Drawing.Color.Black;
-            this.btnregresar.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.btnregresar, Guna.UI.Animation.DecorationType.None);
-            this.btnregresar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnregresar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnregresar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnregresar.ForeColor = System.Drawing.Color.White;
-            this.btnregresar.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.btnregresar.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnregresar.Location = new System.Drawing.Point(655, 616);
-            this.btnregresar.Name = "btnregresar";
-            this.btnregresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnregresar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnregresar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnregresar.OnHoverImage = null;
-            this.btnregresar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnregresar.Radius = 20;
-            this.btnregresar.Size = new System.Drawing.Size(120, 44);
-            this.btnregresar.TabIndex = 2;
-            this.btnregresar.Text = "Regresar";
-            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // paP6
             // 
             this.paP6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.paP6.BackColor = System.Drawing.Color.LightSteelBlue;
             this.paP6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.paP6.Controls.Add(this.gunaButton5);
             this.paP6.Controls.Add(this.label22);
             this.paP6.Controls.Add(this.label23);
-            this.paP6.Controls.Add(this.gunaButton5);
             this.paP6.Controls.Add(this.label24);
             this.paP6.Controls.Add(this.label25);
             this.transicionMenu.SetDecoration(this.paP6, Guna.UI.Animation.DecorationType.None);
@@ -373,37 +222,11 @@
             // 
             this.label23.AutoSize = true;
             this.transicionMenu.SetDecoration(this.label23, Guna.UI.Animation.DecorationType.None);
-            this.label23.Location = new System.Drawing.Point(19, 163);
+            this.label23.Location = new System.Drawing.Point(19, 175);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(67, 13);
             this.label23.TabIndex = 8;
             this.label23.Text = "10/20 temas";
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.Black;
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.gunaButton5, Guna.UI.Animation.DecorationType.None);
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton5.Location = new System.Drawing.Point(22, 179);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Radius = 15;
-            this.gunaButton5.Size = new System.Drawing.Size(159, 36);
-            this.gunaButton5.TabIndex = 7;
-            this.gunaButton5.Text = "gunaButton5";
             // 
             // label24
             // 
@@ -458,37 +281,11 @@
             // 
             this.label19.AutoSize = true;
             this.transicionMenu.SetDecoration(this.label19, Guna.UI.Animation.DecorationType.None);
-            this.label19.Location = new System.Drawing.Point(19, 163);
+            this.label19.Location = new System.Drawing.Point(19, 178);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(67, 13);
             this.label19.TabIndex = 8;
             this.label19.Text = "10/20 temas";
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.Black;
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.gunaButton4, Guna.UI.Animation.DecorationType.None);
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaButton4.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton4.Location = new System.Drawing.Point(22, 179);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Radius = 15;
-            this.gunaButton4.Size = new System.Drawing.Size(159, 36);
-            this.gunaButton4.TabIndex = 7;
-            this.gunaButton4.Text = "gunaButton4";
             // 
             // label20
             // 
@@ -543,37 +340,11 @@
             // 
             this.label15.AutoSize = true;
             this.transicionMenu.SetDecoration(this.label15, Guna.UI.Animation.DecorationType.None);
-            this.label15.Location = new System.Drawing.Point(19, 163);
+            this.label15.Location = new System.Drawing.Point(19, 175);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(67, 13);
             this.label15.TabIndex = 8;
             this.label15.Text = "10/20 temas";
-            // 
-            // gunaButton3
-            // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.Black;
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.gunaButton3, Guna.UI.Animation.DecorationType.None);
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton3.Location = new System.Drawing.Point(22, 179);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Radius = 15;
-            this.gunaButton3.Size = new System.Drawing.Size(159, 36);
-            this.gunaButton3.TabIndex = 7;
-            this.gunaButton3.Text = "gunaButton3";
             // 
             // label16
             // 
@@ -636,32 +407,6 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "10/20 temas";
             // 
-            // gunaButton2
-            // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BaseColor = System.Drawing.Color.Black;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.gunaButton2, Guna.UI.Animation.DecorationType.None);
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton2.Location = new System.Drawing.Point(22, 200);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Radius = 15;
-            this.gunaButton2.Size = new System.Drawing.Size(159, 36);
-            this.gunaButton2.TabIndex = 7;
-            this.gunaButton2.Text = "gunaButton2";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -720,32 +465,6 @@
             this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "10/20 temas";
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Black;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.transicionMenu.SetDecoration(this.gunaButton1, Guna.UI.Animation.DecorationType.None);
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton1.Location = new System.Drawing.Point(22, 196);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 15;
-            this.gunaButton1.Size = new System.Drawing.Size(159, 36);
-            this.gunaButton1.TabIndex = 7;
-            this.gunaButton1.Text = "gunaButton1";
             // 
             // label6
             // 
@@ -806,6 +525,201 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "10/20 temas";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.label3, Guna.UI.Animation.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(2, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 32);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Aprende a desglosar problemas \r\ncomplejos  paso a paso";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.label1, Guna.UI.Animation.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Pensamiento\r\nAlgoritmico";
+            // 
+            // transicionMenu
+            // 
+            this.transicionMenu.AnimationType = Guna.UI.Animation.AnimationType.Scale;
+            this.transicionMenu.Cursor = null;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.transicionMenu.DefaultAnimation = animation5;
+            // 
+            // contextMenuStrip1
+            // 
+            this.transicionMenu.SetDecoration(this.contextMenuStrip1, Guna.UI.Animation.DecorationType.None);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labelToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 26);
+            // 
+            // labelToolStripMenuItem
+            // 
+            this.labelToolStripMenuItem.Name = "labelToolStripMenuItem";
+            this.labelToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.labelToolStripMenuItem.Text = "label";
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // btnregresar
+            // 
+            this.btnregresar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnregresar.Animated = true;
+            this.btnregresar.AnimationHoverSpeed = 0.07F;
+            this.btnregresar.AnimationSpeed = 0.03F;
+            this.btnregresar.BackColor = System.Drawing.Color.Transparent;
+            this.btnregresar.BaseColor = System.Drawing.Color.Black;
+            this.btnregresar.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.btnregresar, Guna.UI.Animation.DecorationType.None);
+            this.btnregresar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnregresar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnregresar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnregresar.ForeColor = System.Drawing.Color.White;
+            this.btnregresar.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
+            this.btnregresar.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnregresar.Location = new System.Drawing.Point(655, 616);
+            this.btnregresar.Name = "btnregresar";
+            this.btnregresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnregresar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnregresar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnregresar.OnHoverImage = null;
+            this.btnregresar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnregresar.Radius = 20;
+            this.btnregresar.Size = new System.Drawing.Size(120, 44);
+            this.btnregresar.TabIndex = 2;
+            this.btnregresar.Text = "Regresar";
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
+            // 
+            // gunaButton4
+            // 
+            this.gunaButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaButton4.AnimationSpeed = 0.03F;
+            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.BaseColor = System.Drawing.Color.Black;
+            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.gunaButton4, Guna.UI.Animation.DecorationType.None);
+            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton4.ForeColor = System.Drawing.Color.White;
+            this.gunaButton4.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
+            this.gunaButton4.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton4.Location = new System.Drawing.Point(22, 197);
+            this.gunaButton4.Name = "gunaButton4";
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton4.OnHoverImage = null;
+            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton4.Radius = 15;
+            this.gunaButton4.Size = new System.Drawing.Size(159, 36);
+            this.gunaButton4.TabIndex = 7;
+            this.gunaButton4.Text = "Iniciar";
+            // 
+            // gunaButton3
+            // 
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.BaseColor = System.Drawing.Color.Black;
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.gunaButton3, Guna.UI.Animation.DecorationType.None);
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaButton3.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
+            this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton3.Location = new System.Drawing.Point(22, 195);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.Radius = 15;
+            this.gunaButton3.Size = new System.Drawing.Size(159, 36);
+            this.gunaButton3.TabIndex = 7;
+            this.gunaButton3.Text = "iniciar";
+            // 
+            // gunaButton2
+            // 
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.BaseColor = System.Drawing.Color.Black;
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.gunaButton2, Guna.UI.Animation.DecorationType.None);
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = global::DevyClass.Properties.Resources.candado__1_;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaButton2.Location = new System.Drawing.Point(22, 200);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 15;
+            this.gunaButton2.Size = new System.Drawing.Size(159, 36);
+            this.gunaButton2.TabIndex = 7;
+            this.gunaButton2.Text = "Bloqueado";
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Black;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.gunaButton1, Guna.UI.Animation.DecorationType.None);
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo_botones;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton1.Location = new System.Drawing.Point(22, 196);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 15;
+            this.gunaButton1.Size = new System.Drawing.Size(159, 36);
+            this.gunaButton1.TabIndex = 7;
+            this.gunaButton1.Text = "Iniciar";
+            // 
             // btnContinuarP1
             // 
             this.btnContinuarP1.AnimationHoverSpeed = 0.07F;
@@ -830,29 +744,7 @@
             this.btnContinuarP1.Radius = 15;
             this.btnContinuarP1.Size = new System.Drawing.Size(159, 36);
             this.btnContinuarP1.TabIndex = 7;
-            this.btnContinuarP1.Text = "gunaButton1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.label3, Guna.UI.Animation.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 32);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Aprende a desglosar problemas \r\ncomplejos  paso a paso";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.label1, Guna.UI.Animation.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Pensamiento\r\nAlgoritmico";
+            this.btnContinuarP1.Text = "iniciar";
             // 
             // btnSalir
             // 
@@ -880,40 +772,157 @@
             this.btnSalir.Text = "-";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // transicionMenu
+            // btnRendimiento
             // 
-            this.transicionMenu.AnimationType = Guna.UI.Animation.AnimationType.Scale;
-            this.transicionMenu.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.transicionMenu.DefaultAnimation = animation3;
+            this.btnRendimiento.AnimationHoverSpeed = 0.07F;
+            this.btnRendimiento.AnimationSpeed = 0.03F;
+            this.btnRendimiento.BackColor = System.Drawing.Color.Transparent;
+            this.btnRendimiento.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRendimiento.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.btnRendimiento, Guna.UI.Animation.DecorationType.None);
+            this.btnRendimiento.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRendimiento.FocusedColor = System.Drawing.Color.Empty;
+            this.btnRendimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRendimiento.ForeColor = System.Drawing.Color.Black;
+            this.btnRendimiento.Image = global::DevyClass.Properties.Resources.crecimiento;
+            this.btnRendimiento.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnRendimiento.Location = new System.Drawing.Point(1, 119);
+            this.btnRendimiento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRendimiento.Name = "btnRendimiento";
+            this.btnRendimiento.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnRendimiento.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnRendimiento.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnRendimiento.OnHoverImage = null;
+            this.btnRendimiento.OnPressedColor = System.Drawing.Color.Black;
+            this.btnRendimiento.Radius = 20;
+            this.btnRendimiento.Size = new System.Drawing.Size(185, 50);
+            this.btnRendimiento.TabIndex = 6;
+            this.btnRendimiento.Text = " Rendimiento";
+            this.btnRendimiento.Visible = false;
+            this.btnRendimiento.Click += new System.EventHandler(this.btnRendimiento_Click);
             // 
-            // contextMenuStrip1
+            // btnTemario
             // 
-            this.transicionMenu.SetDecoration(this.contextMenuStrip1, Guna.UI.Animation.DecorationType.None);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.labelToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 26);
+            this.btnTemario.AnimationHoverSpeed = 0.07F;
+            this.btnTemario.AnimationSpeed = 0.03F;
+            this.btnTemario.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemario.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTemario.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.btnTemario, Guna.UI.Animation.DecorationType.None);
+            this.btnTemario.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTemario.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTemario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTemario.ForeColor = System.Drawing.Color.Black;
+            this.btnTemario.Image = global::DevyClass.Properties.Resources.libro_abierto;
+            this.btnTemario.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnTemario.Location = new System.Drawing.Point(0, 10);
+            this.btnTemario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTemario.Name = "btnTemario";
+            this.btnTemario.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnTemario.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTemario.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnTemario.OnHoverImage = null;
+            this.btnTemario.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTemario.Radius = 20;
+            this.btnTemario.Size = new System.Drawing.Size(185, 50);
+            this.btnTemario.TabIndex = 1;
+            this.btnTemario.Text = "    Temario";
+            this.btnTemario.Click += new System.EventHandler(this.btnTemario_Click);
             // 
-            // labelToolStripMenuItem
+            // btnLogros
             // 
-            this.labelToolStripMenuItem.Name = "labelToolStripMenuItem";
-            this.labelToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
-            this.labelToolStripMenuItem.Text = "label";
+            this.btnLogros.AnimationHoverSpeed = 0.07F;
+            this.btnLogros.AnimationSpeed = 0.03F;
+            this.btnLogros.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogros.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLogros.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.btnLogros, Guna.UI.Animation.DecorationType.None);
+            this.btnLogros.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLogros.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLogros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogros.ForeColor = System.Drawing.Color.Black;
+            this.btnLogros.Image = global::DevyClass.Properties.Resources.trofeo;
+            this.btnLogros.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnLogros.Location = new System.Drawing.Point(2, 175);
+            this.btnLogros.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogros.Name = "btnLogros";
+            this.btnLogros.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnLogros.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLogros.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnLogros.OnHoverImage = null;
+            this.btnLogros.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLogros.Radius = 20;
+            this.btnLogros.Size = new System.Drawing.Size(185, 50);
+            this.btnLogros.TabIndex = 5;
+            this.btnLogros.Text = "    Logros";
+            this.btnLogros.Visible = false;
+            this.btnLogros.Click += new System.EventHandler(this.btnLogros_Click);
+            // 
+            // btnAjustes
+            // 
+            this.btnAjustes.AnimationHoverSpeed = 0.07F;
+            this.btnAjustes.AnimationSpeed = 0.03F;
+            this.btnAjustes.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjustes.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAjustes.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.btnAjustes, Guna.UI.Animation.DecorationType.None);
+            this.btnAjustes.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAjustes.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjustes.ForeColor = System.Drawing.Color.Black;
+            this.btnAjustes.Image = global::DevyClass.Properties.Resources.configuraciones;
+            this.btnAjustes.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnAjustes.Location = new System.Drawing.Point(1, 65);
+            this.btnAjustes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAjustes.Name = "btnAjustes";
+            this.btnAjustes.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.btnAjustes.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAjustes.OnHoverForeColor = System.Drawing.Color.Black;
+            this.btnAjustes.OnHoverImage = null;
+            this.btnAjustes.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAjustes.Radius = 20;
+            this.btnAjustes.Size = new System.Drawing.Size(185, 50);
+            this.btnAjustes.TabIndex = 7;
+            this.btnAjustes.Text = "    Ajustes";
+            this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
+            // 
+            // pictureBox2
+            // 
+            this.transicionMenu.SetDecoration(this.pictureBox2, Guna.UI.Animation.DecorationType.None);
+            this.pictureBox2.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo1;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // gunaButton5
+            // 
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.BaseColor = System.Drawing.Color.Black;
+            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.transicionMenu.SetDecoration(this.gunaButton5, Guna.UI.Animation.DecorationType.None);
+            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton5.ForeColor = System.Drawing.Color.White;
+            this.gunaButton5.Image = global::DevyClass.Properties.Resources.candado__1_;
+            this.gunaButton5.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaButton5.Location = new System.Drawing.Point(23, 197);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton5.Radius = 15;
+            this.gunaButton5.Size = new System.Drawing.Size(159, 36);
+            this.gunaButton5.TabIndex = 11;
+            this.gunaButton5.Text = "Bloqueado";
             // 
             // Form1
             // 
@@ -923,6 +932,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.transicionMenu.SetDecoration(this, Guna.UI.Animation.DecorationType.None);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -933,7 +943,6 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.paP6.ResumeLayout(false);
             this.paP6.PerformLayout();
@@ -948,6 +957,7 @@
             this.pnP1.ResumeLayout(false);
             this.pnP1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -983,7 +993,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel paP5;
@@ -1005,6 +1014,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel paP6;
         private System.Windows.Forms.Panel paP3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Guna.UI.WinForms.GunaButton gunaButton5;
     }
 }
 
