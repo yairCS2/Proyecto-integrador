@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Base_de_datos_DevyClass_;
 
 
 namespace DevyClass
@@ -31,7 +32,9 @@ namespace DevyClass
 
         private void btnregresar_Click(object sender, EventArgs e)
         {
+        
             Form1 accederform1 = new Form1();
+          
             this.Hide();
             accederform1.Show();
 
@@ -62,6 +65,33 @@ namespace DevyClass
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void formAjustes_Load(object sender, EventArgs e)
+        {
+            
+
+
+
+
+
+
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            string correo = txtCorreo.Text;
+            string nuevonombre = txtNombre.Text;
+            UsuarioDB accesoUsurio = new UsuarioDB();
+            accesoUsurio.EditarUsuario(txtCorreo.Text, txtNombre.Text);
+
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UI_InicioSesion accederUsesion = new UI_InicioSesion();
+            accederUsesion.Show();
         }
     }
 }

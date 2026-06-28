@@ -16,5 +16,10 @@ namespace DevyClass
         {
             InitializeComponent();
         }
+
+        private void UI_InicioSesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
