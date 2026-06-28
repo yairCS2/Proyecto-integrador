@@ -80,11 +80,24 @@ namespace DevyClass
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            
+            UsuarioDB accesoUsurio = new UsuarioDB();
             string correo = txtCorreo.Text;
             string nuevonombre = txtNombre.Text;
-            UsuarioDB accesoUsurio = new UsuarioDB();
-            accesoUsurio.EditarUsuario(txtCorreo.Text, txtNombre.Text);
+            if (correo == "" || nuevonombre == "")
 
+                {
+                MessageBox.Show("llena todo los campos");
+                }
+            else
+            {
+                accesoUsurio.EditarUsuario(correo, nuevonombre);
+            }
+            
+            
+           
+
+        
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

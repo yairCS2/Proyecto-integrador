@@ -226,6 +226,7 @@
             this.btninicia.TabIndex = 32;
             this.btninicia.Text = "Inicia Sesion";
             this.btninicia.UseVisualStyleBackColor = false;
+            this.btninicia.Click += new System.EventHandler(this.btninicia_Click);
             // 
             // txtfecha
             // 

@@ -21,21 +21,25 @@ namespace DevyClass.Base_de_datos_DevyClass_
                 {
                     //on.Open(); abre la communicacion entre c# y el servidor de maria db
                     con.Open();
-                    //creamos una variable llamada query a la cual se le da la instruccion en lenguaje sql de lo que queremos hacer en la base de datos qeu tenemos en mariadb
+                        
+                    //creamos una variable llamada query a la cual se le da la instruccion en lenguaje sql de lo que queremos modificar en la tabla de nuestra base de datos
+                    //en pocas palabras hacer una consulta (modificar,crear,actualizar) etc..;
                     string query = "UPDATE usuarios SET NameUsuarios = @nombre WHERE Correo = @correo";
 
                     MySqlCommand cmd = new MySqlCommand(query, con);
+                    //le damos valor a los parmetros que hicimos en la sonsulta por medio de los parametros qeu recibe el metodo Editar usuario;
                     cmd.Parameters.AddWithValue("@correo", correo);
                     cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
 
 
-                    MessageBox.Show("Correo: " + correo + "\nNombre: " + nuevoNombre);
+                    MessageBox.Show("Confirme si el correo es correcto para editar su usuario\nCorreo: " + correo + "\nNombre: " + nuevoNombre);
+                    //ejecuta la culsuta sql que esta en cmd
                     cmd.ExecuteNonQuery();
                 }
             }
-            catch (Exception ex)
+            catch (Exception tipoerror)
             {
-                MessageBox.Show("Error al editar usuario: " + ex.Message);
+                MessageBox.Show("Error al editar usuario: " + tipoerror.Message);
             }
         }
     }

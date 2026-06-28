@@ -21,5 +21,12 @@ namespace DevyClass
         {
 
         }
+
+        private void btninicia_Click(object sender, EventArgs e)
+        {
+            Form1 accederF1 = new Form1();  
+            this.Hide();
+            accederF1.Show();
+        }
     }
 }

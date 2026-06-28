@@ -51,5 +51,28 @@ namespace DevyClass
             adduser.Show();
         }
 
+     
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            UI_InicioSesion sccederUi = new UI_InicioSesion();
+            this.Hide();
+            sccederUi.Show();
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Form1 accederF1 = new Form1();
+
+            this.Close();
+            accederF1.Close();
+        }
+
+        private void btnAgregarUsuario_Click_1(object sender, EventArgs e)
+        {
+            AgregarUsuario accederAU = new AgregarUsuario();
+            this.Hide();
+            accederAU.Show();
+        }
     }
 }

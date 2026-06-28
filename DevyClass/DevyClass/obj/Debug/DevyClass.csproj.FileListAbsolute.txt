@@ -46,3 +46,6 @@ C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\System.Memo
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.AgregarUsuario.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Administrador.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Registro.resources

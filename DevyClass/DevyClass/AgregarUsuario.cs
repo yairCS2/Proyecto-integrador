@@ -24,7 +24,9 @@ namespace DevyClass
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            UI_Administrador accederF1 = new UI_Administrador();
             this.Close();
+            accederF1.ShowDialog();
         }
     }
 }
