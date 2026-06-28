@@ -16,7 +16,7 @@ namespace DevyClass
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI_InicioSesion());
+            Application.Run(new Niveles_Modulo1());
         }
     }
 }

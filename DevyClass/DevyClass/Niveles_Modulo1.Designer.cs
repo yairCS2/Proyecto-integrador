@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(461, 170);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(266, 143);
-            this.panel1.TabIndex = 0;
             // 
             // Niveles_Modulo1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DevyClass.Properties.Resources.ui_modulos1;
             this.ClientSize = new System.Drawing.Size(1449, 761);
-            this.Controls.Add(this.panel1);
             this.Name = "Niveles_Modulo1";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -54,7 +46,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
     }
 }

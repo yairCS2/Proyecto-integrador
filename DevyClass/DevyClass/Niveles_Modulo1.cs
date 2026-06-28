@@ -20,7 +20,7 @@ namespace DevyClass
         private void Niveles_Modulo1_Load(object sender, EventArgs e)
         {
             Cartel accederCartel = new Cartel();
-            accederCartel.Location = new Point(this.Left + 10, this.Top + 20);
+            accederCartel.Location = new Point(this.Left + 40, this.Top + 180);
             accederCartel.Show(this);
         }
     }
