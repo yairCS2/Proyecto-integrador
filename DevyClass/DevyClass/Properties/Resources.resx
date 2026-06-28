@@ -121,6 +121,12 @@
   <data name="DevyPngSinFondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ui_modulos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui_modulos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DevyPngSinFondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DevyPngSinFondo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="escudo.ICONO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escudo.ICONO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +141,9 @@
   </data>
   <data name="candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="idea.form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idea.form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cerrar-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +166,9 @@
   <data name="usersicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usersicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agregar-usuario.ICONO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar-usuario.ICONO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,11 +187,14 @@
   <data name="DevyPngSinFondo.fondopng" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo.fondopng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DevyPngSinFondo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DevyPngSinFondo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Diseño sin título (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diseño sin título (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boligrafo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boligrafo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +205,11 @@
   <data name="DevyPngSinFondo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo.fondopng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Diseño sin título (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Diseño sin título (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="trofeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trofeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ui_modulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui_modulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clipart2601066 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clipart2601066 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +220,10 @@
   <data name="escudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logout (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChatGPT Image 28 jun 2026, 03_06_00 p.m." type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatGPT Image 28 jun 2026, 03_06_00 p.m..png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UI_Modulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UI_Modulos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -49,3 +49,5 @@ C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\System.Thre
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.AgregarUsuario.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Administrador.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Registro.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Cartel.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Niveles_Modulo1.resources

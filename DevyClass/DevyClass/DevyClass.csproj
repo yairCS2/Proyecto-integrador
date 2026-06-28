@@ -110,6 +110,12 @@
     </Compile>
     <Compile Include="Base_de_datos%28DevyClass%29\Conexion.cs" />
     <Compile Include="Base_de_datos%28DevyClass%29\UsuarioDB.cs" />
+    <Compile Include="Cartel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cartel.Designer.cs">
+      <DependentUpon>Cartel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     <Compile Include="formTemario.Designer.cs">
       <DependentUpon>formTemario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Niveles_Modulo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles_Modulo1.Designer.cs">
+      <DependentUpon>Niveles_Modulo1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI_Administrador.cs">
@@ -163,6 +175,9 @@
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cartel.resx">
+      <DependentUpon>Cartel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,16 +193,13 @@
     <EmbeddedResource Include="formTemario.resx">
       <DependentUpon>formTemario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Niveles_Modulo1.resx">
+      <DependentUpon>Niveles_Modulo1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UI_Administrador.resx">
       <DependentUpon>UI_Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +312,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.form.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

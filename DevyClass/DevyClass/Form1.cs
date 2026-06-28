@@ -124,5 +124,12 @@ namespace DevyClass
         {
 
         }
+
+        private void btnContinuarP1_Click(object sender, EventArgs e)
+        {
+            Niveles_Modulo1 accederNM1 = new Niveles_Modulo1();
+            this.Hide();
+            accederNM1.Show();
+        }
     }
 }
