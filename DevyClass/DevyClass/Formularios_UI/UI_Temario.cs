@@ -10,23 +10,18 @@ using System.Windows.Forms;
 
 namespace DevyClass
 {
-    public partial class UI_InicioSesion : Form
+    public partial class UI_Temario : Form
     {
-        public UI_InicioSesion()
+        public UI_Temario()
         {
             InitializeComponent();
         }
 
-        private void UI_InicioSesion_Load(object sender, EventArgs e)
+        private void btnregresar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btninicia_Click(object sender, EventArgs e)
-        {
-            Form1 accederF1 = new Form1();  
+            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal();
             this.Hide();
-            accederF1.Show();
+            accederform1.Show();
         }
     }
 }

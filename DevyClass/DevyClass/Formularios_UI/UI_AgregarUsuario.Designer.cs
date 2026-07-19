@@ -1,6 +1,6 @@
 ﻿namespace DevyClass
 {
-    partial class AgregarUsuario
+    partial class UI_AgregarUsuario
     {
         /// <summary>
         /// Required designer variable.

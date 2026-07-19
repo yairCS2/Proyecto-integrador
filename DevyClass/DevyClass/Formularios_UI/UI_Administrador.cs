@@ -47,7 +47,7 @@ namespace DevyClass
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
-            AgregarUsuario adduser = new AgregarUsuario();
+            UI_AgregarUsuario adduser = new UI_AgregarUsuario();
             adduser.Show();
         }
 
@@ -62,7 +62,7 @@ namespace DevyClass
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Form1 accederF1 = new Form1();
+            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();
 
             this.Close();
             accederF1.Close();
@@ -70,7 +70,7 @@ namespace DevyClass
 
         private void btnAgregarUsuario_Click_1(object sender, EventArgs e)
         {
-            AgregarUsuario accederAU = new AgregarUsuario();
+            UI_AgregarUsuario accederAU = new UI_AgregarUsuario();
             this.Hide();
             accederAU.Show();
         }

@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace DevyClass
 {
-    public partial class Niveles_Modulo1 : Form
+    public partial class UI_Cartel : Form
     {
-        public Niveles_Modulo1()
+        public UI_Cartel()
         {
             InitializeComponent();
         }
 
-        private void Niveles_Modulo1_Load(object sender, EventArgs e)
+        private void Cartel_Load(object sender, EventArgs e)
         {
-            Cartel accederCartel = new Cartel();
-            accederCartel.Location = new Point(this.Left + 40, this.Top + 180);
-            accederCartel.Show(this);
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

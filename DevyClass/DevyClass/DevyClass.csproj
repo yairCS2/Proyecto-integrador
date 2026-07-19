@@ -102,55 +102,67 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarUsuario.Designer.cs">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Base_de_datos%28DevyClass%29\Conexion.cs" />
     <Compile Include="Base_de_datos%28DevyClass%29\UsuarioDB.cs" />
-    <Compile Include="Cartel.cs">
+    <Compile Include="Formularios_UI\UI_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cartel.Designer.cs">
-      <DependentUpon>Cartel.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_Administrador.Designer.cs">
+      <DependentUpon>UI_Administrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Formularios_UI\UI_AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_AgregarUsuario.Designer.cs">
+      <DependentUpon>UI_AgregarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="formAjustes.cs">
+    <Compile Include="Formularios_UI\UI_Ajustes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formAjustes.Designer.cs">
-      <DependentUpon>formAjustes.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_Ajustes.Designer.cs">
+      <DependentUpon>UI_Ajustes.cs</DependentUpon>
     </Compile>
-    <Compile Include="formLogros.cs">
+    <Compile Include="Formularios_UI\UI_Cartel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formLogros.Designer.cs">
-      <DependentUpon>formLogros.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_Cartel.Designer.cs">
+      <DependentUpon>UI_Cartel.cs</DependentUpon>
     </Compile>
-    <Compile Include="formRendimiento.cs">
+    <Compile Include="Formularios_UI\UI_InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formRendimiento.Designer.cs">
-      <DependentUpon>formRendimiento.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_InicioSesion.Designer.cs">
+      <DependentUpon>UI_InicioSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="formTemario.cs">
+    <Compile Include="Formularios_UI\UI_Logros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formTemario.Designer.cs">
-      <DependentUpon>formTemario.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_Logros.Designer.cs">
+      <DependentUpon>UI_Logros.cs</DependentUpon>
     </Compile>
-    <Compile Include="Niveles_Modulo1.cs">
+    <Compile Include="Formularios_UI\UI_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Niveles_Modulo1.Designer.cs">
-      <DependentUpon>Niveles_Modulo1.cs</DependentUpon>
+    <Compile Include="Formularios_UI\UI_MenuPrincipal.Designer.cs">
+      <DependentUpon>UI_MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Registro.Designer.cs">
+      <DependentUpon>UI_Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Rendimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Rendimiento.Designer.cs">
+      <DependentUpon>UI_Rendimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Temario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_Temario.Designer.cs">
+      <DependentUpon>UI_Temario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,61 +171,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UI_Administrador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI_Administrador.Designer.cs">
+    <EmbeddedResource Include="Formularios_UI\UI_Administrador.resx">
       <DependentUpon>UI_Administrador.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI_InicioSesion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI_InicioSesion.Designer.cs">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_AgregarUsuario.resx">
+      <DependentUpon>UI_AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_Ajustes.resx">
+      <DependentUpon>UI_Ajustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_Cartel.resx">
+      <DependentUpon>UI_Cartel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_InicioSesion.resx">
       <DependentUpon>UI_InicioSesion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI_Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI_Registro.Designer.cs">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_Logros.resx">
+      <DependentUpon>UI_Logros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_MenuPrincipal.resx">
+      <DependentUpon>UI_MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_Registro.resx">
       <DependentUpon>UI_Registro.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AgregarUsuario.resx">
-      <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cartel.resx">
-      <DependentUpon>Cartel.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios_UI\UI_Rendimiento.resx">
+      <DependentUpon>UI_Rendimiento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formAjustes.resx">
-      <DependentUpon>formAjustes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formLogros.resx">
-      <DependentUpon>formLogros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formRendimiento.resx">
-      <DependentUpon>formRendimiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formTemario.resx">
-      <DependentUpon>formTemario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Niveles_Modulo1.resx">
-      <DependentUpon>Niveles_Modulo1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios_UI\UI_Temario.resx">
+      <DependentUpon>UI_Temario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI_Administrador.resx">
-      <DependentUpon>UI_Administrador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI_InicioSesion.resx">
-      <DependentUpon>UI_InicioSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI_Registro.resx">
-      <DependentUpon>UI_Registro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

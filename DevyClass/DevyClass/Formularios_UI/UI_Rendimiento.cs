@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace DevyClass
 {
-    public partial class Cartel : Form
+    public partial class UI_Rendimiento : Form
     {
-        public Cartel()
+        public UI_Rendimiento()
         {
             InitializeComponent();
         }
 
-        private void Cartel_Load(object sender, EventArgs e)
+        private void btnregresar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
+            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal();
+            this.Hide();
+            accederform1.Show();
         }
     }
 }

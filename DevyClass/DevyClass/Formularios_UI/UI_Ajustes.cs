@@ -13,9 +13,9 @@ using DevyClass.Base_de_datos_DevyClass_;
 
 namespace DevyClass
 {
-    public partial class formAjustes : Form
+    public partial class UI_Ajustes : Form
     {
-        public formAjustes()
+        public UI_Ajustes()
         {
             InitializeComponent();
           
@@ -33,7 +33,7 @@ namespace DevyClass
         private void btnregresar_Click(object sender, EventArgs e)
         {
         
-            Form1 accederform1 = new Form1();
+            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal();
           
             this.Hide();
             accederform1.Show();

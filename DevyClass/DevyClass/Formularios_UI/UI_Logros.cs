@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace DevyClass
 {
-    public partial class formTemario : Form
+    public partial class UI_Logros : Form
     {
-        public formTemario()
+        public UI_Logros()
         {
             InitializeComponent();
         }
 
         private void btnregresar_Click(object sender, EventArgs e)
         {
-            Form1 accederform1 = new Form1();
+            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal();
             this.Hide();
             accederform1.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace DevyClass
 {
-    partial class formLogros
+    partial class UI_Logros
     {
         /// <summary>
         /// Required designer variable.

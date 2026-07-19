@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace DevyClass
 {
-    public partial class formLogros : Form
+    public partial class UI_AgregarUsuario : Form
     {
-        public formLogros()
+        public UI_AgregarUsuario()
         {
             InitializeComponent();
         }
 
-        private void btnregresar_Click(object sender, EventArgs e)
+        private void AgregarUsuario_Load(object sender, EventArgs e)
         {
-            Form1 accederform1 = new Form1();
-            this.Hide();
-            accederform1.Show();
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-
+            UI_Administrador accederF1 = new UI_Administrador();
+            this.Close();
+            accederF1.ShowDialog();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace DevyClass
 {
-    partial class formAjustes
+    partial class UI_Ajustes
     {
         /// <summary>
         /// Required designer variable.
