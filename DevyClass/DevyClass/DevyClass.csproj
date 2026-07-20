@@ -366,5 +366,8 @@
   <ItemGroup>
     <None Include="Resources\Estructura.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LogicaC#\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
