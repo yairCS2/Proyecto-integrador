@@ -332,14 +332,14 @@
             this.btnregresar.UseTransfarantBackground = true;
             this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
-            // formAjustes
+            // UI_Ajustes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 406);
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.panel1);
-            this.Name = "formAjustes";
+            this.Name = "UI_Ajustes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formAjustes";
             this.Load += new System.EventHandler(this.formAjustes_Load);

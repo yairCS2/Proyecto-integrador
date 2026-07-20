@@ -54,6 +54,9 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Klik.Windows.Forms.EntryLib.V2.2005">
+      <HintPath>..\..\..\..\Downloads\Librerías para formularios\Libreria\Klik.Windows.Forms.EntryLib.V2.2005.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -70,6 +73,7 @@
       <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -201,6 +205,7 @@
     <EmbeddedResource Include="Formularios_UI\UI_Temario.resx">
       <DependentUpon>UI_Temario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -315,6 +320,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\idea.form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajuste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Codigo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DevyNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerebro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Variable y tipo de datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\variable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estructura.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

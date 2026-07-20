@@ -103,21 +103,16 @@ namespace DevyClass
         
         private void paP3_MouseLeave(object sender, EventArgs e)
         {
-            paP3.BackgroundImage=null;
-            label11.Visible = true;
-            label12.Visible = true;
-            label13.Visible = true;
+    
+
 
 
         }
 
         private void paP3_MouseEnter(object sender, EventArgs e)
         {
-            paP3.BackgroundImage = Properties.Resources.candado_Tarjeta;
 
-            label11.Visible = false;
-            label12.Visible = false;
-            label13.Visible = false;
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -130,6 +125,33 @@ namespace DevyClass
            
             this.Hide();
            
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton1_Click(object sender, EventArgs e)
+        {
+            UI_Ajustes a = new UI_Ajustes();
+            this.Hide();
+            a.Show();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,3 +50,5 @@ C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.U
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Logros.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Rendimiento.resources
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Temario.resources
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\bin\Debug\Klik.Windows.Forms.EntryLib.V2.2005.dll
+C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.exe.licenses
