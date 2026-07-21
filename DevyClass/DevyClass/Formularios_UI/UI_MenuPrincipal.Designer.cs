@@ -947,7 +947,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(178, 24);
             this.label29.TabIndex = 4;
-            this.label29.Text = "!Hola Yair Bobo👋";
+            this.label29.Text = "!Hola Keo Boba👋";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // btnSalir
