@@ -153,5 +153,15 @@ namespace DevyClass
         {
 
         }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
