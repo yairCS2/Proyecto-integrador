@@ -106,6 +106,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base_de_datos%28DevyClass%29\AdminDB.cs" />
     <Compile Include="Base_de_datos%28DevyClass%29\Conexion.cs" />
     <Compile Include="Base_de_datos%28DevyClass%29\UsuarioDB.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">

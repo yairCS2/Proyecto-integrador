@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.Formularios_UI_niveles.Modulo_1;
 using Guna.UI.WinForms;
 
@@ -193,6 +195,17 @@ namespace DevyClass
         private void gunaGroupBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            Conexion C = new Conexion();
+            C.verificarConecxion();
         }
     }
 }

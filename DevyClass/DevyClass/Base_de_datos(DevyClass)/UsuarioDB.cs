@@ -42,5 +42,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                 MessageBox.Show("Error al editar usuario: " + tipoerror.Message);
             }
         }
+
+        
     }
 }
