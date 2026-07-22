@@ -154,3 +154,4 @@ C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\
 C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.Up2Date
 C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\DevyClass\obj\Debug\DevyClass.exe
 C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources

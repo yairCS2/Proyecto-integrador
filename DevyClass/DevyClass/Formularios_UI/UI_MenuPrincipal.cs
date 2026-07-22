@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Formularios_UI_niveles.Modulo_1;
 using Guna.UI.WinForms;
 
 namespace DevyClass
@@ -18,6 +19,8 @@ namespace DevyClass
         {
             InitializeComponent();
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -160,6 +163,34 @@ namespace DevyClass
         }
 
         private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaGroupBox1_Click(object sender, EventArgs e)
+        {
+            Nivel1 nivel1 = new Nivel1();
+            this.Hide();
+            nivel1.Show();
+
+        }
+
+        private void gunaGroupBox4_Click(object sender, EventArgs e)
         {
 
         }
