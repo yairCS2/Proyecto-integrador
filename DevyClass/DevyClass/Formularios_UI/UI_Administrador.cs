@@ -75,4 +75,6 @@ namespace DevyClass
             accederAU.Show();
         }
     } // Fin form
+
+    //ctrl + shift + s
 }
