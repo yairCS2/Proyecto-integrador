@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\autenticacion\\validarcontraseniayusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\formularios_ui\\ui_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\devyclass\\formularios_ui\\ui_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui\\ui_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\usuariodb\\consultasusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\devyclass\\usuariodb\\consultasusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\usuariodb\\consultasusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui\\ui_iniciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto integrador\\devyclass\\devyclass\\autenticacion\\iniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\devyclass\\autenticacion\\iniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\autenticacion\\iniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,8 +50,7 @@
               "RelativeToolTip": "DevyClass\\UsuarioDB\\ConsultasUsuario.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T18:38:46.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:38:46.52Z"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "DevyClass\\Autenticacion\\ValidarContraseniaYUsuario.cs",
               "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Autenticacion\\ValidarContraseniaYUsuario.cs",
               "RelativeToolTip": "DevyClass\\Autenticacion\\ValidarContraseniaYUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-22T18:29:06.119Z",
               "EditorCaption": ""
@@ -76,8 +75,7 @@
               "RelativeToolTip": "DevyClass\\Formularios_UI\\UI_InicioSesion.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAWwDwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T18:17:30.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:17:30.503Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "DevyClass\\Autenticacion\\IniciarSesion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T18:10:24.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-22T18:10:24.019Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Formularios_UI\\UI_InicioSesion.cs [Dise\u00F1o]",
               "RelativeToolTip": "DevyClass\\Formularios_UI\\UI_InicioSesion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T15:18:49.809Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-07-22T15:18:49.809Z"
             },
             {
               "$type": "Document",
@@ -113,8 +109,7 @@
               "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto integrador\\DevyClass\\DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T04:57:40.915Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-07-21T04:57:40.915Z"
             }
           ]
         }
