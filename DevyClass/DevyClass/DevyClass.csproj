@@ -106,9 +106,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base_de_datos%28DevyClass%29\AdminDB.cs" />
-    <Compile Include="Base_de_datos%28DevyClass%29\Conexion.cs" />
-    <Compile Include="Base_de_datos%28DevyClass%29\UsuarioDB.cs" />
+    <Compile Include="Autenticacion\IniciarSesion.cs" />
+    <Compile Include="Autenticacion\RegistrarUsuario.cs" />
+    <Compile Include="Autenticacion\ValidarContrasenia.cs" />
+    <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
+    <Compile Include="AdminDB\ConsultasAdmin.cs" />
+    <Compile Include="ConexionBD\Conexion.cs" />
+    <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>

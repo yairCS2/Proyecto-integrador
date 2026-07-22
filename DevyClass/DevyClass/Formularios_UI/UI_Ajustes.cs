@@ -81,7 +81,7 @@ namespace DevyClass
         private void gunaButton3_Click(object sender, EventArgs e)
         {
             
-            UsuarioDB accesoUsurio = new UsuarioDB();
+            ConsultasUsuario accesoUsurio = new ConsultasUsuario();
             string correo = txtCorreo.Text;
             string nuevonombre = txtNombre.Text;
             if (correo == "" || nuevonombre == "")

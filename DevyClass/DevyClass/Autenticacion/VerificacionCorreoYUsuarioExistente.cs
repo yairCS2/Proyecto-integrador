@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevyClass.Base_de_datos_DevyClass_
+namespace DevyClass.Autenticacion
 {
-    internal class AdminDB
+    internal class VerificacionCorreoYUsuarioExistente
     {
     }
 }

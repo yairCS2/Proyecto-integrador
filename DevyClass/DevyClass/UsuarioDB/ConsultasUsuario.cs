@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace DevyClass.Base_de_datos_DevyClass_
 {
-    public class UsuarioDB
+    public class ConsultasUsuario
     {
         Conexion conexion = new Conexion();
 
