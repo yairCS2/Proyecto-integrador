@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Autenticacion;
 
 namespace DevyClass
 {
@@ -19,14 +20,55 @@ namespace DevyClass
 
         private void UI_InicioSesion_Load(object sender, EventArgs e)
         {
+            
+           
+
 
         }
 
         private void btninicia_Click(object sender, EventArgs e)
         {
-            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();  
+            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();
+
+            try
+            {
+                string nombre = txtusuario.Text;
+                string contrasenia = txtcontraseña.Text;
+                if (nombre == "" || contrasenia == "")
+                {
+                    MessageBox.Show("Complete todos los cambios por favor");
+                    return;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+                return;
+            }
+
+            ValidarContraseniaYUsuario validar = new ValidarContraseniaYUsuario();
+            if (validar.UsuarioyContraseniaCorrectos(txtusuario.Text, txtcontraseña.Text))
+            {
+                MessageBox.Show("Bienvenido");
+                this.Hide();
+                accederF1.Show();
+                return;
+            }
+            else
+            {
+                MessageBox.Show("usuario o contraseña incorrecta");
+            }
+         
+           
+        }
+
+        private void linkLbregistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
             this.Hide();
-            accederF1.Show();
+            UI_Registro R = new UI_Registro();
+            R.Show();
         }
     }
 }

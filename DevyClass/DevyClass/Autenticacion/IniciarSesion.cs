@@ -8,5 +8,12 @@ namespace DevyClass.Autenticacion
 {
     internal class IniciarSesion
     {
+        public void iniciarSesion()
+        {
+            UI_InicioSesion sesion = new UI_InicioSesion();
+
+           
+        }
+
     }
 }

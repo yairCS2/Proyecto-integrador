@@ -108,7 +108,7 @@
   <ItemGroup>
     <Compile Include="Autenticacion\IniciarSesion.cs" />
     <Compile Include="Autenticacion\RegistrarUsuario.cs" />
-    <Compile Include="Autenticacion\ValidarContrasenia.cs" />
+    <Compile Include="Autenticacion\ValidarContraseniaYUsuario.cs" />
     <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
     <Compile Include="AdminDB\ConsultasAdmin.cs" />
     <Compile Include="ConexionBD\Conexion.cs" />

@@ -15,9 +15,41 @@ namespace DevyClass
         public UI_Registro()
         {
             InitializeComponent();
+
+
         }
 
         private void UI_Registro_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+      
+       
+
+        private void txtusuario_Enter(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void txtusuario_Leave(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void caja_Entrar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcontrasegura_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
         {
 
         }

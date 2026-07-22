@@ -30,6 +30,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     //le damos valor a los parmetros que hicimos en la sonsulta por medio de los parametros qeu recibe el metodo Editar usuario;
                     cmd.Parameters.AddWithValue("@correo", correo);
                     cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
+                    
 
 
                     MessageBox.Show("Confirme si el correo es correcto para editar su usuario\nCorreo: " + correo + "\nNombre: " + nuevoNombre);

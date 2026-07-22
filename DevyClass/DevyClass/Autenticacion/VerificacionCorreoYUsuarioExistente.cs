@@ -8,5 +8,6 @@ namespace DevyClass.Autenticacion
 {
     internal class VerificacionCorreoYUsuarioExistente
     {
+       
     }
 }
