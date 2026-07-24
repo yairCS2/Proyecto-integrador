@@ -57,9 +57,9 @@ namespace DevyClass
      
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            UI_InicioSesion sccederUi = new UI_InicioSesion();
+            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
             this.Hide();
-            sccederUi.Show();
+            accederF1.Show();
 
         }
 

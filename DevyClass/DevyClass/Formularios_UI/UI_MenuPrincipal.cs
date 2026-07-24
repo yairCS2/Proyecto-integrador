@@ -50,13 +50,7 @@ namespace DevyClass
             gunaButton8.Text = UsuarioActual.Username;
             lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 2 ?? 0}%";
             lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
-<<<<<<< HEAD
             lblBienvenida.Text = $"!Hola, {UsuarioActual.Username} Bienvenido!";
-=======
-            lblBienvenida.Text = $"Bienvenido, {UsuarioActual.Username}!";
-
-            
->>>>>>> 6141bb5329943e2b87b2896cdb3df50c0b7bbdda
         }
 
         public UI_MenuPrincipal()
@@ -242,7 +236,6 @@ namespace DevyClass
            
         }
 
-<<<<<<< HEAD
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             Conexion C = new Conexion();
@@ -255,8 +248,5 @@ namespace DevyClass
             this.Hide();
             u.Show();
         }
-=======
-        
->>>>>>> 6141bb5329943e2b87b2896cdb3df50c0b7bbdda
     }
 }
