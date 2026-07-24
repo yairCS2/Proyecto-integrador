@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Autenticacion;
 
 namespace DevyClass
 {
@@ -51,6 +52,36 @@ namespace DevyClass
 
         private void txtusuario_TextChanged(object sender, EventArgs e)
         {
+                
+
+        }
+
+        private void btnregistro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string usuario = txtusuario.Text;
+                string correo = txtcorreo.Text;
+                string fecha = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                string contrasenia = txtcontrasegura.Text;
+
+                if (usuario == "" || correo == "" || fecha == "" || contrasenia == "")
+                {
+                    MessageBox.Show("llene tododos los campos porfavor");
+                    return;
+                }
+
+                RegistrarUsuario R = new RegistrarUsuario();
+                R.RegistarUsuario(usuario, correo, fecha, contrasenia);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
 
         }
     }

@@ -34,7 +34,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
 
 
                     MessageBox.Show("Confirme si el correo es correcto para editar su usuario\nCorreo: " + correo + "\nNombre: " + nuevoNombre);
-                    //ejecuta la culsuta sql que esta en cmd
+                    //ejecuta la culsuta sql que esta en query
                     cmd.ExecuteNonQuery();
                 }
             }

@@ -39,7 +39,6 @@
             this.lbconfirmarcontra = new System.Windows.Forms.Label();
             this.txtcontrasegura = new System.Windows.Forms.TextBox();
             this.lbcontra = new System.Windows.Forms.Label();
-            this.txtfechanacimiento = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtcorreo = new System.Windows.Forms.TextBox();
             this.lbcorreo = new System.Windows.Forms.Label();
@@ -47,17 +46,16 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -118,6 +116,7 @@
             this.btnregistro.TabIndex = 37;
             this.btnregistro.Text = "Registrarme";
             this.btnregistro.UseVisualStyleBackColor = false;
+            this.btnregistro.Click += new System.EventHandler(this.btnregistro_Click);
             // 
             // chknotificaciones
             // 
@@ -170,15 +169,6 @@
             this.lbcontra.Size = new System.Drawing.Size(79, 19);
             this.lbcontra.TabIndex = 32;
             this.lbcontra.Text = "Contraseña";
-            // 
-            // txtfechanacimiento
-            // 
-            this.txtfechanacimiento.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfechanacimiento.Location = new System.Drawing.Point(75, 240);
-            this.txtfechanacimiento.Margin = new System.Windows.Forms.Padding(2);
-            this.txtfechanacimiento.Name = "txtfechanacimiento";
-            this.txtfechanacimiento.Size = new System.Drawing.Size(201, 25);
-            this.txtfechanacimiento.TabIndex = 31;
             // 
             // label1
             // 
@@ -253,16 +243,6 @@
             this.pictureBox7.TabIndex = 48;
             this.pictureBox7.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(241, 240);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(34, 22);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 47;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.Location = new System.Drawing.Point(37, 341);
@@ -325,15 +305,22 @@
             this.txtusuario.Enter += new System.EventHandler(this.txtusuario_Enter);
             this.txtusuario.Leave += new System.EventHandler(this.txtusuario_Leave);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(75, 247);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 51;
+            // 
             // UI_Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 492);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -349,7 +336,6 @@
             this.Controls.Add(this.lbconfirmarcontra);
             this.Controls.Add(this.txtcontrasegura);
             this.Controls.Add(this.lbcontra);
-            this.Controls.Add(this.txtfechanacimiento);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.lbcorreo);
@@ -362,7 +348,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -378,7 +363,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -394,11 +378,11 @@
         private System.Windows.Forms.Label lbconfirmarcontra;
         private System.Windows.Forms.TextBox txtcontrasegura;
         private System.Windows.Forms.Label lbcontra;
-        private System.Windows.Forms.TextBox txtfechanacimiento;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label lbcorreo;
         private System.Windows.Forms.Label lbusuario;
         private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
