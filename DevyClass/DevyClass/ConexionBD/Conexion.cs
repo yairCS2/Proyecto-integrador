@@ -20,8 +20,17 @@ namespace DevyClass.Base_de_datos_DevyClass_
         {
             try
             {
+                //no va a entrar en el catch por que aqui solo establece la conexion no compurueba si el servidor existe o si la contrraseña es correcta 
                 var conn = new MySqlConnection(cadena);
+                //cuando abrimos la conexion aqui si compueba todo y si algo esta mal ahora si lo atrapa el catch de tipo mysqlconnection 
+                // porue si es un error de conexion lo que pasaba cunado no tenia el open y el close lo atrapaba la excepcion de alguna consulta en otra clase y no la de este metodo ObtenerConexion()
+                //entonces por eso jamas se ejecutaba la excepcion de aqui :)
+                conn.Open();
+                conn.Close();
                 return conn;
+
+              
+                
             }
             catch (MySqlException)
             {

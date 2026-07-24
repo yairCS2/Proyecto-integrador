@@ -28,6 +28,8 @@ namespace DevyClass
             lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 0.02 ?? 0}%";
             lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
             lblBienvenida.Text = $"Bienvenido, {UsuarioActual.Username}!";
+
+            
         }
 
         public UI_MenuPrincipal()
@@ -79,7 +81,7 @@ namespace DevyClass
 
 
             accederformRendimiento.Show();
-            // hide me permite cambiar de formulario
+            // hide me permite ocultar ell formulario
             // en cambio si le pongo close se cierra el formulario actual y termina el programa 
             this.Hide();
 
@@ -213,10 +215,6 @@ namespace DevyClass
            
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-            Conexion C = new Conexion();
-            C.verificarConecxion();
-        }
+        
     }
 }
