@@ -13,12 +13,22 @@ namespace DevyClass.Base_de_datos_DevyClass_
 
     public class Conexion
     {
-        private string cadena = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;";
+        private string cadena = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=;";
+        private string cadena2 = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;";
 
         public MySqlConnection ObtenerConexion()
         {
-            return new MySqlConnection(cadena);
-
+            try
+            {
+                var conn = new MySqlConnection(cadena);
+                conn.Open();
+                conn.Close();
+                return conn;
+            }
+            catch (MySqlException)
+            {
+                return new MySqlConnection(cadena2);
+            }
         }
 
         public void verificarConecxion()
