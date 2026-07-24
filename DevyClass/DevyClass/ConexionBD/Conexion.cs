@@ -21,8 +21,6 @@ namespace DevyClass.Base_de_datos_DevyClass_
             try
             {
                 var conn = new MySqlConnection(cadena);
-                conn.Open();
-                conn.Close();
                 return conn;
             }
             catch (MySqlException)
