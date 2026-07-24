@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_InicioSesion));
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlinfo = new System.Windows.Forms.Panel();
             this.lbinfoseguridad = new System.Windows.Forms.Label();
             this.lbtituloseguridad = new System.Windows.Forms.Label();
@@ -51,9 +48,6 @@
             this.lbdescripcion = new System.Windows.Forms.Label();
             this.lbtitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,36 +62,6 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 43;
             this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(283, 234);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(34, 22);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 41;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(79, 234);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 22);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 39;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(79, 185);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 22);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
             // 
             // pnlinfo
             // 
@@ -194,7 +158,7 @@
             this.btninicia.BackColor = System.Drawing.Color.RoyalBlue;
             this.btninicia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninicia.Location = new System.Drawing.Point(91, 299);
+            this.btninicia.Location = new System.Drawing.Point(99, 299);
             this.btninicia.Margin = new System.Windows.Forms.Padding(2);
             this.btninicia.Name = "btninicia";
             this.btninicia.Size = new System.Drawing.Size(217, 32);
@@ -227,11 +191,11 @@
             // txtcontraseña
             // 
             this.txtcontraseña.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontraseña.Location = new System.Drawing.Point(117, 234);
+            this.txtcontraseña.Location = new System.Drawing.Point(82, 234);
             this.txtcontraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.PasswordChar = '*';
-            this.txtcontraseña.Size = new System.Drawing.Size(201, 25);
+            this.txtcontraseña.Size = new System.Drawing.Size(253, 25);
             this.txtcontraseña.TabIndex = 27;
             // 
             // lbcontraseña
@@ -248,10 +212,10 @@
             // txtusuario
             // 
             this.txtusuario.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(117, 185);
+            this.txtusuario.Location = new System.Drawing.Point(82, 186);
             this.txtusuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(201, 25);
+            this.txtusuario.Size = new System.Drawing.Size(253, 25);
             this.txtusuario.TabIndex = 25;
             // 
             // lbusuario
@@ -293,9 +257,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 494);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pnlinfo);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLbregistro);
@@ -315,9 +276,6 @@
             this.Text = "UI_InicioSesion";
             this.Load += new System.EventHandler(this.UI_InicioSesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlinfo.ResumeLayout(false);
             this.pnlinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -329,9 +287,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlinfo;
         private System.Windows.Forms.Label lbinfoseguridad;
         private System.Windows.Forms.Label lbtituloseguridad;

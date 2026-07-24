@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevyClass.UsuarioDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,10 @@ namespace DevyClass
 {
     public partial class UI_AgregarUsuario : Form
     {
-        public UI_AgregarUsuario()
+        private DatosUsuario UsuarioActual;
+        public UI_AgregarUsuario(DatosUsuario usuario)
         {
+            UsuarioActual = usuario;
             InitializeComponent();
         }
 
@@ -24,7 +27,7 @@ namespace DevyClass
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            UI_Administrador accederF1 = new UI_Administrador();
+            UI_Administrador accederF1 = new UI_Administrador(UsuarioActual);
             this.Close();
             accederF1.ShowDialog();
         }

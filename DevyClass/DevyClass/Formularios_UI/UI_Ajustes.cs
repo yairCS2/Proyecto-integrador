@@ -20,6 +20,7 @@ namespace DevyClass
         public UI_Ajustes(DatosUsuario usuario)
         {
             InitializeComponent();
+            // se establece todo a la medida del usuario.
             UsuarioActual = usuario;
             txtCorreo.Text = UsuarioActual.Correo;
             txtNombre.Text = UsuarioActual.Username;

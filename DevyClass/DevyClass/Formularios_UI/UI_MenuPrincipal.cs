@@ -19,17 +19,44 @@ namespace DevyClass
     public partial class UI_MenuPrincipal : Form
     {
         private DatosUsuario UsuarioActual;
+
+        private static readonly string[] frases = new string[]
+        {
+            "Cada línea de código te acerca a tu meta.",
+            "Hoy es un buen día para aprender algo nuevo.",
+            "El progreso, aunque lento, sigue siendo progreso.",
+            "Los errores de hoy son el aprendizaje de mañana.",
+            "Tu esfuerzo de hoy es tu éxito de mañana.",
+            "No se trata de ser el mejor, sino de ser mejor que ayer.",
+            "Cada reto es una oportunidad para crecer."
+        };
+
+        private static readonly Random rnd = new Random();
+
+        public static string ObtenerFraseAleatoria()
+        {
+            int indice = rnd.Next(frases.Length);
+            return frases[indice];
+        }
+
         public UI_MenuPrincipal(DatosUsuario usuario)
         {
             InitializeComponent();
+            // se obtiene una frase motivadora aleatoria y se establece en el label correspondiente.
+            lblFraseMotivadora.Text = ObtenerFraseAleatoria();
             // se establece todo a la medida del usuario.
             UsuarioActual = usuario;
+            if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Enabled = true;
             gunaButton8.Text = UsuarioActual.Username;
-            lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 0.02 ?? 0}%";
+            lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 2 ?? 0}%";
             lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
+<<<<<<< HEAD
+            lblBienvenida.Text = $"!Hola, {UsuarioActual.Username} Bienvenido!";
+=======
             lblBienvenida.Text = $"Bienvenido, {UsuarioActual.Username}!";
 
             
+>>>>>>> 6141bb5329943e2b87b2896cdb3df50c0b7bbdda
         }
 
         public UI_MenuPrincipal()
@@ -215,6 +242,21 @@ namespace DevyClass
            
         }
 
+<<<<<<< HEAD
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            Conexion C = new Conexion();
+            C.verificarConecxion();
+        }
+
+        private void gunaButton1_Click_1(object sender, EventArgs e)
+        {
+            UI_Administrador u = new UI_Administrador(UsuarioActual);
+            this.Hide();
+            u.Show();
+        }
+=======
         
+>>>>>>> 6141bb5329943e2b87b2896cdb3df50c0b7bbdda
     }
 }

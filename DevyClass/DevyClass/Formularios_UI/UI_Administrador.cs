@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevyClass.UsuarioDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,10 @@ namespace DevyClass
 {
     public partial class UI_Administrador : Form
     {
-        public UI_Administrador()
+        private DatosUsuario UsuarioActual;
+        public UI_Administrador(DatosUsuario usuario)
         {
+            UsuarioActual = usuario;
             InitializeComponent();
         }
 
@@ -47,7 +50,7 @@ namespace DevyClass
 
         private void btnAgregarUsuario_Click(object sender, EventArgs e)
         {
-            UI_AgregarUsuario adduser = new UI_AgregarUsuario();
+            UI_AgregarUsuario adduser = new UI_AgregarUsuario(UsuarioActual);
             adduser.Show();
         }
 
@@ -63,16 +66,40 @@ namespace DevyClass
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();
-
             this.Close();
             accederF1.Close();
         }
 
         private void btnAgregarUsuario_Click_1(object sender, EventArgs e)
         {
-            UI_AgregarUsuario accederAU = new UI_AgregarUsuario();
+            
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UI_AgregarUsuario accederAU = new UI_AgregarUsuario(UsuarioActual);
             this.Hide();
             accederAU.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     } // Fin form
 }

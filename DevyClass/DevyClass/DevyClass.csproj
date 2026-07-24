@@ -384,5 +384,11 @@
   <ItemGroup>
     <Folder Include="LogicaC#\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Admin.png" />
+    <Content Include="Resources\agregar-usuario.png" />
+    <Content Include="Resources\borrar-usuario.png" />
+    <None Include="Resources\Siguiente.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
