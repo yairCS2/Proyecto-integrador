@@ -10,8 +10,6 @@ namespace DevyClass.Autenticacion
 {
     internal class ValidarContraseniaYUsuario
     {
-
-
         public bool UsuarioyContraseniaCorrectos(string usuario,string contrasena)
         {
             try
@@ -30,10 +28,6 @@ namespace DevyClass.Autenticacion
                     {
                         return true;
                     }else { return false; }
-                    
-
-          
-
                 }
 
             }

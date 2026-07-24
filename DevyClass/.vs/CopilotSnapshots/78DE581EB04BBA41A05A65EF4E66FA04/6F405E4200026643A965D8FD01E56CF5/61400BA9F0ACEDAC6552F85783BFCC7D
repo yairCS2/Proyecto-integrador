@@ -46,11 +46,11 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
-        public DatosUsuario ObtenerUsuarioPorUsername(string username)
+        public Usuario ObtenerUsuarioPorUsername(string username)
         {
             DatosUsuario usuario = null;
 
-            using (MySqlConnection conn = conexion.ObtenerConexion())
+            using (MySqlConnection conn = Conexion.ObtenerConexion()) // ajusta al nombre real de tu método
             {
                 string query = "SELECT * FROM usuarios WHERE username = @username";
 
@@ -65,13 +65,15 @@ namespace DevyClass.Base_de_datos_DevyClass_
                         {
                             usuario = new DatosUsuario
                             {
-                                IdUsuario = reader.IsDBNull(reader.GetOrdinal("id_usuarios")) ? 0 : reader.GetInt32("id_usuarios"),
-                                Username = reader.IsDBNull(reader.GetOrdinal("username")) ? null : reader.GetString("username"),
-                                Correo = reader.IsDBNull(reader.GetOrdinal("Correo")) ? null : reader.GetString("Correo"),
-                                Fecha = reader.IsDBNull(reader.GetOrdinal("fecha")) ? DateTime.MinValue : reader.GetDateTime("fecha"),
-                                Contrasena = reader.IsDBNull(reader.GetOrdinal("contrasena")) ? null : reader.GetString("contrasena"),
-                                ReferenciaTipo = reader.IsDBNull(reader.GetOrdinal("referencia_tipo")) ? 0 : reader.GetInt32("referencia_tipo"),
-                                UltimoNivel = reader.IsDBNull(reader.GetOrdinal("ultimo_nivel")) ? (int?)null : reader.GetInt32("ultimo_nivel")
+                                IdUsuario = reader.GetInt32("id_usuarios"),
+                                Username = reader.GetString("username"),
+                                Correo = reader.GetString("correo"),
+                                Fecha = reader.GetDateTime("fecha"),
+                                Contrasena = reader.GetString("contrasena"),
+                                ReferenciaTipo = reader.GetInt32("referencia_tipo"),
+                                UltimoNivel = reader.IsDBNull(reader.GetOrdinal("ultimo_nivel"))
+                                    ? (int?)null
+                                    : reader.GetInt32("ultimo_nivel")
                             };
                         }
                     }

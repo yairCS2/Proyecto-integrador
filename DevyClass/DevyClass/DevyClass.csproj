@@ -186,6 +186,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UsuarioDB\DatosUsuario.cs" />
     <EmbeddedResource Include="Formularios_UI\UI_Administrador.resx">
       <DependentUpon>UI_Administrador.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevyClass.Base_de_datos_DevyClass_;
+using DevyClass.UsuarioDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,32 +10,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevyClass.Base_de_datos_DevyClass_;
 
 
 namespace DevyClass
 {
     public partial class UI_Ajustes : Form
     {
-        public UI_Ajustes()
+        private DatosUsuario UsuarioActual;
+        public UI_Ajustes(DatosUsuario usuario)
         {
             InitializeComponent();
-          
+            UsuarioActual = usuario;
+            txtCorreo.Text = UsuarioActual.Correo;
+            txtNombre.Text = UsuarioActual.Username;
+
             // Color de fondo general del panel1
             panel1.BackColor = ColorTranslator.FromHtml("#1A2233");
             panel2.BackColor = ColorTranslator.FromHtml("#1E2A38");
             panel3.BackColor = ColorTranslator.FromHtml("#1E2A38");
-
-
-
-
-
         }
 
         private void btnregresar_Click(object sender, EventArgs e)
         {
         
-            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal();
+            UI_MenuPrincipal accederform1 = new UI_MenuPrincipal(UsuarioActual);
           
             this.Hide();
             accederform1.Show();
@@ -93,11 +93,6 @@ namespace DevyClass
             {
                 accesoUsurio.EditarUsuario(correo, nuevonombre);
             }
-            
-            
-           
-
-        
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

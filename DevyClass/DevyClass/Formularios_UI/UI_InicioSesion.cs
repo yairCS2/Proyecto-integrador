@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DevyClass.Autenticacion;
+using DevyClass.Base_de_datos_DevyClass_;
+using DevyClass.UsuarioDB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevyClass.Autenticacion;
+using static DevyClass.UsuarioDB.DatosUsuario;
 
 namespace DevyClass
 {
@@ -20,15 +23,11 @@ namespace DevyClass
 
         private void UI_InicioSesion_Load(object sender, EventArgs e)
         {
-            
-           
-
-
         }
 
         private void btninicia_Click(object sender, EventArgs e)
         {
-            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();
+            
 
             try
             {
@@ -51,7 +50,9 @@ namespace DevyClass
             ValidarContraseniaYUsuario validar = new ValidarContraseniaYUsuario();
             if (validar.UsuarioyContraseniaCorrectos(txtusuario.Text, txtcontraseña.Text))
             {
-                MessageBox.Show("Bienvenido");
+                ConsultasUsuario dao = new ConsultasUsuario();
+                DatosUsuario usuarioActual = dao.ObtenerUsuarioPorUsername(txtusuario.Text);
+                UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(usuarioActual);
                 this.Hide();
                 accederF1.Show();
                 return;

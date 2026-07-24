@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DevyClass.UsuarioDB
+{
+    public class DatosUsuario
+    {
+       DatosUsuario(string nombre, string contrasenia)
+        {
+            Nombre = nombre;
+            Contrasenia = contrasenia;
+        }
+        public string Nombre { get; set; }
+        public string Contrasenia { get; set; }
+
+
+    }
+}

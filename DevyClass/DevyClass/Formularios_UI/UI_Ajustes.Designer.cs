@@ -226,7 +226,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label8.Location = new System.Drawing.Point(212, 60);
+            this.label8.Location = new System.Drawing.Point(235, 77);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 18);
             this.label8.TabIndex = 10;
@@ -245,7 +245,7 @@
             // txtCorreo
             // 
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCorreo.Location = new System.Drawing.Point(13, 63);
+            this.txtCorreo.Location = new System.Drawing.Point(15, 120);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(192, 13);
             this.txtCorreo.TabIndex = 7;
@@ -255,7 +255,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(13, 45);
+            this.label4.Location = new System.Drawing.Point(12, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 13);
             this.label4.TabIndex = 5;
@@ -264,9 +264,9 @@
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Location = new System.Drawing.Point(12, 119);
+            this.txtNombre.Location = new System.Drawing.Point(15, 79);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(207, 13);
+            this.txtNombre.Size = new System.Drawing.Size(192, 13);
             this.txtNombre.TabIndex = 6;
             // 
             // label3
@@ -274,11 +274,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(12, 101);
+            this.label3.Location = new System.Drawing.Point(12, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Nombre de usuario";
+            this.label3.Text = "UserName";
             // 
             // label2
             // 

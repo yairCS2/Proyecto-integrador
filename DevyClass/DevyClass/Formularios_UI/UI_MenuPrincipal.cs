@@ -11,18 +11,29 @@ using System.Windows.Forms;
 using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.Formularios_UI_niveles.Modulo_1;
 using Guna.UI.WinForms;
+using DevyClass.UsuarioDB;
 
 namespace DevyClass
 {
 
     public partial class UI_MenuPrincipal : Form
     {
+        private DatosUsuario UsuarioActual;
+        public UI_MenuPrincipal(DatosUsuario usuario)
+        {
+            InitializeComponent();
+            // se establece todo a la medida del usuario.
+            UsuarioActual = usuario;
+            gunaButton8.Text = UsuarioActual.Username;
+            lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 0.02 ?? 0}%";
+            lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
+            lblBienvenida.Text = $"Bienvenido, {UsuarioActual.Username}!";
+        }
+
         public UI_MenuPrincipal()
         {
             InitializeComponent();
         }
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -100,7 +111,7 @@ namespace DevyClass
 
         private void btnAjustes_Click(object sender, EventArgs e)
         {
-            UI_Ajustes accedeerformAjustes = new UI_Ajustes();
+            UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
 
             accedeerformAjustes.Show();
             this.Hide();
@@ -149,7 +160,7 @@ namespace DevyClass
 
         private void gunaImageButton1_Click(object sender, EventArgs e)
         {
-            UI_Ajustes a = new UI_Ajustes();
+            UI_Ajustes a = new UI_Ajustes(UsuarioActual);
             this.Hide();
             a.Show();
         }
