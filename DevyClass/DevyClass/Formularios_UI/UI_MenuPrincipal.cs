@@ -46,7 +46,7 @@ namespace DevyClass
             lblFraseMotivadora.Text = ObtenerFraseAleatoria();
             // se establece todo a la medida del usuario.
             UsuarioActual = usuario;
-            if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Enabled = true;
+            if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Visible = true;
             gunaButton8.Text = UsuarioActual.Username;
             lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 2 ?? 0}%";
             lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
@@ -183,9 +183,6 @@ namespace DevyClass
 
         private void gunaImageButton1_Click(object sender, EventArgs e)
         {
-            UI_Ajustes a = new UI_Ajustes(UsuarioActual);
-            this.Hide();
-            a.Show();
         }
 
         private void label17_Click(object sender, EventArgs e)
