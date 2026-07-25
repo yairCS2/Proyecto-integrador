@@ -4,3 +4,6 @@
 
 /DevyClass/DevyClass/.vs
 /DevyClass/.vs/DevyClass.slnx/FileContentIndex
+.vs/
+bin/
+obj/
