@@ -203,6 +203,26 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap candado1 {
+            get {
+                object obj = ResourceManager.GetObject("candado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap candado2 {
+            get {
+                object obj = ResourceManager.GetObject("candado2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cerebro {
             get {
                 object obj = ResourceManager.GetObject("Cerebro", resourceCulture);
@@ -413,6 +433,16 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap estrella {
+            get {
+                object obj = ResourceManager.GetObject("estrella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Estructura {
             get {
                 object obj = ResourceManager.GetObject("Estructura", resourceCulture);
@@ -463,6 +493,16 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Jugar {
+            get {
+                object obj = ResourceManager.GetObject("Jugar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap libro_abierto {
             get {
                 object obj = ResourceManager.GetObject("libro-abierto", resourceCulture);
@@ -503,6 +543,26 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Nivel_Completado {
+            get {
+                object obj = ResourceManager.GetObject("Nivel-Completado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pensamiento_algoritmico {
+            get {
+                object obj = ResourceManager.GetObject("pensamiento-algoritmico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salida {
             get {
                 object obj = ResourceManager.GetObject("salida", resourceCulture);
@@ -516,6 +576,16 @@ namespace DevyClass.Properties {
         internal static System.Drawing.Bitmap Siguiente {
             get {
                 object obj = ResourceManager.GetObject("Siguiente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Siguiente1 {
+            get {
+                object obj = ResourceManager.GetObject("Siguiente1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

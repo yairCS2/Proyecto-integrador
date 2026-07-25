@@ -112,6 +112,12 @@
     <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
     <Compile Include="AdminDB\ConsultasAdmin.cs" />
     <Compile Include="ConexionBD\Conexion.cs" />
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.Designer.cs">
+      <DependentUpon>Nivel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
       <SubType>Form</SubType>
@@ -388,6 +394,10 @@
     <Content Include="Resources\Admin.png" />
     <Content Include="Resources\agregar-usuario.png" />
     <Content Include="Resources\borrar-usuario.png" />
+    <Content Include="Resources\estrella.png" />
+    <Content Include="Resources\Jugar.png" />
+    <Content Include="Resources\Nivel-Completado.png" />
+    <Content Include="Resources\pensamiento-algoritmico.png" />
     <None Include="Resources\Siguiente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

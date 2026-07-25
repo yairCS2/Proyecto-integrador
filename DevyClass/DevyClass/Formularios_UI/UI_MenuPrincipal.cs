@@ -44,13 +44,73 @@ namespace DevyClass
             InitializeComponent();
             // se obtiene una frase motivadora aleatoria y se establece en el label correspondiente.
             lblFraseMotivadora.Text = ObtenerFraseAleatoria();
+
             // se establece todo a la medida del usuario.
+
+            // se asigna el usuario actual al formulario
             UsuarioActual = usuario;
+            // Se configura la barra de progreso y los labels según el último nivel del usuario.
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;
+            progressBar1.Value = usuario.UltimoNivel * 2 ?? 0;
+            // se verifica si el usuario es un administrador (ReferenciaTipo == 1) y se muestra el botón correspondiente si es así.
             if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Visible = true;
+            // se muestra el nombre de usuario en el botón correspondiente.
             gunaButton8.Text = UsuarioActual.Username;
+            // se muestra el porcentaje de niveles completados por el usuario.
             lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 2 ?? 0}%";
+            // se muestra el progreso del usuario en términos de niveles completados.
             lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
+            // Bienvenida personalizada con el nombre de usuario.
             lblBienvenida.Text = $"!Hola, {UsuarioActual.Username} Bienvenido!";
+            // se muestra la experiencia acumulada del usuario.
+            lblExperiencia.Text = $"{(UsuarioActual.UltimoNivel) * 20 ?? 0} XP";
+
+            if (usuario.UltimoNivel <= 10)
+            {
+                if(usuario.UltimoNivel % 10 != 0)
+                {
+                    lblModulo1Porcentaje.Text = $"{(usuario.UltimoNivel % 10) * 10 ?? 0}%";
+                    lblModulo1NivelActual.Text = $"{usuario.UltimoNivel % 10 ?? 0}/10 Niveles";
+                }
+            }
+            // Modulo 2
+            if (usuario.UltimoNivel > 10 && usuario.UltimoNivel <= 20)
+            {
+                lblModulo2Porcentaje.Text = $"{(usuario.UltimoNivel % 10) * 10 ?? 0}%";
+                lblModulo2NivelActual.Text = $"{usuario.UltimoNivel % 10 ?? 0}/10 Niveles";
+            }
+            else
+            {
+                lblModulo2Porcentaje.Text = $"0%";
+                lblModulo2NivelActual.Text = $"0/10 Niveles";
+            }
+
+            // Modulo 3
+            if (usuario.UltimoNivel > 20 && usuario.UltimoNivel <= 30)
+            {
+                lblModulo3Porcentaje.Text = $"0%";
+                lblModulo3NivelActual.Text = $"0/10 Niveles";
+            }
+            else
+            {
+                lblModulo3Porcentaje.Text = $"0%";
+                lblModulo3NivelActual.Text = $"0/10 Niveles";
+            }
+
+            // Modulo 4
+            if (usuario.UltimoNivel > 30 && usuario.UltimoNivel <= 40)
+            {
+
+                lblModulo4Porcentaje.Text = $"0%";
+                lblModulo4NivelActual.Text = $"0/10 Niveles";
+            }
+            else
+            {
+                lblModulo4Porcentaje.Text = $"0%";
+                lblModulo4NivelActual.Text = $"0/10 Niveles";
+            }
+
         }
 
         public UI_MenuPrincipal()
@@ -250,6 +310,11 @@ namespace DevyClass
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void gunaButton8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
