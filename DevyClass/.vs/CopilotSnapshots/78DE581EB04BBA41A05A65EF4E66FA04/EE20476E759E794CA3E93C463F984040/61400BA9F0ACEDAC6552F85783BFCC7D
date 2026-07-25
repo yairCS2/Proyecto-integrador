@@ -1,0 +1,86 @@
+﻿using DevyClass.UsuarioDB;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static DevyClass.UsuarioDB.DatosUsuario;
+
+namespace DevyClass.Base_de_datos_DevyClass_
+{
+    public class ConsultasUsuario
+    {
+        Conexion conexion = new Conexion();
+
+        public void EditarUsuario(string correo, string nuevoNombre)
+        {
+            try
+            {   //using (palabre reservada) incica o le dice a la condicional usa este recurso y en donde terminen las llaves cierralo automaticamente3
+                //por eso usamos el nombre del objeto .open() para abrirlo y ya no es necesario poner con.close();
+                using (MySqlConnection con = conexion.ObtenerConexion())
+                {
+                    //on.Open(); abre la communicacion entre c# y el servidor de maria db
+                    con.Open();
+                        
+                    //creamos una variable llamada query a la cual se le da la instruccion en lenguaje sql de lo que queremos modificar en la tabla de nuestra base de datos
+                    //en pocas palabras hacer una consulta (modificar,crear,actualizar) etc..;
+                    string query = "UPDATE usuarios SET NameUsuarios = @nombre WHERE Correo = @correo";
+
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    //le damos valor a los parmetros que hicimos en la sonsulta por medio de los parametros qeu recibe el metodo Editar usuario;
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
+                    
+
+
+                    MessageBox.Show("Confirme si el correo es correcto para editar su usuario\nCorreo: " + correo + "\nNombre: " + nuevoNombre);
+                    //ejecuta la culsuta sql que esta en query
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception tipoerror)
+            {
+                MessageBox.Show("Error al editar usuario: " + tipoerror.Message);
+            }
+        }
+
+        public Usuario ObtenerUsuarioPorUsername(string username)
+        {
+            DatosUsuario usuario = null;
+
+            using (MySqlConnection conn = Conexion.ObtenerConexion()) // ajusta al nombre real de tu método
+            {
+                string query = "SELECT * FROM usuarios WHERE username = @username";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+
+                    conn.Open();
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuario = new DatosUsuario
+                            {
+                                IdUsuario = reader.GetInt32("id_usuarios"),
+                                Username = reader.GetString("username"),
+                                Correo = reader.GetString("correo"),
+                                Fecha = reader.GetDateTime("fecha"),
+                                Contrasena = reader.GetString("contrasena"),
+                                ReferenciaTipo = reader.GetInt32("referencia_tipo"),
+                                UltimoNivel = reader.IsDBNull(reader.GetOrdinal("ultimo_nivel"))
+                                    ? (int?)null
+                                    : reader.GetInt32("ultimo_nivel")
+                            };
+                        }
+                    }
+                }
+            }
+
+            return usuario;
+        }
+    }
+}

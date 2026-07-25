@@ -121,9 +121,6 @@
   <data name="DevyPngSinFondo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Inici" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ui_modulos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ui_modulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,6 +169,9 @@
   <data name="clipart2601066" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clipart2601066.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="escudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\escudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boligrafo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boligrafo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -207,6 +207,9 @@
   </data>
   <data name="Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DevyPngSinFondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,14 +250,14 @@
   <data name="DevyPngSinFondo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo.fondopng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DevyPngSinFondo.botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DevyPngSinFondo.botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Diseño sin título (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Diseño sin título (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trofeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trofeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="borrar-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrar-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="modulos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\modulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,13 +268,13 @@
   <data name="Ajuste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ajuste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DevyPngSinFondo.botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DevyPngSinFondo.botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="escudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Inici" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="borrar-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\borrar-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Codigo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Codigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

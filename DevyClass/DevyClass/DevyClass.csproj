@@ -173,11 +173,11 @@
     <Compile Include="Formularios_UI\UI_Temario.Designer.cs">
       <DependentUpon>UI_Temario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Modulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.Designer.cs">
-      <DependentUpon>Nivel1.cs</DependentUpon>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Modulo.Designer.cs">
+      <DependentUpon>Modulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="Formularios_UI\UI_Temario.resx">
       <DependentUpon>UI_Temario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1.resx">
-      <DependentUpon>Nivel1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Modulo.resx">
+      <DependentUpon>Modulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
