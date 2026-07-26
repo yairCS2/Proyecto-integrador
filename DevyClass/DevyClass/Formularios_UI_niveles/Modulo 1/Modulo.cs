@@ -32,78 +32,34 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
             gunaButton8.Text = UsuarioActual.Username;
 
-            if (usuario.UltimoNivel >= 1)
+            PictureBox[] lblNiveles = { lblNivel1, lblNivel2, lblNivel3, lblNivel4, lblNivel5,
+                             lblNivel6, lblNivel7, lblNivel8, lblNivel9, lblNivel10 };
+
+            for (int i = 0; i < lblNiveles.Length; i++)
             {
-                // Nivel desbloqueado
-                lblNivel1.Image = Properties.Resources.Jugar;
-                lblNivel1.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel1.Enabled = true;
+                int nivel = i + 1;
+
+                if (nivel <= usuario.UltimoNivel)
+                {
+                    // Nivel completado
+                    lblNiveles[i].Image = (nivel >= 8)
+                        ? Properties.Resources.estrella
+                        : Properties.Resources.Estrella_plata;
+                    lblNiveles[i].Cursor = Cursors.Hand;
+                    lblNiveles[i].Enabled = false;
+                }
+                else if (nivel == usuario.UltimoNivel + 1)
+                {
+                    // Nivel jugable
+                    lblNiveles[i].Image = Properties.Resources.Jugar;
+                    lblNiveles[i].Cursor = Cursors.Hand;
+                    lblNiveles[i].Enabled = true;
+                }
+                // else se queda con el candado por default
             }
-            if (usuario.UltimoNivel >= 2)
-            {
-                // Nivel desbloqueado
-                lblNivel2.Image = Properties.Resources.Jugar;
-                lblNivel2.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel2.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 3)
-            {
-                // Nivel desbloqueado
-                lblNivel3.Image = Properties.Resources.Jugar;
-                lblNivel3.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel3.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 4)
-            {
-                // Nivel desbloqueado
-                lblNivel4.Image = Properties.Resources.Jugar;
-                lblNivel4.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel4.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 5)
-            {
-                // Nivel desbloqueado
-                lblNivel5.Image = Properties.Resources.Jugar;
-                lblNivel5.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel5.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 6)
-            {
-                // Nivel desbloqueado
-                lblNivel6.Image = Properties.Resources.Jugar;
-                lblNivel6.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel6.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 7)
-            {
-                // Nivel desbloqueado
-                lblNivel7.Image = Properties.Resources.Jugar;
-                lblNivel7.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel7.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 8)
-            {
-                // Nivel desbloqueado
-                lblNivel8.Image = Properties.Resources.estrella;
-                lblNivel8.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel8.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 9)
-            {
-                // Nivel desbloqueado
-                lblNivel9.Image = Properties.Resources.estrella;
-                lblNivel9.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel9.Enabled = true;
-            }
-            if (usuario.UltimoNivel >= 10)
-            {
-                // Nivel desbloqueado
-                lblNivel10.Image = Properties.Resources.estrella;
-                lblNivel10.Cursor = Cursors.Hand;   // manita, como link
-                lblNivel10.Enabled = true;
-            }
+
         }
-   
+
 
         private void gunaButton6_Click(object sender, EventArgs e)
         {

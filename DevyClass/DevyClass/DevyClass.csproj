@@ -167,12 +167,6 @@
     <Compile Include="Formularios_UI\UI_Registro.Designer.cs">
       <DependentUpon>UI_Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI\UI_Rendimiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_Rendimiento.Designer.cs">
-      <DependentUpon>UI_Rendimiento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios_UI\UI_Temario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_Registro.resx">
       <DependentUpon>UI_Registro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI\UI_Rendimiento.resx">
-      <DependentUpon>UI_Rendimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_Temario.resx">
       <DependentUpon>UI_Temario.cs</DependentUpon>
@@ -391,10 +382,24 @@
     <Folder Include="LogicaC#\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConexionBD\Funciones.png" />
     <Content Include="Resources\Admin.png" />
     <Content Include="Resources\agregar-usuario.png" />
     <Content Include="Resources\borrar-usuario.png" />
+    <None Include="Resources\candado1.png" />
+    <Content Include="Resources\Devy_corriendo.png" />
+    <None Include="Resources\Devy_corriendo1.png" />
+    <Content Include="Resources\Devy_meditando.png" />
+    <Content Include="Resources\Devy_pensando.png" />
+    <None Include="Resources\Devy_pensando1.png" />
+    <Content Include="Resources\Devy_saludando.png" />
+    <None Include="Resources\Devy_saludando1.png" />
+    <Content Include="Resources\Devy_sentado.png" />
+    <None Include="Resources\Devy_sentado1.png" />
     <Content Include="Resources\estrella.png" />
+    <None Include="Resources\Funciones.png" />
+    <Content Include="Resources\Estrella_plata.png" />
+    <None Include="Resources\Estrella_plata1.png" />
     <Content Include="Resources\Jugar.png" />
     <Content Include="Resources\Nivel-Completado.png" />
     <Content Include="Resources\pensamiento-algoritmico.png" />

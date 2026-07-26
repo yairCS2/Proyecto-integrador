@@ -73,6 +73,7 @@ namespace DevyClass
                     lblModulo1Porcentaje.Text = $"{(usuario.UltimoNivel % 10) * 10 ?? 0}%";
                     lblModulo1NivelActual.Text = $"{usuario.UltimoNivel % 10 ?? 0}/10 Niveles";
                 }
+                lblModuloActual.Text = $"Pensamiento\nalgoritmico";
             }
             // Modulo 2
             if (usuario.UltimoNivel > 10 && usuario.UltimoNivel <= 20)

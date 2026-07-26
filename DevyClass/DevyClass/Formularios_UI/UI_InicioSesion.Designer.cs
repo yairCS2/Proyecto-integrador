@@ -34,19 +34,19 @@
             this.lbinfoseguridad = new System.Windows.Forms.Label();
             this.lbtituloseguridad = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLbregistro = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbnousuario = new System.Windows.Forms.Label();
             this.btninicia = new System.Windows.Forms.Button();
             this.lbolvidarcontra = new System.Windows.Forms.Label();
-            this.chcRecordarme = new System.Windows.Forms.CheckBox();
             this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.lbcontraseña = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.lbusuario = new System.Windows.Forms.Label();
             this.lbdescripcion = new System.Windows.Forms.Label();
             this.lbtitulo = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.chcRecordarme = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.pnlinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,17 +111,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(271, 280);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(131, 13);
-            this.linkLabel1.TabIndex = 36;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Olvidaste tu contraseña?";
-            // 
             // linkLbregistro
             // 
             this.linkLbregistro.AutoSize = true;
@@ -158,7 +147,7 @@
             this.btninicia.BackColor = System.Drawing.Color.RoyalBlue;
             this.btninicia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninicia.Location = new System.Drawing.Point(99, 299);
+            this.btninicia.Location = new System.Drawing.Point(99, 294);
             this.btninicia.Margin = new System.Windows.Forms.Padding(2);
             this.btninicia.Name = "btninicia";
             this.btninicia.Size = new System.Drawing.Size(217, 32);
@@ -170,23 +159,11 @@
             // lbolvidarcontra
             // 
             this.lbolvidarcontra.AutoSize = true;
-            this.lbolvidarcontra.Location = new System.Drawing.Point(271, 277);
+            this.lbolvidarcontra.Location = new System.Drawing.Point(239, 270);
             this.lbolvidarcontra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbolvidarcontra.Name = "lbolvidarcontra";
             this.lbolvidarcontra.Size = new System.Drawing.Size(0, 13);
             this.lbolvidarcontra.TabIndex = 29;
-            // 
-            // chcRecordarme
-            // 
-            this.chcRecordarme.AutoSize = true;
-            this.chcRecordarme.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chcRecordarme.Location = new System.Drawing.Point(79, 277);
-            this.chcRecordarme.Margin = new System.Windows.Forms.Padding(2);
-            this.chcRecordarme.Name = "chcRecordarme";
-            this.chcRecordarme.Size = new System.Drawing.Size(190, 20);
-            this.chcRecordarme.TabIndex = 28;
-            this.chcRecordarme.Text = "Recordarme en este dispositivo";
-            this.chcRecordarme.UseVisualStyleBackColor = true;
             // 
             // txtcontraseña
             // 
@@ -251,6 +228,29 @@
             this.lbtitulo.TabIndex = 22;
             this.lbtitulo.Text = "DeviClass";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(239, 273);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(131, 13);
+            this.linkLabel1.TabIndex = 36;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Olvidaste tu contraseña?";
+            // 
+            // chcRecordarme
+            // 
+            this.chcRecordarme.AutoSize = true;
+            this.chcRecordarme.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chcRecordarme.Location = new System.Drawing.Point(47, 270);
+            this.chcRecordarme.Margin = new System.Windows.Forms.Padding(2);
+            this.chcRecordarme.Name = "chcRecordarme";
+            this.chcRecordarme.Size = new System.Drawing.Size(190, 20);
+            this.chcRecordarme.TabIndex = 28;
+            this.chcRecordarme.Text = "Recordarme en este dispositivo";
+            this.chcRecordarme.UseVisualStyleBackColor = true;
+            // 
             // UI_InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,18 +291,18 @@
         private System.Windows.Forms.Label lbinfoseguridad;
         private System.Windows.Forms.Label lbtituloseguridad;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLbregistro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbnousuario;
         private System.Windows.Forms.Button btninicia;
         private System.Windows.Forms.Label lbolvidarcontra;
-        private System.Windows.Forms.CheckBox chcRecordarme;
         private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label lbcontraseña;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label lbusuario;
         private System.Windows.Forms.Label lbdescripcion;
         private System.Windows.Forms.Label lbtitulo;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox chcRecordarme;
     }
 }

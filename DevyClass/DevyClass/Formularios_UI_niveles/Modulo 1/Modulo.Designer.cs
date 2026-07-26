@@ -79,6 +79,7 @@
             this.lblNivelProgreso = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbusuario = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblNivel10 = new System.Windows.Forms.PictureBox();
             this.lblNivel7 = new System.Windows.Forms.PictureBox();
             this.lblNivel6 = new System.Windows.Forms.PictureBox();
@@ -91,6 +92,7 @@
             this.lblNivel1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
@@ -103,6 +105,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel6)).BeginInit();
@@ -115,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -227,6 +231,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.lblNivel10);
             this.panel7.Controls.Add(this.lblNivel7);
             this.panel7.Controls.Add(this.lblNivel6);
@@ -695,6 +700,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.progressBar1);
             this.panel4.Controls.Add(this.lblNivelProgreso);
             this.panel4.Controls.Add(this.label3);
@@ -748,6 +754,17 @@
             this.lbusuario.TabIndex = 25;
             this.lbusuario.Text = "Modulo 1";
             this.lbusuario.Click += new System.EventHandler(this.lbusuario_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DevyClass.Properties.Resources.Devy_pensando;
+            this.pictureBox5.Location = new System.Drawing.Point(7, 201);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 106);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 56;
+            this.pictureBox5.TabStop = false;
             // 
             // lblNivel10
             // 
@@ -828,7 +845,7 @@
             // 
             // lblNivel8
             // 
-            this.lblNivel8.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel8.Image = global::DevyClass.Properties.Resources.candado3;
             this.lblNivel8.Location = new System.Drawing.Point(172, 224);
             this.lblNivel8.Margin = new System.Windows.Forms.Padding(2);
             this.lblNivel8.Name = "lblNivel8";
@@ -881,6 +898,17 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 40;
             this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DevyClass.Properties.Resources.Devy_sentado;
+            this.pictureBox6.Location = new System.Drawing.Point(482, 10);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(101, 98);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 57;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -1005,6 +1033,7 @@
             this.panel7.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel6)).EndInit();
@@ -1017,6 +1046,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1093,5 +1123,7 @@
         private System.Windows.Forms.PictureBox lblNivel10;
         private System.Windows.Forms.PictureBox lblNivel7;
         private System.Windows.Forms.PictureBox lblNivel6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
