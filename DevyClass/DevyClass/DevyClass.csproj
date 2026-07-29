@@ -112,11 +112,36 @@
     <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
     <Compile Include="AdminDB\ConsultasAdmin.cs" />
     <Compile Include="ConexionBD\Conexion.cs" />
+    <Compile Include="Formularios_UI\UI_CartelModulo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_CartelModulo1.Designer.cs">
+      <DependentUpon>UI_CartelModulo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_EliminarUsuario.Designer.cs">
+      <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.Designer.cs">
       <DependentUpon>Nivel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1RepuestasCorrectas.cs" />
+    <Compile Include="Formularios_UI_niveles\Modulo 1\pregunta1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\pregunta1.Designer.cs">
+      <DependentUpon>pregunta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta2.Designer.cs">
+      <DependentUpon>Pregunta2.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
@@ -167,12 +192,6 @@
     <Compile Include="Formularios_UI\UI_Registro.Designer.cs">
       <DependentUpon>UI_Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI\UI_Temario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_Temario.Designer.cs">
-      <DependentUpon>UI_Temario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Modulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +218,12 @@
     <EmbeddedResource Include="Formularios_UI\UI_Cartel.resx">
       <DependentUpon>UI_Cartel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_CartelModulo1.resx">
+      <DependentUpon>UI_CartelModulo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_EliminarUsuario.resx">
+      <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_InicioSesion.resx">
       <DependentUpon>UI_InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,11 +236,17 @@
     <EmbeddedResource Include="Formularios_UI\UI_Registro.resx">
       <DependentUpon>UI_Registro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI\UI_Temario.resx">
-      <DependentUpon>UI_Temario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Modulo.resx">
       <DependentUpon>Modulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1.resx">
+      <DependentUpon>Nivel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\pregunta1.resx">
+      <DependentUpon>pregunta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Pregunta2.resx">
+      <DependentUpon>Pregunta2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -385,8 +416,30 @@
     <Content Include="ConexionBD\Funciones.png" />
     <Content Include="Resources\Admin.png" />
     <Content Include="Resources\agregar-usuario.png" />
+    <None Include="Resources\atras.png" />
+    <Content Include="Resources\barajar.png" />
+    <None Include="Resources\pensamiento-algoritmico1.png" />
+    <None Include="Resources\pensamiento-algoritmico2.png" />
+    <None Include="Resources\borrar-usuario1.png" />
+    <None Include="Resources\borrar-usuario_UI_administrador.png" />
+    <Content Include="Resources\borrar_icon.png" />
+    <None Include="Resources\borrar_icon1.png" />
+    <None Include="Resources\Devy_computadora2.png" />
+    <Content Include="Resources\cerrar-sesion_rojo.png" />
+    <None Include="Resources\cerrar-sesion_rojo1.png" />
+    <Content Include="Resources\configuracion.png" />
+    <None Include="Resources\configuracion1.png" />
+    <None Include="Resources\Devy_programando.png" />
+    <Content Include="Resources\Devy_lentes.png" />
+    <None Include="Resources\Devy_lentes1.png" />
+    <Content Include="Resources\Que_es.png" />
+    <None Include="Resources\barajar1.png" />
     <Content Include="Resources\borrar-usuario.png" />
     <None Include="Resources\candado1.png" />
+    <Content Include="Resources\Candado_rojo.png" />
+    <None Include="Resources\Candado_rojo1.png" />
+    <Content Include="Resources\Devy_computadora.png" />
+    <None Include="Resources\Devy_computadora1.png" />
     <Content Include="Resources\Devy_corriendo.png" />
     <None Include="Resources\Devy_corriendo1.png" />
     <Content Include="Resources\Devy_meditando.png" />
@@ -400,8 +453,17 @@
     <None Include="Resources\Funciones.png" />
     <Content Include="Resources\Estrella_plata.png" />
     <None Include="Resources\Estrella_plata1.png" />
+    <Content Include="Resources\Fondo_Niveles.png" />
+    <None Include="Resources\Fondo_Niveles1.png" />
+    <None Include="Resources\Fondo_Niveles2.png" />
+    <None Include="Resources\Fondo_Niveles3.png" />
     <Content Include="Resources\Jugar.png" />
     <Content Include="Resources\Nivel-Completado.png" />
+    <Content Include="Resources\ojo_abierto.png" />
+    <None Include="Resources\ojo_abierto1.png" />
+    <Content Include="Resources\ojo_cerrado.png" />
+    <None Include="Resources\ojo_cerrado1.png" />
+    <None Include="Resources\ojo_cerrado2.png" />
     <Content Include="Resources\pensamiento-algoritmico.png" />
     <None Include="Resources\Siguiente.png" />
   </ItemGroup>

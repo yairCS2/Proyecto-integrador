@@ -29,18 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lblNivel10 = new System.Windows.Forms.PictureBox();
+            this.lblNivel7 = new System.Windows.Forms.PictureBox();
+            this.lblNivel6 = new System.Windows.Forms.PictureBox();
+            this.lblNivel5 = new System.Windows.Forms.PictureBox();
+            this.lblNivel4 = new System.Windows.Forms.PictureBox();
+            this.lblNivel3 = new System.Windows.Forms.PictureBox();
+            this.lblNivel9 = new System.Windows.Forms.PictureBox();
+            this.lblNivel8 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.lblNivel2 = new System.Windows.Forms.PictureBox();
+            this.lblNivel1 = new System.Windows.Forms.PictureBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -55,6 +70,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -75,36 +92,19 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblNivelProgreso = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbusuario = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.lblNivel10 = new System.Windows.Forms.PictureBox();
-            this.lblNivel7 = new System.Windows.Forms.PictureBox();
-            this.lblNivel6 = new System.Windows.Forms.PictureBox();
-            this.lblNivel5 = new System.Windows.Forms.PictureBox();
-            this.lblNivel4 = new System.Windows.Forms.PictureBox();
-            this.lblNivel3 = new System.Windows.Forms.PictureBox();
-            this.lblNivel9 = new System.Windows.Forms.PictureBox();
-            this.lblNivel8 = new System.Windows.Forms.PictureBox();
-            this.lblNivel2 = new System.Windows.Forms.PictureBox();
-            this.lblNivel1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbusuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel7)).BeginInit();
@@ -118,9 +118,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,6 +142,33 @@
             this.panel1.Size = new System.Drawing.Size(197, 492);
             this.panel1.TabIndex = 7;
             // 
+            // gunaButton7
+            // 
+            this.gunaButton7.AnimationHoverSpeed = 0.07F;
+            this.gunaButton7.AnimationSpeed = 0.03F;
+            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton7.BaseColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton7.Image = global::DevyClass.Properties.Resources.salida;
+            this.gunaButton7.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton7.Location = new System.Drawing.Point(11, 405);
+            this.gunaButton7.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton7.Name = "gunaButton7";
+            this.gunaButton7.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.Black;
+            this.gunaButton7.OnHoverImage = null;
+            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton7.Radius = 20;
+            this.gunaButton7.Size = new System.Drawing.Size(173, 50);
+            this.gunaButton7.TabIndex = 10;
+            this.gunaButton7.Text = "Cerrar sesion";
+            this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click);
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -153,6 +180,32 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "DevyClass 1.1.0";
             // 
+            // gunaButton8
+            // 
+            this.gunaButton8.AnimationHoverSpeed = 0.07F;
+            this.gunaButton8.AnimationSpeed = 0.03F;
+            this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton8.BaseColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaButton8.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton8.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton8.Image = global::DevyClass.Properties.Resources.Usuario;
+            this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaButton8.Location = new System.Drawing.Point(11, 351);
+            this.gunaButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton8.Name = "gunaButton8";
+            this.gunaButton8.OnHoverBaseColor = System.Drawing.SystemColors.Control;
+            this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton8.OnHoverForeColor = System.Drawing.Color.Black;
+            this.gunaButton8.OnHoverImage = null;
+            this.gunaButton8.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton8.Radius = 20;
+            this.gunaButton8.Size = new System.Drawing.Size(173, 46);
+            this.gunaButton8.TabIndex = 9;
+            this.gunaButton8.Text = "Alexis Flores";
+            // 
             // panelMenu
             // 
             this.panelMenu.Controls.Add(this.gunaButton6);
@@ -162,6 +215,33 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(173, 256);
             this.panelMenu.TabIndex = 8;
+            // 
+            // gunaButton6
+            // 
+            this.gunaButton6.AnimationHoverSpeed = 0.07F;
+            this.gunaButton6.AnimationSpeed = 0.03F;
+            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.BaseColor = System.Drawing.Color.CornflowerBlue;
+            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton6.ForeColor = System.Drawing.Color.White;
+            this.gunaButton6.Image = global::DevyClass.Properties.Resources.Inici;
+            this.gunaButton6.ImageSize = new System.Drawing.Size(50, 50);
+            this.gunaButton6.Location = new System.Drawing.Point(2, 2);
+            this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton6.Name = "gunaButton6";
+            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Silver;
+            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.Black;
+            this.gunaButton6.OnHoverImage = null;
+            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton6.Radius = 20;
+            this.gunaButton6.Size = new System.Drawing.Size(169, 52);
+            this.gunaButton6.TabIndex = 8;
+            this.gunaButton6.Text = "     Inicio";
+            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
             // 
             // panel2
             // 
@@ -186,6 +266,17 @@
             this.label1.Size = new System.Drawing.Size(88, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "DevyClass";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo1;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -266,6 +357,112 @@
             this.panel7.Size = new System.Drawing.Size(585, 337);
             this.panel7.TabIndex = 42;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::DevyClass.Properties.Resources.Devy_pensando;
+            this.pictureBox5.Location = new System.Drawing.Point(20, 213);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(108, 95);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 56;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // lblNivel10
+            // 
+            this.lblNivel10.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel10.Location = new System.Drawing.Point(343, 223);
+            this.lblNivel10.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel10.Name = "lblNivel10";
+            this.lblNivel10.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel10.TabIndex = 55;
+            this.lblNivel10.TabStop = false;
+            // 
+            // lblNivel7
+            // 
+            this.lblNivel7.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel7.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel7.Location = new System.Drawing.Point(512, 85);
+            this.lblNivel7.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel7.Name = "lblNivel7";
+            this.lblNivel7.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel7.TabIndex = 54;
+            this.lblNivel7.TabStop = false;
+            // 
+            // lblNivel6
+            // 
+            this.lblNivel6.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel6.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel6.Location = new System.Drawing.Point(431, 22);
+            this.lblNivel6.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel6.Name = "lblNivel6";
+            this.lblNivel6.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel6.TabIndex = 53;
+            this.lblNivel6.TabStop = false;
+            // 
+            // lblNivel5
+            // 
+            this.lblNivel5.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel5.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel5.Location = new System.Drawing.Point(347, 85);
+            this.lblNivel5.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel5.Name = "lblNivel5";
+            this.lblNivel5.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel5.TabIndex = 52;
+            this.lblNivel5.TabStop = false;
+            // 
+            // lblNivel4
+            // 
+            this.lblNivel4.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel4.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel4.Location = new System.Drawing.Point(262, 23);
+            this.lblNivel4.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel4.Name = "lblNivel4";
+            this.lblNivel4.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel4.TabIndex = 51;
+            this.lblNivel4.TabStop = false;
+            // 
+            // lblNivel3
+            // 
+            this.lblNivel3.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel3.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel3.Location = new System.Drawing.Point(174, 85);
+            this.lblNivel3.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel3.Name = "lblNivel3";
+            this.lblNivel3.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel3.TabIndex = 50;
+            this.lblNivel3.TabStop = false;
+            // 
+            // lblNivel9
+            // 
+            this.lblNivel9.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel9.Location = new System.Drawing.Point(258, 224);
+            this.lblNivel9.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel9.Name = "lblNivel9";
+            this.lblNivel9.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel9.TabIndex = 49;
+            this.lblNivel9.TabStop = false;
+            // 
+            // lblNivel8
+            // 
+            this.lblNivel8.Image = global::DevyClass.Properties.Resources.candado3;
+            this.lblNivel8.Location = new System.Drawing.Point(172, 224);
+            this.lblNivel8.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel8.Name = "lblNivel8";
+            this.lblNivel8.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel8.TabIndex = 48;
+            this.lblNivel8.TabStop = false;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -293,6 +490,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(350, 290);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -305,6 +503,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(266, 291);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -317,6 +516,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(182, 291);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -325,6 +525,31 @@
             this.label36.TabIndex = 43;
             this.label36.Text = "Nivel 8";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNivel2
+            // 
+            this.lblNivel2.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel2.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel2.Location = new System.Drawing.Point(92, 23);
+            this.lblNivel2.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel2.Name = "lblNivel2";
+            this.lblNivel2.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel2.TabIndex = 41;
+            this.lblNivel2.TabStop = false;
+            // 
+            // lblNivel1
+            // 
+            this.lblNivel1.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivel1.Image = global::DevyClass.Properties.Resources.candado2;
+            this.lblNivel1.Location = new System.Drawing.Point(7, 85);
+            this.lblNivel1.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNivel1.Name = "lblNivel1";
+            this.lblNivel1.Size = new System.Drawing.Size(65, 65);
+            this.lblNivel1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblNivel1.TabIndex = 40;
+            this.lblNivel1.TabStop = false;
+            this.lblNivel1.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label23
             // 
@@ -401,6 +626,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(520, 152);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -413,6 +639,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(440, 90);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -425,6 +652,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(357, 152);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -437,6 +665,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(267, 90);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -461,6 +690,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(185, 152);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -473,6 +703,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(100, 90);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -485,6 +716,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(17, 152);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -493,6 +725,28 @@
             this.label22.TabIndex = 26;
             this.label22.Text = "Nivel 1";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DevyClass.Properties.Resources.Nivel_Completado;
+            this.pictureBox4.Location = new System.Drawing.Point(92, 23);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DevyClass.Properties.Resources.Nivel_Completado;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 85);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
             // 
             // label17
             // 
@@ -712,6 +966,17 @@
             this.panel4.Size = new System.Drawing.Size(610, 121);
             this.panel4.TabIndex = 9;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DevyClass.Properties.Resources.Devy_sentado;
+            this.pictureBox6.Location = new System.Drawing.Point(481, 10);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(109, 104);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 57;
+            this.pictureBox6.TabStop = false;
+            // 
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
@@ -719,6 +984,7 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(398, 21);
             this.progressBar1.TabIndex = 9;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // lblNivelProgreso
             // 
@@ -743,173 +1009,6 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Pensamiento algorítmico";
             // 
-            // lbusuario
-            // 
-            this.lbusuario.AutoSize = true;
-            this.lbusuario.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbusuario.Location = new System.Drawing.Point(78, 11);
-            this.lbusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbusuario.Name = "lbusuario";
-            this.lbusuario.Size = new System.Drawing.Size(65, 17);
-            this.lbusuario.TabIndex = 25;
-            this.lbusuario.Text = "Modulo 1";
-            this.lbusuario.Click += new System.EventHandler(this.lbusuario_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DevyClass.Properties.Resources.Devy_pensando;
-            this.pictureBox5.Location = new System.Drawing.Point(7, 201);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 106);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 56;
-            this.pictureBox5.TabStop = false;
-            // 
-            // lblNivel10
-            // 
-            this.lblNivel10.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel10.Location = new System.Drawing.Point(343, 223);
-            this.lblNivel10.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel10.Name = "lblNivel10";
-            this.lblNivel10.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel10.TabIndex = 55;
-            this.lblNivel10.TabStop = false;
-            // 
-            // lblNivel7
-            // 
-            this.lblNivel7.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel7.Location = new System.Drawing.Point(512, 85);
-            this.lblNivel7.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel7.Name = "lblNivel7";
-            this.lblNivel7.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel7.TabIndex = 54;
-            this.lblNivel7.TabStop = false;
-            // 
-            // lblNivel6
-            // 
-            this.lblNivel6.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel6.Location = new System.Drawing.Point(431, 22);
-            this.lblNivel6.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel6.Name = "lblNivel6";
-            this.lblNivel6.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel6.TabIndex = 53;
-            this.lblNivel6.TabStop = false;
-            // 
-            // lblNivel5
-            // 
-            this.lblNivel5.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel5.Location = new System.Drawing.Point(347, 85);
-            this.lblNivel5.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel5.Name = "lblNivel5";
-            this.lblNivel5.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel5.TabIndex = 52;
-            this.lblNivel5.TabStop = false;
-            // 
-            // lblNivel4
-            // 
-            this.lblNivel4.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel4.Location = new System.Drawing.Point(262, 23);
-            this.lblNivel4.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel4.Name = "lblNivel4";
-            this.lblNivel4.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel4.TabIndex = 51;
-            this.lblNivel4.TabStop = false;
-            // 
-            // lblNivel3
-            // 
-            this.lblNivel3.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel3.Location = new System.Drawing.Point(174, 85);
-            this.lblNivel3.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel3.Name = "lblNivel3";
-            this.lblNivel3.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel3.TabIndex = 50;
-            this.lblNivel3.TabStop = false;
-            // 
-            // lblNivel9
-            // 
-            this.lblNivel9.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel9.Location = new System.Drawing.Point(258, 224);
-            this.lblNivel9.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel9.Name = "lblNivel9";
-            this.lblNivel9.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel9.TabIndex = 49;
-            this.lblNivel9.TabStop = false;
-            // 
-            // lblNivel8
-            // 
-            this.lblNivel8.Image = global::DevyClass.Properties.Resources.candado3;
-            this.lblNivel8.Location = new System.Drawing.Point(172, 224);
-            this.lblNivel8.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel8.Name = "lblNivel8";
-            this.lblNivel8.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel8.TabIndex = 48;
-            this.lblNivel8.TabStop = false;
-            // 
-            // lblNivel2
-            // 
-            this.lblNivel2.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel2.Location = new System.Drawing.Point(92, 23);
-            this.lblNivel2.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel2.Name = "lblNivel2";
-            this.lblNivel2.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel2.TabIndex = 41;
-            this.lblNivel2.TabStop = false;
-            // 
-            // lblNivel1
-            // 
-            this.lblNivel1.Image = global::DevyClass.Properties.Resources.candado2;
-            this.lblNivel1.Location = new System.Drawing.Point(7, 85);
-            this.lblNivel1.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNivel1.Name = "lblNivel1";
-            this.lblNivel1.Size = new System.Drawing.Size(65, 65);
-            this.lblNivel1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblNivel1.TabIndex = 40;
-            this.lblNivel1.TabStop = false;
-            this.lblNivel1.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DevyClass.Properties.Resources.Nivel_Completado;
-            this.pictureBox4.Location = new System.Drawing.Point(92, 23);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 41;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DevyClass.Properties.Resources.Nivel_Completado;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 85);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 40;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DevyClass.Properties.Resources.Devy_sentado;
-            this.pictureBox6.Location = new System.Drawing.Point(482, 10);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(101, 98);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 57;
-            this.pictureBox6.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DevyClass.Properties.Resources.pensamiento_algoritmico;
@@ -921,95 +1020,17 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
-            // gunaButton7
+            // lbusuario
             // 
-            this.gunaButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaButton7.AnimationSpeed = 0.03F;
-            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton7.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton7.Image = global::DevyClass.Properties.Resources.salida;
-            this.gunaButton7.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton7.Location = new System.Drawing.Point(11, 405);
-            this.gunaButton7.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton7.Name = "gunaButton7";
-            this.gunaButton7.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaButton7.OnHoverImage = null;
-            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton7.Radius = 20;
-            this.gunaButton7.Size = new System.Drawing.Size(173, 50);
-            this.gunaButton7.TabIndex = 10;
-            this.gunaButton7.Text = "Cerrar sesion";
-            // 
-            // gunaButton8
-            // 
-            this.gunaButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaButton8.AnimationSpeed = 0.03F;
-            this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton8.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaButton8.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton8.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton8.Image = global::DevyClass.Properties.Resources.Usuario;
-            this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton8.Location = new System.Drawing.Point(11, 351);
-            this.gunaButton8.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton8.Name = "gunaButton8";
-            this.gunaButton8.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton8.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaButton8.OnHoverImage = null;
-            this.gunaButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton8.Radius = 20;
-            this.gunaButton8.Size = new System.Drawing.Size(173, 46);
-            this.gunaButton8.TabIndex = 9;
-            this.gunaButton8.Text = "Alexis Flores";
-            // 
-            // gunaButton6
-            // 
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaButton6.Image = global::DevyClass.Properties.Resources.Inici;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(50, 50);
-            this.gunaButton6.Location = new System.Drawing.Point(2, 2);
-            this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Silver;
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Radius = 20;
-            this.gunaButton6.Size = new System.Drawing.Size(169, 52);
-            this.gunaButton6.TabIndex = 8;
-            this.gunaButton6.Text = "     Inicio";
-            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DevyClass.Properties.Resources.DevyPngSinFondo1;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.lbusuario.AutoSize = true;
+            this.lbusuario.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbusuario.Location = new System.Drawing.Point(78, 11);
+            this.lbusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbusuario.Name = "lbusuario";
+            this.lbusuario.Size = new System.Drawing.Size(65, 17);
+            this.lbusuario.TabIndex = 25;
+            this.lbusuario.Text = "Modulo 1";
+            this.lbusuario.Click += new System.EventHandler(this.lbusuario_Click);
             // 
             // Modulo
             // 
@@ -1026,13 +1047,12 @@
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel7)).EndInit();
@@ -1046,9 +1066,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblNivel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1070,28 +1091,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblNivelProgreso;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox lblNivel9;
         private System.Windows.Forms.PictureBox lblNivel8;
@@ -1116,7 +1116,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox lblNivel3;
         private System.Windows.Forms.PictureBox lblNivel5;
         private System.Windows.Forms.PictureBox lblNivel4;
@@ -1125,5 +1124,27 @@
         private System.Windows.Forms.PictureBox lblNivel6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel9;
     }
 }

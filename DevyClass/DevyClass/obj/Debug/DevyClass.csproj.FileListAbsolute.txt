@@ -94,8 +94,6 @@ C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_InicioSesion
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Logros.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_MenuPrincipal.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Registro.resources
-C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Rendimiento.resources
-C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Temario.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Properties.Resources.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.GenerateResource.cache
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.exe.licenses
@@ -156,3 +154,8 @@ C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\
 C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Modulo.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI.UI_CartelModulo1.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI.UI_EliminarUsuario.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.pregunta1.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Pregunta2.resources

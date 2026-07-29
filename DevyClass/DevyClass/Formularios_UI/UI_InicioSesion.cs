@@ -16,9 +16,11 @@ namespace DevyClass
 {
     public partial class UI_InicioSesion : Form
     {
+        bool OjoRegistro;
         public UI_InicioSesion()
         {
             InitializeComponent();
+            txtcontrasenia.PasswordChar = '•';
         }
 
         private void UI_InicioSesion_Load(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace DevyClass
             try
             {
                 string nombre = txtusuario.Text;
-                string contrasenia = txtcontraseña.Text;
+                string contrasenia = txtcontrasenia.Text;
                 if (nombre == "" || contrasenia == "")
                 {
                     MessageBox.Show("Complete todos los cambios por favor");
@@ -48,7 +50,7 @@ namespace DevyClass
             }
 
             ValidarContraseniaYUsuario validar = new ValidarContraseniaYUsuario();
-            if (validar.UsuarioyContraseniaCorrectos(txtusuario.Text, txtcontraseña.Text))
+            if (validar.UsuarioyContraseniaCorrectos(txtusuario.Text, txtcontrasenia.Text))
             {
                 ConsultasUsuario dao = new ConsultasUsuario();
                 DatosUsuario usuarioActual = dao.ObtenerUsuarioPorUsername(txtusuario.Text);
@@ -67,9 +69,24 @@ namespace DevyClass
 
         private void linkLbregistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
             UI_Registro R = new UI_Registro();
+            this.Hide();
             R.Show();
+        }
+
+        private void OjoContrasenia_Click(object sender, EventArgs e)
+        {
+            OjoRegistro = !OjoRegistro;
+            if (OjoRegistro)
+            {
+                OjoContrasenia.Image = Properties.Resources.ojo_abierto;
+                txtcontrasenia.PasswordChar = default;
+            }
+            else
+            {
+                OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
+                txtcontrasenia.PasswordChar = '•';
+            }
         }
     }
 }

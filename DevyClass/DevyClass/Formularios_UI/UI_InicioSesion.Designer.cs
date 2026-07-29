@@ -29,17 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_InicioSesion));
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pnlinfo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbinfoseguridad = new System.Windows.Forms.Label();
             this.lbtituloseguridad = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLbregistro = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbnousuario = new System.Windows.Forms.Label();
             this.btninicia = new System.Windows.Forms.Button();
             this.lbolvidarcontra = new System.Windows.Forms.Label();
-            this.txtcontraseña = new System.Windows.Forms.TextBox();
+            this.txtcontrasenia = new System.Windows.Forms.TextBox();
             this.lbcontraseña = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.lbusuario = new System.Windows.Forms.Label();
@@ -47,43 +46,46 @@
             this.lbtitulo = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.chcRecordarme = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.OjoContrasenia = new System.Windows.Forms.PictureBox();
             this.pnlinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OjoContrasenia)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(117, 26);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(153, 74);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 43;
-            this.pictureBox7.TabStop = false;
             // 
             // pnlinfo
             // 
             this.pnlinfo.BackColor = System.Drawing.Color.LightBlue;
             this.pnlinfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlinfo.Controls.Add(this.pictureBox1);
             this.pnlinfo.Controls.Add(this.lbinfoseguridad);
             this.pnlinfo.Controls.Add(this.lbtituloseguridad);
-            this.pnlinfo.Controls.Add(this.pictureBox1);
-            this.pnlinfo.Location = new System.Drawing.Point(79, 357);
+            this.pnlinfo.Location = new System.Drawing.Point(74, 382);
             this.pnlinfo.Margin = new System.Windows.Forms.Padding(2);
             this.pnlinfo.Name = "pnlinfo";
             this.pnlinfo.Size = new System.Drawing.Size(271, 72);
             this.pnlinfo.TabIndex = 37;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DevyClass.Properties.Resources.Candado_rojo;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
             // lbinfoseguridad
             // 
             this.lbinfoseguridad.AutoSize = true;
-            this.lbinfoseguridad.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbinfoseguridad.Location = new System.Drawing.Point(70, 15);
+            this.lbinfoseguridad.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbinfoseguridad.Location = new System.Drawing.Point(78, 17);
             this.lbinfoseguridad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbinfoseguridad.Name = "lbinfoseguridad";
-            this.lbinfoseguridad.Size = new System.Drawing.Size(220, 52);
+            this.lbinfoseguridad.Size = new System.Drawing.Size(168, 48);
             this.lbinfoseguridad.TabIndex = 2;
             this.lbinfoseguridad.Text = "Nos tomamos muy en serio la seguridad\r\nde tus datos.\r\nNunca compartiremos tu info" +
     "rmacion con\r\nterceros.";
@@ -101,20 +103,10 @@
             this.lbtituloseguridad.TabIndex = 1;
             this.lbtituloseguridad.Text = "Tu informacion esta protegida";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(2, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // linkLbregistro
             // 
             this.linkLbregistro.AutoSize = true;
-            this.linkLbregistro.Location = new System.Drawing.Point(261, 333);
+            this.linkLbregistro.Location = new System.Drawing.Point(275, 356);
             this.linkLbregistro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLbregistro.Name = "linkLbregistro";
             this.linkLbregistro.Size = new System.Drawing.Size(55, 13);
@@ -126,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(309, 373);
+            this.label1.Location = new System.Drawing.Point(304, 398);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
@@ -135,7 +127,7 @@
             // lbnousuario
             // 
             this.lbnousuario.AutoSize = true;
-            this.lbnousuario.Location = new System.Drawing.Point(76, 333);
+            this.lbnousuario.Location = new System.Drawing.Point(90, 356);
             this.lbnousuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbnousuario.Name = "lbnousuario";
             this.lbnousuario.Size = new System.Drawing.Size(181, 13);
@@ -145,9 +137,10 @@
             // btninicia
             // 
             this.btninicia.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btninicia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btninicia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicia.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btninicia.Location = new System.Drawing.Point(99, 294);
+            this.btninicia.Location = new System.Drawing.Point(99, 311);
             this.btninicia.Margin = new System.Windows.Forms.Padding(2);
             this.btninicia.Name = "btninicia";
             this.btninicia.Size = new System.Drawing.Size(217, 32);
@@ -159,21 +152,21 @@
             // lbolvidarcontra
             // 
             this.lbolvidarcontra.AutoSize = true;
-            this.lbolvidarcontra.Location = new System.Drawing.Point(239, 270);
+            this.lbolvidarcontra.Location = new System.Drawing.Point(248, 278);
             this.lbolvidarcontra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbolvidarcontra.Name = "lbolvidarcontra";
             this.lbolvidarcontra.Size = new System.Drawing.Size(0, 13);
             this.lbolvidarcontra.TabIndex = 29;
             // 
-            // txtcontraseña
+            // txtcontrasenia
             // 
-            this.txtcontraseña.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontraseña.Location = new System.Drawing.Point(82, 234);
-            this.txtcontraseña.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.PasswordChar = '*';
-            this.txtcontraseña.Size = new System.Drawing.Size(253, 25);
-            this.txtcontraseña.TabIndex = 27;
+            this.txtcontrasenia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontrasenia.Location = new System.Drawing.Point(82, 234);
+            this.txtcontrasenia.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcontrasenia.Name = "txtcontrasenia";
+            this.txtcontrasenia.PasswordChar = '*';
+            this.txtcontrasenia.Size = new System.Drawing.Size(164, 25);
+            this.txtcontrasenia.TabIndex = 27;
             // 
             // lbcontraseña
             // 
@@ -221,7 +214,7 @@
             // 
             this.lbtitulo.AutoSize = true;
             this.lbtitulo.Font = new System.Drawing.Font("Segoe UI Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtitulo.Location = new System.Drawing.Point(123, 91);
+            this.lbtitulo.Location = new System.Drawing.Point(178, 45);
             this.lbtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(158, 41);
@@ -231,7 +224,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(239, 273);
+            this.linkLabel1.Location = new System.Drawing.Point(248, 281);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(131, 13);
@@ -243,7 +236,7 @@
             // 
             this.chcRecordarme.AutoSize = true;
             this.chcRecordarme.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chcRecordarme.Location = new System.Drawing.Point(47, 270);
+            this.chcRecordarme.Location = new System.Drawing.Point(56, 278);
             this.chcRecordarme.Margin = new System.Windows.Forms.Padding(2);
             this.chcRecordarme.Name = "chcRecordarme";
             this.chcRecordarme.Size = new System.Drawing.Size(190, 20);
@@ -251,12 +244,37 @@
             this.chcRecordarme.Text = "Recordarme en este dispositivo";
             this.chcRecordarme.UseVisualStyleBackColor = true;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(74, 23);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(131, 97);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 43;
+            this.pictureBox7.TabStop = false;
+            // 
+            // OjoContrasenia
+            // 
+            this.OjoContrasenia.BackColor = System.Drawing.Color.Transparent;
+            this.OjoContrasenia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OjoContrasenia.Image = global::DevyClass.Properties.Resources.ojo_abierto;
+            this.OjoContrasenia.Location = new System.Drawing.Point(267, 231);
+            this.OjoContrasenia.Margin = new System.Windows.Forms.Padding(2);
+            this.OjoContrasenia.Name = "OjoContrasenia";
+            this.OjoContrasenia.Size = new System.Drawing.Size(54, 34);
+            this.OjoContrasenia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.OjoContrasenia.TabIndex = 53;
+            this.OjoContrasenia.TabStop = false;
+            this.OjoContrasenia.Click += new System.EventHandler(this.OjoContrasenia_Click);
+            // 
             // UI_InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 494);
-            this.Controls.Add(this.pictureBox7);
+            this.ClientSize = new System.Drawing.Size(413, 466);
+            this.Controls.Add(this.OjoContrasenia);
             this.Controls.Add(this.pnlinfo);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLbregistro);
@@ -265,20 +283,22 @@
             this.Controls.Add(this.btninicia);
             this.Controls.Add(this.lbolvidarcontra);
             this.Controls.Add(this.chcRecordarme);
-            this.Controls.Add(this.txtcontraseña);
+            this.Controls.Add(this.txtcontrasenia);
             this.Controls.Add(this.lbcontraseña);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.lbusuario);
             this.Controls.Add(this.lbdescripcion);
             this.Controls.Add(this.lbtitulo);
+            this.Controls.Add(this.pictureBox7);
             this.Name = "UI_InicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI_InicioSesion";
             this.Load += new System.EventHandler(this.UI_InicioSesion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pnlinfo.ResumeLayout(false);
             this.pnlinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OjoContrasenia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,15 +308,13 @@
 
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel pnlinfo;
-        private System.Windows.Forms.Label lbinfoseguridad;
         private System.Windows.Forms.Label lbtituloseguridad;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLbregistro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbnousuario;
         private System.Windows.Forms.Button btninicia;
         private System.Windows.Forms.Label lbolvidarcontra;
-        private System.Windows.Forms.TextBox txtcontraseña;
+        private System.Windows.Forms.TextBox txtcontrasenia;
         private System.Windows.Forms.Label lbcontraseña;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label lbusuario;
@@ -304,5 +322,8 @@
         private System.Windows.Forms.Label lbtitulo;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox chcRecordarme;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbinfoseguridad;
+        private System.Windows.Forms.PictureBox OjoContrasenia;
     }
 }

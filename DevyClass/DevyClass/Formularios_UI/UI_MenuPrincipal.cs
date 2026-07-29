@@ -12,6 +12,7 @@ using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.Formularios_UI_niveles.Modulo_1;
 using Guna.UI.WinForms;
 using DevyClass.UsuarioDB;
+using Mysqlx.Notice;
 
 namespace DevyClass
 {
@@ -38,6 +39,11 @@ namespace DevyClass
             int indice = rnd.Next(frases.Length);
             return frases[indice];
         }
+
+        private Type[] Niveles =
+            {
+                typeof(Nivel1)
+            };
 
         public UI_MenuPrincipal(DatosUsuario usuario)
         {
@@ -66,9 +72,10 @@ namespace DevyClass
             // se muestra la experiencia acumulada del usuario.
             lblExperiencia.Text = $"{(UsuarioActual.UltimoNivel) * 20 ?? 0} XP";
 
+            // se configura la información de los módulos según el último nivel del usuario.
             if (usuario.UltimoNivel <= 10)
             {
-                if(usuario.UltimoNivel % 10 != 0)
+                if(usuario.UltimoNivel != 10)
                 {
                     lblModulo1Porcentaje.Text = $"{(usuario.UltimoNivel % 10) * 10 ?? 0}%";
                     lblModulo1NivelActual.Text = $"{usuario.UltimoNivel % 10 ?? 0}/10 Niveles";
@@ -158,25 +165,14 @@ namespace DevyClass
 
         private void btnRendimiento_Click(object sender, EventArgs e)
         {
-
-            UI_Rendimiento accederformRendimiento = new UI_Rendimiento();
-
-
-            accederformRendimiento.Show();
-            // hide me permite ocultar ell formulario
-            // en cambio si le pongo close se cierra el formulario actual y termina el programa 
-            this.Hide();
-
-    
         }
 
         private void btnregresar_Click(object sender, EventArgs e)
         {
             UI_InicioSesion accederUI = new UI_InicioSesion();
-
-            this.Hide();
+            this.Close();
             accederUI.Show();
-            
+            UsuarioActual.BorrarDatos();
         }
 
 
@@ -195,9 +191,7 @@ namespace DevyClass
 
         private void btnAjustes_Click(object sender, EventArgs e)
         {
-            UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
-            accedeerformAjustes.Show();
-            this.Hide();
+
         } 
         
         private void paP3_MouseLeave(object sender, EventArgs e)
@@ -293,7 +287,17 @@ namespace DevyClass
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-           
+            int indice = UsuarioActual.UltimoNivel ?? 0;
+
+            if (indice < 0 || indice >= Niveles.Length)
+            {
+                MessageBox.Show("No hay más niveles disponibles.");
+                return;
+            }
+
+            Form pantallaNivel = (Form)Activator.CreateInstance(Niveles[indice]);
+            pantallaNivel.Show();
+            this.Hide();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -315,7 +319,17 @@ namespace DevyClass
 
         private void gunaButton8_Click(object sender, EventArgs e)
         {
+            UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
+            accedeerformAjustes.Show();
+            this.Hide();
+        }
 
+        private void gunaButton7_Click(object sender, EventArgs e)
+        {
+            UsuarioActual.BorrarDatos();
+            UI_InicioSesion iniciar = new UI_InicioSesion();
+            this.Hide();
+            iniciar.Show();
         }
     }
 }

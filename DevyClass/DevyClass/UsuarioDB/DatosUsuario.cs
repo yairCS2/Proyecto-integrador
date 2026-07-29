@@ -40,5 +40,16 @@ namespace DevyClass.UsuarioDB
         public string Contrasena { get; set; }
         public int ReferenciaTipo { get; set; }
         public int? UltimoNivel { get; set; }
+
+        public void BorrarDatos()
+        {
+            IdUsuario = 0;
+            Username = null;
+            Correo = null;
+            Fecha = default(DateTime);
+            Contrasena = null;
+            ReferenciaTipo = 0;
+            UltimoNivel = null;
+        }
     }
 }

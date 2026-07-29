@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,35 +15,22 @@ namespace DevyClass.Base_de_datos_DevyClass_
     {
         Conexion conexion = new Conexion();
 
-        public void EditarUsuario(string correo, string nuevoNombre)
+        public int EditarUsuarioCompleto(int idUsuario, string nuevoUsername, string nuevaContrasena)
         {
-            try
-            {   //using (palabre reservada) incica o le dice a la condicional usa este recurso y en donde terminen las llaves cierralo automaticamente3
-                //por eso usamos el nombre del objeto .open() para abrirlo y ya no es necesario poner con.close();
-                using (MySqlConnection con = conexion.ObtenerConexion())
-                {
-                    //on.Open(); abre la communicacion entre c# y el servidor de maria db
-                    con.Open();
-                        
-                    //creamos una variable llamada query a la cual se le da la instruccion en lenguaje sql de lo que queremos modificar en la tabla de nuestra base de datos
-                    //en pocas palabras hacer una consulta (modificar,crear,actualizar) etc..;
-                    string query = "UPDATE usuarios SET NameUsuarios = @nombre WHERE Correo = @correo";
-
-                    MySqlCommand cmd = new MySqlCommand(query, con);
-                    //le damos valor a los parmetros que hicimos en la sonsulta por medio de los parametros qeu recibe el metodo Editar usuario;
-                    cmd.Parameters.AddWithValue("@correo", correo);
-                    cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
-                    
-
-
-                    MessageBox.Show("Confirme si el correo es correcto para editar su usuario\nCorreo: " + correo + "\nNombre: " + nuevoNombre);
-                    //ejecuta la culsuta sql que esta en query
-                    cmd.ExecuteNonQuery();
-                }
-            }
-            catch (Exception tipoerror)
+            using (MySqlConnection con = conexion.ObtenerConexion())
             {
-                MessageBox.Show("Error al editar usuario: " + tipoerror.Message);
+                con.Open();
+
+                string query = "UPDATE usuarios SET username = @username, contrasena = @contrasena WHERE id_usuarios = @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@username", nuevoUsername);
+                    cmd.Parameters.AddWithValue("@contrasena", nuevaContrasena);
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+
+                    return cmd.ExecuteNonQuery();
+                }
             }
         }
 
@@ -79,6 +67,92 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
 
             return usuario;
+        }
+
+        public int RegistrarUsuario(string usuario, string correo, DateTime fechaNacimiento, string contrasena, int tipo, int nivel)
+        {
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                if (conn.State != System.Data.ConnectionState.Open)
+                {
+                    conn.Open();
+                }
+
+                string query = @"INSERT INTO Usuarios (username, correo, fecha, contrasena, referencia_tipo, ultimo_nivel)
+                          VALUES (@Usuario, @Correo, @FechaNac, @Contrasena, @tipo, @Nivel)";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Usuario", usuario);
+                    cmd.Parameters.AddWithValue("@Correo", correo);
+                    cmd.Parameters.AddWithValue("@FechaNac", fechaNacimiento);
+                    cmd.Parameters.AddWithValue("@Contrasena", contrasena); 
+                    cmd.Parameters.AddWithValue("@tipo", tipo);
+                    cmd.Parameters.AddWithValue("@Nivel", nivel);
+
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public int EliminarUsuario(int idUsuario)
+        {
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                if (conn.State != System.Data.ConnectionState.Open)
+                {
+                    conn.Open();
+                }
+
+                string query = "DELETE FROM usuarios WHERE id_usuarios = @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public DataTable ObtenerTodosLosUsuarios()
+        {
+            DataTable tabla = new DataTable();
+
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                string query = @"SELECT usuarios.id_usuarios, usuarios.username, usuarios.correo, usuarios.fecha, 
+                          tipo_usuario.tipo, niveles.id_nivel, niveles.nombre
+                          FROM usuarios 
+                          JOIN niveles ON usuarios.ultimo_nivel = niveles.id_nivel
+                          JOIN tipo_usuario ON usuarios.referencia_tipo = tipo_usuario.id_tipo";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                {
+                    adapter.Fill(tabla);
+                }
+            }
+
+            return tabla;
+        }
+
+        public bool ExisteUsername(string username, int idExcluir)
+        {
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                conn.Open();
+
+                string query = "SELECT COUNT(*) FROM usuarios WHERE username = @username AND id_usuarios != @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@id", idExcluir);
+
+                    long total = Convert.ToInt64(cmd.ExecuteScalar());
+                    return total > 0;
+                }
+            }
         }
     }
 }

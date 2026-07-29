@@ -1,4 +1,5 @@
-﻿using DevyClass.UsuarioDB;
+﻿using DevyClass.Formularios_UI;
+using DevyClass.UsuarioDB;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -100,6 +101,23 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             Nivel1 nivel = new Nivel1();
             this.Hide();
             nivel.Show();
+        }
+
+        private void gunaButton7_Click(object sender, EventArgs e)
+        {
+            UsuarioActual.BorrarDatos();
+            UI_InicioSesion accederUI = new UI_InicioSesion();
+            this.Hide();
+            accederUI.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {    
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

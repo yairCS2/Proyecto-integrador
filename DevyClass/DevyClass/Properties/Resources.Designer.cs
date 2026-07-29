@@ -123,6 +123,26 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap atras {
+            get {
+                object obj = ResourceManager.GetObject("atras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap barajar {
+            get {
+                object obj = ResourceManager.GetObject("barajar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boligrafo {
             get {
                 object obj = ResourceManager.GetObject("boligrafo", resourceCulture);
@@ -153,9 +173,39 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borrar_icon {
+            get {
+                object obj = ResourceManager.GetObject("borrar_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap borrar_usuario {
             get {
                 object obj = ResourceManager.GetObject("borrar-usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borrar_usuario_UI_administrador {
+            get {
+                object obj = ResourceManager.GetObject("borrar-usuario_UI_administrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borrar_usuario1 {
+            get {
+                object obj = ResourceManager.GetObject("borrar-usuario1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +236,16 @@ namespace DevyClass.Properties {
         internal static System.Drawing.Bitmap candado__1_ {
             get {
                 object obj = ResourceManager.GetObject("candado (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Candado_rojo {
+            get {
+                object obj = ResourceManager.GetObject("Candado_rojo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +313,16 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrar_sesion_rojo {
+            get {
+                object obj = ResourceManager.GetObject("cerrar-sesion_rojo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clipart2601066 {
             get {
                 object obj = ResourceManager.GetObject("clipart2601066", resourceCulture);
@@ -293,6 +363,16 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap configuracion {
+            get {
+                object obj = ResourceManager.GetObject("configuracion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuraciones {
             get {
                 object obj = ResourceManager.GetObject("configuraciones", resourceCulture);
@@ -313,6 +393,26 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Devy_computadora {
+            get {
+                object obj = ResourceManager.GetObject("Devy_computadora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Devy_computadora1 {
+            get {
+                object obj = ResourceManager.GetObject("Devy_computadora1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Devy_corriendo {
             get {
                 object obj = ResourceManager.GetObject("Devy_corriendo", resourceCulture);
@@ -323,9 +423,29 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Devy_lentes {
+            get {
+                object obj = ResourceManager.GetObject("Devy_lentes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Devy_pensando {
             get {
                 object obj = ResourceManager.GetObject("Devy_pensando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Devy_programando {
+            get {
+                object obj = ResourceManager.GetObject("Devy_programando", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +633,36 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Niveles {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Niveles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Niveles1 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Niveles1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Niveles2 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Niveles2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Funciones {
             get {
                 object obj = ResourceManager.GetObject("Funciones", resourceCulture);
@@ -623,9 +773,59 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ojo_abierto {
+            get {
+                object obj = ResourceManager.GetObject("ojo_abierto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ojo_cerrado {
+            get {
+                object obj = ResourceManager.GetObject("ojo_cerrado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ojo_cerrado1 {
+            get {
+                object obj = ResourceManager.GetObject("ojo_cerrado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pensamiento_algoritmico {
             get {
                 object obj = ResourceManager.GetObject("pensamiento-algoritmico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pensamiento_algoritmico1 {
+            get {
+                object obj = ResourceManager.GetObject("pensamiento-algoritmico1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pensamiento_algoritmico2 {
+            get {
+                object obj = ResourceManager.GetObject("pensamiento-algoritmico2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

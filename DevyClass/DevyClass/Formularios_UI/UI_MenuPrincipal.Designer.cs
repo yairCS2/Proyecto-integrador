@@ -92,7 +92,6 @@
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.btnAjustes = new Guna.UI.WinForms.GunaButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -138,7 +137,6 @@
             // panelMenu
             // 
             this.panelMenu.Controls.Add(this.gunaButton6);
-            this.panelMenu.Controls.Add(this.btnAjustes);
             this.transicionMenu.SetDecoration(this.panelMenu, Guna.UI.Animation.DecorationType.None);
             this.panelMenu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panelMenu.Location = new System.Drawing.Point(0, 76);
@@ -978,6 +976,7 @@
             this.gunaButton7.Size = new System.Drawing.Size(184, 50);
             this.gunaButton7.TabIndex = 10;
             this.gunaButton7.Text = "Cerrar sesion";
+            this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click);
             // 
             // gunaButton8
             // 
@@ -994,7 +993,7 @@
             this.gunaButton8.ForeColor = System.Drawing.Color.Black;
             this.gunaButton8.Image = global::DevyClass.Properties.Resources.Usuario;
             this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton8.Location = new System.Drawing.Point(11, 392);
+            this.gunaButton8.Location = new System.Drawing.Point(10, 389);
             this.gunaButton8.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton8.Name = "gunaButton8";
             this.gunaButton8.OnHoverBaseColor = System.Drawing.SystemColors.Control;
@@ -1037,35 +1036,6 @@
             this.gunaButton6.Text = "     Inicio";
             this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
             // 
-            // btnAjustes
-            // 
-            this.btnAjustes.AnimationHoverSpeed = 0.07F;
-            this.btnAjustes.AnimationSpeed = 0.03F;
-            this.btnAjustes.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjustes.BaseColor = System.Drawing.Color.CornflowerBlue;
-            this.btnAjustes.BorderColor = System.Drawing.Color.Black;
-            this.btnAjustes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transicionMenu.SetDecoration(this.btnAjustes, Guna.UI.Animation.DecorationType.None);
-            this.btnAjustes.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAjustes.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAjustes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjustes.ForeColor = System.Drawing.Color.White;
-            this.btnAjustes.Image = global::DevyClass.Properties.Resources.ajust;
-            this.btnAjustes.ImageSize = new System.Drawing.Size(55, 55);
-            this.btnAjustes.Location = new System.Drawing.Point(11, 83);
-            this.btnAjustes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAjustes.Name = "btnAjustes";
-            this.btnAjustes.OnHoverBaseColor = System.Drawing.Color.Silver;
-            this.btnAjustes.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAjustes.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnAjustes.OnHoverImage = null;
-            this.btnAjustes.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAjustes.Radius = 15;
-            this.btnAjustes.Size = new System.Drawing.Size(185, 50);
-            this.btnAjustes.TabIndex = 7;
-            this.btnAjustes.Text = "   Ajustes";
-            this.btnAjustes.Click += new System.EventHandler(this.btnAjustes_Click);
-            // 
             // pictureBox2
             // 
             this.transicionMenu.SetDecoration(this.pictureBox2, Guna.UI.Animation.DecorationType.None);
@@ -1083,6 +1053,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 535);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.transicionMenu.SetDecoration(this, Guna.UI.Animation.DecorationType.None);
@@ -1130,7 +1101,6 @@
         private System.Windows.Forms.Label lbmenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaButton btnAjustes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
@@ -1175,9 +1145,7 @@
         private Guna.UI.WinForms.GunaProgressBar gunaProgressBar2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label17;
-        private Klik.Windows.Forms.v1.EntryLib.ELCalendar elCalendar1;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox4;
         private Guna.UI.WinForms.GunaImageButton gunaImageButton4;
         private System.Windows.Forms.Label lblModulo4NivelActual;
@@ -1189,6 +1157,8 @@
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label13;
+        private Klik.Windows.Forms.v1.EntryLib.ELCalendar elCalendar1;
     }
 }
 
