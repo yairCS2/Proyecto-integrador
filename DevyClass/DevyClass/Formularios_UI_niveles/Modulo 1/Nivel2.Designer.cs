@@ -1,6 +1,6 @@
 ﻿namespace DevyClass.Formularios_UI_niveles.Modulo_1
 {
-    partial class Nivel1
+    partial class Nivel2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nivel2));
             this.panel3 = new System.Windows.Forms.Panel();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
@@ -39,7 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelPregunta = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.label3 = new System.Windows.Forms.Label();
             this.lbusuario = new System.Windows.Forms.Label();
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
@@ -69,7 +69,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 491);
-            this.panel3.TabIndex = 9;
+            this.panel3.TabIndex = 10;
             // 
             // gunaButton2
             // 
@@ -102,7 +102,6 @@
             this.gunaButton2.Text = "Siguiente ▶";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton2.UseTransfarantBackground = true;
-            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // gunaButton1
             // 
@@ -135,7 +134,6 @@
             this.gunaButton1.Text = "◀ Anterior";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.UseTransfarantBackground = true;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton5
             // 
@@ -169,7 +167,6 @@
             this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton5.UseTransfarantBackground = true;
             this.gunaButton5.Visible = false;
-            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
             // panel1
             // 
@@ -244,7 +241,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.gunaButton3);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.lbusuario);
@@ -252,39 +248,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(598, 121);
             this.panel4.TabIndex = 9;
-            // 
-            // gunaButton3
-            // 
-            this.gunaButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaButton3.Animated = true;
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.LightSteelBlue;
-            this.gunaButton3.BorderColor = System.Drawing.Color.MidnightBlue;
-            this.gunaButton3.BorderSize = 2;
-            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = null;
-            this.gunaButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton3.Location = new System.Drawing.Point(13, 73);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.ForestGreen;
-            this.gunaButton3.Radius = 15;
-            this.gunaButton3.Size = new System.Drawing.Size(133, 35);
-            this.gunaButton3.TabIndex = 50;
-            this.gunaButton3.Text = "Finalizar bien";
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.UseTransfarantBackground = true;
-            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // label3
             // 
@@ -295,7 +258,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(343, 32);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Nivel 1: ¿Qué es un algoritmo?";
+            this.label3.Text = "NIvel 1: ¿Qué es un algoritmo?";
             // 
             // lbusuario
             // 
@@ -385,7 +348,6 @@
             this.gunaButton6.Size = new System.Drawing.Size(169, 52);
             this.gunaButton6.TabIndex = 8;
             this.gunaButton6.Text = "     Inicio";
-            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
             // 
             // pictureBox1
             // 
@@ -409,16 +371,15 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
-            // Nivel1
+            // Nivel2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 489);
+            this.ClientSize = new System.Drawing.Size(800, 491);
             this.Controls.Add(this.panel3);
-            this.Name = "Nivel1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nivel1";
-            this.Load += new System.EventHandler(this.Nivel1_Load);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Nivel2";
+            this.Text = "Nivel2";
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -436,11 +397,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panelPregunta;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lbusuario;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton gunaButton5;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI.WinForms.GunaButton gunaButton7;
         private System.Windows.Forms.Label label2;
@@ -450,9 +409,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
-        private Guna.UI.WinForms.GunaButton gunaButton3;
+        private System.Windows.Forms.Panel panelPregunta;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbusuario;
     }
 }

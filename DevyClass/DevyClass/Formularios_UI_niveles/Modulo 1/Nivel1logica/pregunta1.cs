@@ -20,7 +20,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         {
             InitializeComponent();
             UsuarioPregunta = usuario;
-            NivelActual.Text = usuario.Pregunta1Res.ToString();
 
             switch (usuario.Pregunta1Res)
             {

@@ -112,6 +112,9 @@
     <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
     <Compile Include="AdminDB\ConsultasAdmin.cs" />
     <Compile Include="ConexionBD\Conexion.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios_UI\UI_CartelModulo1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,24 +127,48 @@
     <Compile Include="Formularios_UI\UI_EliminarUsuario.Designer.cs">
       <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
+    <None Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
       <SubType>Form</SubType>
-    </Compile>
+    </None>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.Designer.cs">
       <DependentUpon>Nivel1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1RepuestasCorrectas.cs" />
-    <Compile Include="Formularios_UI_niveles\Modulo 1\pregunta1.cs">
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Nivel1RepuestasCorrectas.cs" />
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelCompletado.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\pregunta1.Designer.cs">
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelCompletado.Designer.cs">
+      <DependentUpon>NivelCompletado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelNoCompletado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelNoCompletado.Designer.cs">
+      <DependentUpon>NivelNoCompletado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\pregunta1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\pregunta1.Designer.cs">
       <DependentUpon>pregunta1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta2.cs">
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta2.Designer.cs">
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta2.Designer.cs">
       <DependentUpon>Pregunta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta3.Designer.cs">
+      <DependentUpon>Pregunta3.cs</DependentUpon>
+    </Compile>
+    <None Include="Formularios_UI_niveles\Modulo 1\Nivel2.cs">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel2.Designer.cs">
+      <DependentUpon>Nivel2.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
@@ -192,9 +219,9 @@
     <Compile Include="Formularios_UI\UI_Registro.Designer.cs">
       <DependentUpon>UI_Registro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI_niveles\Modulo 1\Modulo.cs">
+    <None Include="Formularios_UI_niveles\Modulo 1\Modulo.cs">
       <SubType>Form</SubType>
-    </Compile>
+    </None>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Modulo.Designer.cs">
       <DependentUpon>Modulo.cs</DependentUpon>
     </Compile>
@@ -242,11 +269,23 @@
     <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1.resx">
       <DependentUpon>Nivel1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\pregunta1.resx">
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelCompletado.resx">
+      <DependentUpon>NivelCompletado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\NivelNoCompletado.resx">
+      <DependentUpon>NivelNoCompletado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\pregunta1.resx">
       <DependentUpon>pregunta1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Pregunta2.resx">
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta2.resx">
       <DependentUpon>Pregunta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel1logica\Pregunta3.resx">
+      <DependentUpon>Pregunta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Nivel2.resx">
+      <DependentUpon>Nivel2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -430,8 +469,16 @@
     <Content Include="Resources\configuracion.png" />
     <None Include="Resources\configuracion1.png" />
     <None Include="Resources\Devy_programando.png" />
+    <None Include="Resources\Devy_feliz.png" />
+    <Content Include="Resources\DevyPngSinFondo.ico" />
+    <Content Include="Resources\Devy_comiendo.png" />
+    <None Include="Resources\Devy_comiendo1.png" />
+    <Content Include="Resources\Devy_confeti.png" />
+    <None Include="Resources\Devy_confeti1.png" />
     <Content Include="Resources\Devy_lentes.png" />
     <None Include="Resources\Devy_lentes1.png" />
+    <None Include="Resources\Devy_llorando.png" />
+    <Content Include="Resources\image-removebg-preview %283%29.png" />
     <Content Include="Resources\Que_es.png" />
     <None Include="Resources\barajar1.png" />
     <Content Include="Resources\borrar-usuario.png" />

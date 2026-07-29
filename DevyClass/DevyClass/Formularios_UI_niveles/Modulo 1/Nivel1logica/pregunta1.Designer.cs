@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.NivelActual = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,22 +169,10 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Ejercicio 1 · Opcion multiple";
             // 
-            // NivelActual
-            // 
-            this.NivelActual.AutoSize = true;
-            this.NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NivelActual.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NivelActual.Location = new System.Drawing.Point(510, 23);
-            this.NivelActual.Name = "NivelActual";
-            this.NivelActual.Size = new System.Drawing.Size(0, 16);
-            this.NivelActual.TabIndex = 29;
-            // 
             // pregunta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.NivelActual);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton3);
             this.Controls.Add(this.gunaButton8);
@@ -209,6 +196,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label NivelActual;
     }
 }

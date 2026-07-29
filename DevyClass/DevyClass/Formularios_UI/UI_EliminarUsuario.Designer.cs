@@ -176,6 +176,7 @@
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.dgvUsuarios);
             this.Name = "UI_EliminarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI_EliminarUsuario";
             this.Load += new System.EventHandler(this.UI_EliminarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();

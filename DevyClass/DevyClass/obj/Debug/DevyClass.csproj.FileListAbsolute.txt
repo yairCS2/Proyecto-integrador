@@ -159,3 +159,7 @@ C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI.
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.pregunta1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Pregunta2.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.NivelCompletado.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Pregunta3.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.NivelNoCompletado.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel2.resources

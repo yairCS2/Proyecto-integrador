@@ -1,4 +1,5 @@
 ﻿using DevyClass.Formularios_UI_niveles.Modulo_1;
+using DevyClass.UsuarioDB;
 using Guna.UI.WinForms;
 using System;
 using System.Collections.Generic;
@@ -13,25 +14,30 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DevyClass.Formularios_UI_niveles.Modulo_1
 {
+    
     public partial class Nivel1 : Form
     {
+        private DatosUsuario UsuarioActual;
         private Func<UserControl>[] preguntas;
         private int indiceActual = 0;
         Nivel1RepuestasCorrectas UsuarioPreguntas = new Nivel1RepuestasCorrectas();
 
-        public Nivel1()
+        public Nivel1(DatosUsuario usuario)
         {
             InitializeComponent();
+            UsuarioActual = usuario;
+
             gunaButton1.TabStop = false;
             gunaButton2.TabStop = false;
 
-            progressBar1.Minimum = 0;
-            progressBar1.Maximum = 100;
+            UsuarioPreguntas.RespuestasCorrectas = 0;
 
             preguntas = new Func<UserControl>[]
             {
                     () => new pregunta1(UsuarioPreguntas),
-                    () => new Pregunta2()
+                    () => new Pregunta2(),
+                    () => new Pregunta3(),
+                    () => new NivelCompletado()
             };
 
             CambiarUC(preguntas[indiceActual]());
@@ -56,22 +62,55 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             {
                 indiceActual--;
                 CambiarUC(preguntas[indiceActual]());
-                UsuarioPreguntas.progreso -= 25;
-                progressBar1.Value = indiceActual;
             }
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             
-            if (indiceActual < preguntas.Length - 1)
+            if (indiceActual < preguntas.Length-1)
             {
                 
                 indiceActual++;
                 CambiarUC(preguntas[indiceActual]());
                 UsuarioPreguntas.progreso+=25;
-                progressBar1.Value = UsuarioPreguntas.progreso;
             }
+
+            if (UsuarioPreguntas.progreso >= 75 && UsuarioPreguntas.RespuestasCorrectas >= 3 && indiceActual == 3)
+            {
+                gunaButton5.Visible = true;
+                CambiarUC(new NivelCompletado());
+            }else if (UsuarioPreguntas.progreso >= 75 && UsuarioPreguntas.RespuestasCorrectas < 3 && indiceActual == 3)
+            {
+                gunaButton5.Visible = true;
+                CambiarUC(new NivelNoCompletado());
+            }
+            
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            UsuarioPreguntas.RespuestasCorrectas = 4;
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            UsuarioPreguntas.RespuestasCorrectas = 0;
+        }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            UsuarioActual.UltimoNivel = 1;
+            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
+            this.Hide();
+            accederF1.Show();
+        }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
+            this.Hide();
+            accederF1.Show();
         }
     }
 }

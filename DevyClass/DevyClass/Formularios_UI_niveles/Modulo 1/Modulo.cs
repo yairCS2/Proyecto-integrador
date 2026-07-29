@@ -47,7 +47,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
                         ? Properties.Resources.estrella
                         : Properties.Resources.Estrella_plata;
                     lblNiveles[i].Cursor = Cursors.Hand;
-                    lblNiveles[i].Enabled = false;
+                    lblNiveles[i].Enabled = true;
                 }
                 else if (nivel == usuario.UltimoNivel + 1)
                 {
@@ -98,7 +98,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Nivel1 nivel = new Nivel1();
+            Nivel1 nivel = new Nivel1(UsuarioActual);
             this.Hide();
             nivel.Show();
         }
@@ -118,6 +118,26 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         private void progressBar1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblNivel2_Click(object sender, EventArgs e)
+        {
+            // codigo para acceder al nivel 2
+        }
+
+        private void lblNivel3_Click(object sender, EventArgs e)
+        {
+            // codigo para acceder al nivel 3
+        }
+
+        private void lblNivel4_Click(object sender, EventArgs e)
+        {
+            // codigo para acceder al nivel 4
+        }
+
+        private void lblNivel5_Click(object sender, EventArgs e)
+        {
+            // codigo para acceder al nivel 5, entiendes no¿?...
         }
     }
 }

@@ -178,9 +178,6 @@
   <data name="Devy_saludando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Devy_saludando1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\idea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,11 +232,17 @@
   <data name="variable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\variable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DevyPngSinFondo.botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DevyPngSinFondo.botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="candado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\candado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ui_modulos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ui_modulos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Devy_comiendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devy_comiendo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DevyPngSinFondo.fondopng" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DevyPngSinFondo.fondopng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,8 +274,14 @@
   <data name="cerrar-sesion_rojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar-sesion_rojo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Devy_confeti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devy_confeti1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boligrafo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boligrafo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Devy_lentes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devy_lentes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -288,9 +297,6 @@
   </data>
   <data name="pensamiento-algoritmico1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pensamiento-algoritmico1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pensamiento-algoritmico2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pensamiento-algoritmico2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ojo_cerrado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ojo_cerrado2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,14 +322,17 @@
   <data name="pensamiento-algoritmico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pensamiento-algoritmico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="libro-abierto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\libro-abierto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pensamiento-algoritmico2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pensamiento-algoritmico2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Diseño sin título (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Diseño sin título (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="configuraciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\configuraciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="libro-abierto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\libro-abierto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="estrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,8 +349,8 @@
   <data name="Devy_programando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Devy_programando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DevyPngSinFondo.botones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DevyPngSinFondo.botones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Devy_corriendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Devy_corriendo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,10 +382,13 @@
   <data name="ajust" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ajust.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Devy_feliz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devy_feliz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agregar-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Devy_lentes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Devy_lentes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Devy_llorando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Devy_llorando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
