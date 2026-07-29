@@ -16,5 +16,25 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         {
             InitializeComponent();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pregunta2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFraseMotivadora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaButton8_Click(object sender, EventArgs e)
+        {
+         
+        }
     }
 }

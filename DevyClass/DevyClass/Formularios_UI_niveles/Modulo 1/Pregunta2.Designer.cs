@@ -67,6 +67,7 @@
             this.gunaButton1.Text = "falso";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.UseTransfarantBackground = true;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton8
             // 
@@ -99,6 +100,7 @@
             this.gunaButton8.Text = "verdadero";
             this.gunaButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton8.UseTransfarantBackground = true;
+            this.gunaButton8.Click += new System.EventHandler(this.gunaButton8_Click);
             // 
             // pictureBox2
             // 
@@ -122,6 +124,7 @@
             this.lblFraseMotivadora.Size = new System.Drawing.Size(331, 16);
             this.lblFraseMotivadora.TabIndex = 17;
             this.lblFraseMotivadora.Text = "¿Cual de estas opciones describe mejor un algoritmo?";
+            this.lblFraseMotivadora.Click += new System.EventHandler(this.lblFraseMotivadora_Click);
             // 
             // lblBienvenida
             // 
@@ -144,6 +147,7 @@
             this.Controls.Add(this.lblBienvenida);
             this.Name = "Pregunta2";
             this.Size = new System.Drawing.Size(585, 285);
+            this.Load += new System.EventHandler(this.Pregunta2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

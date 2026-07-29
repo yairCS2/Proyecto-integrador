@@ -473,6 +473,26 @@ namespace DevyClass.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap devyclass_levels_background {
+            get {
+                object obj = ResourceManager.GetObject("devyclass_levels_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap devyclass_levels_backgroundd {
+            get {
+                object obj = ResourceManager.GetObject("devyclass_levels_backgroundd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DevyNegro {
             get {
                 object obj = ResourceManager.GetObject("DevyNegro", resourceCulture);

@@ -430,6 +430,8 @@
     <Content Include="Resources\configuracion.png" />
     <None Include="Resources\configuracion1.png" />
     <None Include="Resources\Devy_programando.png" />
+    <None Include="Resources\devyclass_levels_background.png" />
+    <None Include="Resources\devyclass_levels_backgroundd.png" />
     <Content Include="Resources\Devy_lentes.png" />
     <None Include="Resources\Devy_lentes1.png" />
     <Content Include="Resources\Que_es.png" />

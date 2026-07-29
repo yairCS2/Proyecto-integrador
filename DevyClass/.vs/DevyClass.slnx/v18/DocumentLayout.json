@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Proyecto - integrador\\DevyClass\\",
+  "WorkspaceRootPath": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\proyecto - integrador\\devyclass\\devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui\\ui_menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui\\ui_menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\proyecto - integrador\\devyclass\\devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto-integrador\\devyclass\\devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\nivel1repuestascorrectas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\nivel1repuestascorrectas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\nivel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\nivel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\nivel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\nivel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\nivel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto-integrador\\devyclass\\devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|C:\\Proyecto - integrador\\DevyClass\\devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\modulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|c:\\users\\x\\desktop\\proyecto-integrador\\devyclass\\devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F76778B6-9BBA-4F5A-A36B-D45255D97337}|DevyClass\\DevyClass.csproj|solutionrelative:devyclass\\formularios_ui_niveles\\modulo 1\\pregunta1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,22 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Nivel1.cs",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T08:30:55.153Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -80,91 +50,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "pregunta1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
               "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs [Dise\u00F1o]",
               "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-29T02:19:52.022Z",
+              "WhenOpened": "2026-07-29T14:27:26.434Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UI_MenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs",
-              "RelativeToolTip": "DevyClass\\Formularios_UI\\UI_MenuPrincipal.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAewOUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T23:17:07.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Nivel1RepuestasCorrectas.cs",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1RepuestasCorrectas.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1RepuestasCorrectas.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1RepuestasCorrectas.cs",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1RepuestasCorrectas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T23:05:30.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Modulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
+              "Title": "Modulo.cs",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
               "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
+              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwGQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T09:17:35.715Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-07-29T14:19:40.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "pregunta1.cs",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\pregunta1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Title": "Modulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
+              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T09:11:21.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Nivel1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T05:23:34.185Z",
+              "WhenOpened": "2026-07-29T14:19:11.927Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Modulo.cs",
-              "DocumentMoniker": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
-              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
-              "ToolTip": "C:\\Proyecto - integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
-              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Modulo.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAgwBYAAACVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Nivel1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
+              "RelativeDocumentMoniker": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs",
+              "ToolTip": "C:\\Users\\X\\Desktop\\Proyecto-integrador\\DevyClass\\DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DevyClass\\Formularios_UI_niveles\\Modulo 1\\Nivel1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T09:17:36.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-28T05:23:34.185Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

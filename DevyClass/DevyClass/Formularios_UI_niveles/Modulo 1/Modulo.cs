@@ -47,7 +47,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
                         ? Properties.Resources.estrella
                         : Properties.Resources.Estrella_plata;
                     lblNiveles[i].Cursor = Cursors.Hand;
-                    lblNiveles[i].Enabled = false;
+                    lblNiveles[i].Enabled = true;
                 }
                 else if (nivel == usuario.UltimoNivel + 1)
                 {
@@ -99,7 +99,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             Nivel1 nivel = new Nivel1();
-            this.Hide();
             nivel.Show();
         }
 
@@ -116,6 +115,11 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
         }
