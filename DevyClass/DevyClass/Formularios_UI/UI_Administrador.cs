@@ -90,8 +90,7 @@ namespace DevyClass
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
-            this.Hide();
-            accederF1.Show();
+            this.Close();
 
         }
 

@@ -183,9 +183,6 @@ namespace DevyClass
 
         private void btnLogros_Click(object sender, EventArgs e)
         {
-            UI_Logros accederformLogros = new UI_Logros();
-            accederformLogros.Show();
-            this.Hide();
 
         }
 
@@ -238,7 +235,6 @@ namespace DevyClass
         private void gunaImageButton1_Click(object sender, EventArgs e)
         {
             Modulo nivel1 = new Modulo(UsuarioActual);
-            this.Hide();
             nivel1.Show();
         }
 
@@ -275,7 +271,6 @@ namespace DevyClass
         private void gunaGroupBox1_Click(object sender, EventArgs e)
         {
             Modulo nivel1 = new Modulo(UsuarioActual);
-            this.Hide();
             nivel1.Show();
 
         }
@@ -309,7 +304,6 @@ namespace DevyClass
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
             UI_Administrador u = new UI_Administrador(UsuarioActual);
-            this.Hide();
             u.Show();
         }
 
@@ -321,7 +315,6 @@ namespace DevyClass
         {
             UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
             accedeerformAjustes.Show();
-            this.Hide();
         }
 
         private void gunaButton7_Click(object sender, EventArgs e)

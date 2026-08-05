@@ -31,10 +31,9 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.NivelActual = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,17 +136,6 @@
             this.gunaButton8.UseTransfarantBackground = true;
             this.gunaButton8.Click += new System.EventHandler(this.gunaButton8_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DevyClass.Properties.Resources.Devy_programando;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 99);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 147);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -170,22 +158,21 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Ejercicio 1 · Opcion multiple";
             // 
-            // NivelActual
+            // pictureBox1
             // 
-            this.NivelActual.AutoSize = true;
-            this.NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NivelActual.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.NivelActual.Location = new System.Drawing.Point(510, 23);
-            this.NivelActual.Name = "NivelActual";
-            this.NivelActual.Size = new System.Drawing.Size(0, 16);
-            this.NivelActual.TabIndex = 29;
+            this.pictureBox1.Image = global::DevyClass.Properties.Resources.Devy_programando;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 99);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 147);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // pregunta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.NivelActual);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton3);
             this.Controls.Add(this.gunaButton8);
@@ -209,6 +196,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label NivelActual;
     }
 }

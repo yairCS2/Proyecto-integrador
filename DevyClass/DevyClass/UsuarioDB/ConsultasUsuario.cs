@@ -154,5 +154,35 @@ namespace DevyClass.Base_de_datos_DevyClass_
                 }
             }
         }
+
+        public bool ActualizarUsuario(DatosUsuario usuario)
+        {
+            using (MySqlConnection conn = conexion.ObtenerConexion())
+            {
+                string query = @"UPDATE usuarios 
+                          SET username = @username,
+                              correo = @correo,
+                              fecha = @fecha,
+                              contrasena = @contrasena,
+                              referencia_tipo = @referenciaTipo,
+                              ultimo_nivel = @ultimoNivel
+                          WHERE id_usuarios = @idUsuario";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@username", usuario.Username);
+                    cmd.Parameters.AddWithValue("@correo", usuario.Correo);
+                    cmd.Parameters.AddWithValue("@fecha", usuario.Fecha);
+                    cmd.Parameters.AddWithValue("@contrasena", usuario.Contrasena);
+                    cmd.Parameters.AddWithValue("@referenciaTipo", usuario.ReferenciaTipo);
+                    cmd.Parameters.AddWithValue("@ultimoNivel", (object)usuario.UltimoNivel ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@idUsuario", usuario.IdUsuario);
+
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0; // true si se actualizo algo
+                }
+            }
+        }
     }
 }

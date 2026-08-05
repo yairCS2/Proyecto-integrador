@@ -290,6 +290,7 @@
             this.Controls.Add(this.lbdescripcion);
             this.Controls.Add(this.lbtitulo);
             this.Controls.Add(this.pictureBox7);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UI_InicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI_InicioSesion";

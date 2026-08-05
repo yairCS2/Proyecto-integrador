@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_Registro));
             this.latxt2 = new System.Windows.Forms.Label();
             this.linklbinicio = new System.Windows.Forms.LinkLabel();
             this.lbtxt = new System.Windows.Forms.Label();
@@ -307,6 +308,7 @@
             this.Controls.Add(this.lbcorreo);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.lbusuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UI_Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI_Registro";

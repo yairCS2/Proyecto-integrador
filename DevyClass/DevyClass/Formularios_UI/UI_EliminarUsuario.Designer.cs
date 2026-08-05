@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_EliminarUsuario));
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.lbtitulo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -175,7 +176,9 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.dgvUsuarios);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UI_EliminarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI_EliminarUsuario";
             this.Load += new System.EventHandler(this.UI_EliminarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();

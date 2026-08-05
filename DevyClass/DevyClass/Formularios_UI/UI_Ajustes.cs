@@ -37,9 +37,7 @@ namespace DevyClass
         {
         
             UI_MenuPrincipal accederform1 = new UI_MenuPrincipal(UsuarioActual);
-          
             this.Hide();
-            accederform1.Show();
 
         }
 

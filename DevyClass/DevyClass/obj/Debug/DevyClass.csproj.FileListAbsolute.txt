@@ -89,9 +89,7 @@ C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.Assembly
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Administrador.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_AgregarUsuario.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Ajustes.resources
-C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Cartel.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_InicioSesion.resources
-C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Logros.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_MenuPrincipal.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_Registro.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Properties.Resources.resources
@@ -154,7 +152,6 @@ C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\
 C:\Users\raulb\OneDrive\Desktop\3A\POO\CODIGOSUNIDAD4\ProdIntegradora\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
 C:\Users\X\Desktop\Proyecto integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Modulo.resources
-C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI.UI_CartelModulo1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI.UI_EliminarUsuario.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Nivel1.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.pregunta1.resources
@@ -272,3 +269,5 @@ C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.c
 C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.csproj.Up2Date
 C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.exe
 C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Pregunta3.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Ganaste.resources

@@ -106,23 +106,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autenticacion\IniciarSesion.cs" />
     <Compile Include="Autenticacion\RegistrarUsuario.cs" />
     <Compile Include="Autenticacion\ValidarContraseniaYUsuario.cs" />
-    <Compile Include="Autenticacion\VerificacionCorreoYUsuarioExistente.cs" />
-    <Compile Include="AdminDB\ConsultasAdmin.cs" />
     <Compile Include="ConexionBD\Conexion.cs" />
-    <Compile Include="Formularios_UI\UI_CartelModulo1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_CartelModulo1.Designer.cs">
-      <DependentUpon>UI_CartelModulo1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios_UI\UI_EliminarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios_UI\UI_EliminarUsuario.Designer.cs">
       <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Ganaste.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Ganaste.Designer.cs">
+      <DependentUpon>Ganaste.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Nivel1.cs">
       <SubType>Form</SubType>
@@ -143,6 +140,12 @@
     <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta2.Designer.cs">
       <DependentUpon>Pregunta2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI_niveles\Modulo 1\Pregunta3.Designer.cs">
+      <DependentUpon>Pregunta3.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
       <SubType>Form</SubType>
@@ -162,23 +165,11 @@
     <Compile Include="Formularios_UI\UI_Ajustes.Designer.cs">
       <DependentUpon>UI_Ajustes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios_UI\UI_Cartel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_Cartel.Designer.cs">
-      <DependentUpon>UI_Cartel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios_UI\UI_InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios_UI\UI_InicioSesion.Designer.cs">
       <DependentUpon>UI_InicioSesion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_Logros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios_UI\UI_Logros.Designer.cs">
-      <DependentUpon>UI_Logros.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios_UI\UI_MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -215,26 +206,20 @@
     <EmbeddedResource Include="Formularios_UI\UI_Ajustes.resx">
       <DependentUpon>UI_Ajustes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI\UI_Cartel.resx">
-      <DependentUpon>UI_Cartel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI\UI_CartelModulo1.resx">
-      <DependentUpon>UI_CartelModulo1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_EliminarUsuario.resx">
       <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_InicioSesion.resx">
       <DependentUpon>UI_InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios_UI\UI_Logros.resx">
-      <DependentUpon>UI_Logros.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_MenuPrincipal.resx">
       <DependentUpon>UI_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_Registro.resx">
       <DependentUpon>UI_Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Ganaste.resx">
+      <DependentUpon>Ganaste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Modulo.resx">
       <DependentUpon>Modulo.cs</DependentUpon>
@@ -247,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Pregunta2.resx">
       <DependentUpon>Pregunta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI_niveles\Modulo 1\Pregunta3.resx">
+      <DependentUpon>Pregunta3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -432,6 +420,8 @@
     <None Include="Resources\Devy_programando.png" />
     <None Include="Resources\devyclass_levels_background.png" />
     <None Include="Resources\devyclass_levels_backgroundd.png" />
+    <None Include="Resources\Devy_comiendo.png" />
+    <None Include="Resources\Devy_feliz.png" />
     <Content Include="Resources\Devy_lentes.png" />
     <None Include="Resources\Devy_lentes1.png" />
     <Content Include="Resources\Que_es.png" />

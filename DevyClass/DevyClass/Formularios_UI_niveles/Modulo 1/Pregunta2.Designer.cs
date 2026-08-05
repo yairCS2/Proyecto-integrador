@@ -119,18 +119,18 @@
             this.lblFraseMotivadora.BackColor = System.Drawing.Color.Transparent;
             this.lblFraseMotivadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFraseMotivadora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFraseMotivadora.Location = new System.Drawing.Point(108, 51);
+            this.lblFraseMotivadora.Location = new System.Drawing.Point(46, 50);
             this.lblFraseMotivadora.Name = "lblFraseMotivadora";
-            this.lblFraseMotivadora.Size = new System.Drawing.Size(331, 16);
+            this.lblFraseMotivadora.Size = new System.Drawing.Size(488, 16);
             this.lblFraseMotivadora.TabIndex = 17;
-            this.lblFraseMotivadora.Text = "¿Cual de estas opciones describe mejor un algoritmo?";
+            this.lblFraseMotivadora.Text = "Un algoritmo debe tener siempre un punto final, no puede repetirse para siempre.";
             this.lblFraseMotivadora.Click += new System.EventHandler(this.lblFraseMotivadora_Click);
             // 
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
             this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.Location = new System.Drawing.Point(127, 14);
+            this.lblBienvenida.Location = new System.Drawing.Point(137, 12);
             this.lblBienvenida.Name = "lblBienvenida";
             this.lblBienvenida.Size = new System.Drawing.Size(293, 24);
             this.lblBienvenida.TabIndex = 16;

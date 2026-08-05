@@ -18,7 +18,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         public Modulo(DatosUsuario usuario)
         {
             // usuario.UltimoNivel % 10 : esta exprecion representa el nivel en que esta.
-
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             // inicializa el formulario y establece el usuario actual, la barra de progreso y el nivel de progreso según el último nivel del usuario.
             UsuarioActual = usuario;
@@ -31,7 +31,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             }
             else progressBar1.Value = 100;
 
-            gunaButton8.Text = UsuarioActual.Username;
 
             PictureBox[] lblNiveles = { lblNivel1, lblNivel2, lblNivel3, lblNivel4, lblNivel5,
                              lblNivel6, lblNivel7, lblNivel8, lblNivel9, lblNivel10 };
@@ -98,7 +97,8 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Nivel1 nivel = new Nivel1();
+            Nivel1 nivel = new Nivel1(UsuarioActual);
+            this.Hide();
             nivel.Show();
         }
 
@@ -122,6 +122,13 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void gunaButton8_Click(object sender, EventArgs e)
+        {
+            UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
+            accedeerformAjustes.Show();
+            this.Hide();
         }
     }
 }
