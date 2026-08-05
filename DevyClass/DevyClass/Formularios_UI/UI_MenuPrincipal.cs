@@ -290,9 +290,33 @@ namespace DevyClass
                 return;
             }
 
-            Form pantallaNivel = (Form)Activator.CreateInstance(Niveles[indice]);
-            pantallaNivel.Show();
-            this.Hide();
+            if (UsuarioActual == null)
+            {
+                MessageBox.Show("Usuario no inicializado.");
+                return;
+            }
+
+            try
+            {
+                // Pasar UsuarioActual al constructor (Nivel1(DatosUsuario))
+                var pantallaNivel = Activator.CreateInstance(Niveles[indice], UsuarioActual) as Form;
+                if (pantallaNivel == null)
+                {
+                    MessageBox.Show("No se pudo crear la pantalla solicitada.");
+                    return;
+                }
+
+                pantallaNivel.Show();
+                this.Hide();
+            }
+            catch (MissingMethodException mex)
+            {
+                MessageBox.Show("Constructor esperado no encontrado: " + mex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al crear la pantalla: " + ex.Message);
+            }
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
