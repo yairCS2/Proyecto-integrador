@@ -21,10 +21,10 @@ namespace DevyClass
         public UI_Registro()
         {
             InitializeComponent();
-            OjoRegistro = true;
-            OjoContrasenia.Image = Properties.Resources.ojo_abierto;
-            txtcontrasegura.PasswordChar = default;
-            txtconfirmarcontra.PasswordChar = default;
+            OjoRegistro = false;
+            OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
+            txtcontrasegura.PasswordChar = '•';
+            txtconfirmarcontra.PasswordChar = '•';
             dateTimePicker1.Format = DateTimePickerFormat.Short;
         }
 

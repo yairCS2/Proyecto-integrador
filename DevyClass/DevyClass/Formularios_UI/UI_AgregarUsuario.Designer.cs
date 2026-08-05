@@ -92,6 +92,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(474, 458);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox3
             // 
@@ -215,6 +216,7 @@
             this.lbtitulo.Size = new System.Drawing.Size(146, 40);
             this.lbtitulo.TabIndex = 73;
             this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Click += new System.EventHandler(this.lbtitulo_Click);
             // 
             // OjoContrasenia
             // 

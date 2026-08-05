@@ -11,26 +11,7 @@ namespace DevyClass.UsuarioDB
         public DatosUsuario() { }
 
         // solo usename
-        public DatosUsuario(string username)
-        {
-            Username = username;
-        }
-
-        // Constructor compatibilidad: nombre y contraseña
-        public DatosUsuario(string username, string contrasenia)
-        {
-            Contrasena = contrasenia;
-        }
-
-        // Constructor con todos los campos principales
-        public DatosUsuario(string nombre, string correo, DateTime fecha, string contrasena, int referenciaTipo, int? ultimoNivel)
-        {
-            Correo = correo;
-            Fecha = fecha;
-            Contrasena = contrasena;
-            ReferenciaTipo = referenciaTipo;
-            UltimoNivel = ultimoNivel;
-        }
+       
 
         // Todos los datos del usuario.
         public int IdUsuario { get; set; }

@@ -130,6 +130,7 @@
             this.txtconfirmarcontra.Location = new System.Drawing.Point(154, 345);
             this.txtconfirmarcontra.Margin = new System.Windows.Forms.Padding(2);
             this.txtconfirmarcontra.Name = "txtconfirmarcontra";
+            this.txtconfirmarcontra.PasswordChar = '•';
             this.txtconfirmarcontra.Size = new System.Drawing.Size(166, 25);
             this.txtconfirmarcontra.TabIndex = 35;
             // 
@@ -151,6 +152,7 @@
             this.txtcontrasegura.Location = new System.Drawing.Point(154, 295);
             this.txtcontrasegura.Margin = new System.Windows.Forms.Padding(2);
             this.txtcontrasegura.Name = "txtcontrasegura";
+            this.txtcontrasegura.PasswordChar = '•';
             this.txtcontrasegura.Size = new System.Drawing.Size(166, 25);
             this.txtcontrasegura.TabIndex = 33;
             this.txtcontrasegura.TextChanged += new System.EventHandler(this.txtcontrasegura_TextChanged);

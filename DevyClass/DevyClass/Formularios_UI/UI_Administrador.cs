@@ -153,5 +153,10 @@ namespace DevyClass
             tablaUsuarios.DefaultView.RowFilter = $"username LIKE '%{filtro}%'";
             dgvUsuarios.DataSource = tablaUsuarios.DefaultView;
         }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     } // Fin form
 }

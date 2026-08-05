@@ -220,6 +220,7 @@
             this.lbtitulo.Size = new System.Drawing.Size(158, 41);
             this.lbtitulo.TabIndex = 22;
             this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Click += new System.EventHandler(this.lbtitulo_Click);
             // 
             // linkLabel1
             // 

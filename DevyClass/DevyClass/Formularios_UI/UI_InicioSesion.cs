@@ -19,8 +19,11 @@ namespace DevyClass
         bool OjoRegistro;
         public UI_InicioSesion()
         {
+            
             InitializeComponent();
+            OjoRegistro = false;
             txtcontrasenia.PasswordChar = '•';
+            OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
         }
 
         private void UI_InicioSesion_Load(object sender, EventArgs e)
@@ -87,6 +90,11 @@ namespace DevyClass
                 OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
                 txtcontrasenia.PasswordChar = '•';
             }
+        }
+
+        private void lbtitulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

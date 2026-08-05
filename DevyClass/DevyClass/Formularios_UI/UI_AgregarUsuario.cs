@@ -21,9 +21,11 @@ namespace DevyClass
         {
             UsuarioActual = usuario;
             InitializeComponent();
+            OjoRegistro = false;
+            txtcontrasegura.PasswordChar = '•';
+            txtconfirmarcontra.PasswordChar = '•';
+            OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
             rdbUsuarioNromal.Checked = true;
-            txtcontrasegura.PasswordChar = default;
-            txtconfirmarcontra.PasswordChar = default;
             dateTimePicker1.Format = DateTimePickerFormat.Short;
         }
 
@@ -205,6 +207,16 @@ namespace DevyClass
                     LimpiarTextBoxes(ctrl.Controls);
                 }
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbtitulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
