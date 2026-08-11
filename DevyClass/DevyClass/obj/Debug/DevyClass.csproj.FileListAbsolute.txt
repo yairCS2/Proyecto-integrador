@@ -271,3 +271,4 @@ C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.e
 C:\Users\X\Desktop\Proyecto-integrador\DevyClass\DevyClass\obj\Debug\DevyClass.pdb
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Pregunta3.resources
 C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.Formularios_UI_niveles.Modulo_1.Ganaste.resources
+C:\Proyecto - integrador\DevyClass\DevyClass\obj\Debug\DevyClass.UI_GestionarNiveles.resources

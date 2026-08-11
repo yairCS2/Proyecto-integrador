@@ -11,16 +11,22 @@ using static DevyClass.UsuarioDB.DatosUsuario;
 
 namespace DevyClass.Base_de_datos_DevyClass_
 {
+    // Clase de acceso a datos (DAO): contiene todas las consultas SQL que se le hacen
+    // a la tabla "usuarios" de la base de datos. Todos los formularios la usan.
     public class ConsultasUsuario
     {
+        // Conexion compartida por todos los metodos de esta clase.
         Conexion conexion = new Conexion();
 
+        // Actualiza el nombre de usuario y la contrasena de un usuario por su id.
+        // Devuelve cuantas filas se modificaron (1 = se actualizo, 0 = no existia).
         public int EditarUsuarioCompleto(int idUsuario, string nuevoUsername, string nuevaContrasena)
         {
             using (MySqlConnection con = conexion.ObtenerConexion())
             {
                 con.Open();
 
+                // UPDATE: cambia username y contrasena del usuario con ese id.
                 string query = "UPDATE usuarios SET username = @username, contrasena = @contrasena WHERE id_usuarios = @id";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, con))
@@ -34,12 +40,15 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
+        // Busca un usuario por su nombre de usuario y lo devuelve como objeto DatosUsuario.
+        // Devuelve null si no lo encuentra.
         public DatosUsuario ObtenerUsuarioPorUsername(string username)
         {
             DatosUsuario usuario = null;
 
             using (MySqlConnection conn = conexion.ObtenerConexion())
             {
+                // SELECT *: trae todas las columnas del usuario que coincida con el nombre.
                 string query = "SELECT * FROM usuarios WHERE username = @username";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -49,6 +58,8 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     conn.Open();
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
+                        // Si la consulta encontro una fila, se copian los datos al objeto DatosUsuario.
+                        // Se usa IsDBNull por si alguna columna esta vacia (evita errores).
                         if (reader.Read())
                         {
                             usuario = new DatosUsuario
@@ -69,6 +80,9 @@ namespace DevyClass.Base_de_datos_DevyClass_
             return usuario;
         }
 
+        // Inserta un usuario nuevo en la base de datos.
+        // Devuelve cuantas filas se insertaron (1 = exito, 0 = no se inserto).
+        // Es el metodo que usan realmente los formularios de registro y de agregar usuario.
         public int RegistrarUsuario(string usuario, string correo, DateTime fechaNacimiento, string contrasena, int tipo, int nivel)
         {
             using (MySqlConnection conn = conexion.ObtenerConexion())
@@ -78,6 +92,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     conn.Open();
                 }
 
+                // INSERT: agrega una fila nueva a la tabla usuarios con todos sus datos.
                 string query = @"INSERT INTO Usuarios (username, correo, fecha, contrasena, referencia_tipo, ultimo_nivel)
                           VALUES (@Usuario, @Correo, @FechaNac, @Contrasena, @tipo, @Nivel)";
 
@@ -95,6 +110,8 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
+        // Elimina un usuario de la base de datos por su id.
+        // Devuelve cuantas filas se eliminaron (1 = eliminado, 0 = no existia).
         public int EliminarUsuario(int idUsuario)
         {
             using (MySqlConnection conn = conexion.ObtenerConexion())
@@ -104,6 +121,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     conn.Open();
                 }
 
+                // DELETE: borra la fila cuyo id coincida.
                 string query = "DELETE FROM usuarios WHERE id_usuarios = @id";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -114,12 +132,17 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
+        // Devuelve TODOS los usuarios en una DataTable (tabla en memoria).
+        // Se usa para llenar el DataGridView del administrador.
+        // Hace un JOIN para mostrar el tipo de usuario y el nombre del nivel.
         public DataTable ObtenerTodosLosUsuarios()
         {
             DataTable tabla = new DataTable();
 
             using (MySqlConnection conn = conexion.ObtenerConexion())
             {
+                // JOIN: une "usuarios" con "tipo_usuario" (para el tipo) y con "niveles"
+                // (para saber el nombre del nivel actual).
                 string query = @"SELECT usuarios.id_usuarios, usuarios.username, usuarios.correo, usuarios.fecha, 
                           tipo_usuario.tipo, niveles.id_nivel, niveles.nombre
                           FROM usuarios 
@@ -129,6 +152,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
                 {
+                    // adapter.Fill llena la DataTable con el resultado de la consulta.
                     adapter.Fill(tabla);
                 }
             }
@@ -136,12 +160,16 @@ namespace DevyClass.Base_de_datos_DevyClass_
             return tabla;
         }
 
+        // Verifica si un nombre de usuario ya existe (excluyendo a un id concreto).
+        // Devuelve true si ya esta en uso. Se usa al editar, para que el usuario
+        // no tome un nombre que pertenece a otro.
         public bool ExisteUsername(string username, int idExcluir)
         {
             using (MySqlConnection conn = conexion.ObtenerConexion())
             {
                 conn.Open();
 
+                // COUNT(*) devuelve cuantas filas hay con ese username y otro id distinto.
                 string query = "SELECT COUNT(*) FROM usuarios WHERE username = @username AND id_usuarios != @id";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
@@ -155,10 +183,13 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
+        // Actualiza TODOS los datos de un usuario a partir de un objeto DatosUsuario.
+        // Devuelve true si se actualizo al menos una fila.
         public bool ActualizarUsuario(DatosUsuario usuario)
         {
             using (MySqlConnection conn = conexion.ObtenerConexion())
             {
+                // UPDATE: cambia todas las columnas del usuario con ese id.
                 string query = @"UPDATE usuarios 
                           SET username = @username,
                               correo = @correo,
@@ -175,6 +206,7 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     cmd.Parameters.AddWithValue("@fecha", usuario.Fecha);
                     cmd.Parameters.AddWithValue("@contrasena", usuario.Contrasena);
                     cmd.Parameters.AddWithValue("@referenciaTipo", usuario.ReferenciaTipo);
+                    // UltimoNivel es nullable: si es null se envia DBNull.Value (valor nulo en la BD).
                     cmd.Parameters.AddWithValue("@ultimoNivel", (object)usuario.UltimoNivel ?? DBNull.Value);
                     cmd.Parameters.AddWithValue("@idUsuario", usuario.IdUsuario);
 

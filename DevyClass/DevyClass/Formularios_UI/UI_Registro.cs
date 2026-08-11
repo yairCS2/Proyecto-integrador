@@ -15,19 +15,24 @@ using System.Text.RegularExpressions;
 
 namespace DevyClass
 {
+    // Formulario de registro de nuevos usuarios.
+    // Valida los campos, crea el usuario en la base de datos y entra directo al menu principal.
     public partial class UI_Registro : Form
     {
-        bool OjoRegistro;
+        bool OjoRegistro; // Controla si las contrasenas se muestran o se ocultan.
         public UI_Registro()
         {
             InitializeComponent();
             OjoRegistro = false;
+            // Las contrasenas inician ocultas con puntos.
             OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
             txtcontrasegura.PasswordChar = '•';
             txtconfirmarcontra.PasswordChar = '•';
+            // El selector de fecha se muestra en formato corto (dia/mes/ano).
             dateTimePicker1.Format = DateTimePickerFormat.Short;
         }
 
+        // Genera una contrasena aleatoria que cumple los requisitos (letra, numero y especial).
         private string GenerarContrasenaAleatoria(int longitud = 8)
         {
             const string letras = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz";
@@ -87,6 +92,7 @@ namespace DevyClass
 
         }
 
+        // Evento del boton "Registrarse".
         private void btnregistro_Click(object sender, EventArgs e)
         {
             //validamos todos los campos que son obligatorios
@@ -117,6 +123,7 @@ namespace DevyClass
             {
                 ConsultasUsuario dao = new ConsultasUsuario();
 
+                // Se inserta el usuario: tipo 2 (normal) y nivel inicial 0.
                 int filasAfectadas = dao.RegistrarUsuario(
                     txtusuario.Text.Trim(),
                     txtcorreo.Text.Trim(),
@@ -129,10 +136,10 @@ namespace DevyClass
                 if (filasAfectadas > 0)
                 {
                     MessageBox.Show("¡Usuario registrado con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Se carga al usuario recien creado y se entra al menu principal.
                     DatosUsuario usuarioActual = dao.ObtenerUsuarioPorUsername(txtusuario.Text);
-                    UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(usuarioActual);
                     this.Hide();
-                    accederF1.Show();
+                    UI_MenuPrincipal.AbrirMenu(usuarioActual);
                 }
                 else
                 {
@@ -141,6 +148,7 @@ namespace DevyClass
             }
             catch (MySqlException ex)
             {
+                // Error 1062 de MySQL = clave duplicada (usuario o correo ya existente).
                 if (ex.Number == 1062)
                     MessageBox.Show("El nombre de usuario o correo ya está registrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
@@ -162,23 +170,27 @@ namespace DevyClass
            
         }
 
+        // Evento del icono del ojo: muestra u oculta las contrasenas.
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             OjoRegistro = !OjoRegistro;
             if (OjoRegistro)
             {
+                // Mostrar contrasenas.
                 OjoContrasenia.Image = Properties.Resources.ojo_abierto;
                 txtcontrasegura.PasswordChar = default;
                 txtconfirmarcontra.PasswordChar = default;
             }
             else
             {
+                // Ocultar contrasenas.
                 OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
                 txtcontrasegura.PasswordChar = '•';
                 txtconfirmarcontra.PasswordChar = '•';
             }
         }
 
+        // Evento del link "Ya tengo cuenta": vuelve al inicio de sesion.
         private void linklbinicio_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             UI_InicioSesion inicia = new UI_InicioSesion();
@@ -190,6 +202,7 @@ namespace DevyClass
         {
         }
 
+        // Evento del icono de "generar contrasena": rellena ambos campos con una contrasena aleatoria.
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             string nueva = GenerarContrasenaAleatoria();

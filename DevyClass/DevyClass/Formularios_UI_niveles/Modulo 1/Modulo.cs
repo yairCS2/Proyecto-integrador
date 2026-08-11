@@ -12,9 +12,12 @@ using System.Windows.Forms;
 
 namespace DevyClass.Formularios_UI_niveles.Modulo_1
 {
+    // Formulario del Modulo 1: muestra los 10 niveles del modulo como iconos
+    // (estrella = completado, "jugar" = disponible, candado = bloqueado)
+    // y permite entrar al nivel que le toque al usuario.
     public partial class Modulo : Form
     {
-        private DatosUsuario UsuarioActual;
+        private DatosUsuario UsuarioActual; // Usuario que esta viendo el modulo.
         public Modulo(DatosUsuario usuario)
         {
             // usuario.UltimoNivel % 10 : esta exprecion representa el nivel en que esta.
@@ -24,14 +27,16 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             UsuarioActual = usuario;
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
+            // La barra muestra el progreso dentro del modulo (cada nivel completo = 10%).
             if (usuario.UltimoNivel < 10)
             {
                 progressBar1.Value = (usuario.UltimoNivel % 10) * 10 ?? 0;
                 lblNivelProgreso.Text = $"{usuario.UltimoNivel % 10 ?? 0} de 10 niveles completados";
             }
-            else progressBar1.Value = 100;
+            else progressBar1.Value = 100; // Si ya paso el modulo, la barra esta al 100%.
 
 
+            // Los 10 iconos de nivel del modulo.
             PictureBox[] lblNiveles = { lblNivel1, lblNivel2, lblNivel3, lblNivel4, lblNivel5,
                              lblNivel6, lblNivel7, lblNivel8, lblNivel9, lblNivel10 };
 
@@ -41,7 +46,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
                 if (nivel <= usuario.UltimoNivel)
                 {
-                    // Nivel completado
+                    // Nivel completado: se muestra una estrella y se puede volver a entrar.
                     lblNiveles[i].Image = (nivel >= 8)
                         ? Properties.Resources.estrella
                         : Properties.Resources.Estrella_plata;
@@ -50,24 +55,25 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
                 }
                 else if (nivel == usuario.UltimoNivel + 1)
                 {
-                    // Nivel jugable
+                    // Nivel jugable: es el siguiente nivel, se muestra el icono "jugar".
                     lblNiveles[i].Image = Properties.Resources.Jugar;
                     lblNiveles[i].Cursor = Cursors.Hand;
                     lblNiveles[i].Enabled = true;
                 }
-                // else se queda con el candado por default
+                // else se queda con el candado por default (niveles bloqueados)
             }
 
         }
 
 
+        // Boton "Menu principal": regresa al menu.
         private void gunaButton6_Click(object sender, EventArgs e)
         {
-            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
             this.Hide();
-            accederF1.Show();
+            UI_MenuPrincipal.AbrirMenu(UsuarioActual);
         }
 
+        // Boton "Ajustes": abre el formulario de ajustes.
         private void btnAjustes_Click(object sender, EventArgs e)
         {
             UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
@@ -95,6 +101,7 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
         }
 
+        // Click en el nivel 1: abre el formulario del Nivel 1.
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             Nivel1 nivel = new Nivel1(UsuarioActual);
@@ -102,11 +109,12 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             nivel.Show();
         }
 
+        // Boton "Cerrar sesion": limpia los datos y vuelve al inicio.
         private void gunaButton7_Click(object sender, EventArgs e)
         {
             UsuarioActual.BorrarDatos();
             UI_InicioSesion accederUI = new UI_InicioSesion();
-            this.Hide();
+            this.Close();
             accederUI.Show();
         }
 
@@ -124,11 +132,17 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
         }
 
+        // Boton "Ajustes" (secundario): abre el formulario de ajustes.
         private void gunaButton8_Click(object sender, EventArgs e)
         {
             UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
             accedeerformAjustes.Show();
             this.Hide();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -34,30 +34,31 @@
             this.panelGestionarUsuarios = new System.Windows.Forms.Panel();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.btnGestionarUsuarios = new System.Windows.Forms.Button();
+            this.btnGestionarNiveles = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelBienvenida.SuspendLayout();
             this.panelGestionarUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panelContenido.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,17 +122,6 @@
             this.panel1.Size = new System.Drawing.Size(736, 211);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DevyClass.Properties.Resources.Devy_sentado;
-            this.pictureBox6.Location = new System.Drawing.Point(607, 91);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(109, 104);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 58;
-            this.pictureBox6.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -168,20 +158,6 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Acciones de administrador:";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Azure;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::DevyClass.Properties.Resources.agregar_usuario;
-            this.pictureBox2.Location = new System.Drawing.Point(408, 18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -200,20 +176,6 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Azure;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::DevyClass.Properties.Resources.borrar_usuario_UI_administrador;
-            this.pictureBox3.Location = new System.Drawing.Point(579, 18);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // button1
             // 
@@ -270,14 +232,54 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.gunaButton1);
-            this.panel4.Controls.Add(this.btnGestionarUsuarios);
+            this.panel4.Controls.Add(this.btnGestionarNiveles);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(158, 466);
             this.panel4.TabIndex = 12;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DevyClass.Properties.Resources.Devy_sentado;
+            this.pictureBox6.Location = new System.Drawing.Point(607, 91);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(109, 104);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 58;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Azure;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::DevyClass.Properties.Resources.agregar_usuario;
+            this.pictureBox2.Location = new System.Drawing.Point(408, 18);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Azure;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::DevyClass.Properties.Resources.borrar_usuario_UI_administrador;
+            this.pictureBox3.Location = new System.Drawing.Point(579, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // gunaButton1
             // 
@@ -309,19 +311,31 @@
             this.gunaButton1.UseTransfarantBackground = true;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // btnGestionarUsuarios
+            // btnGestionarNiveles
             // 
-            this.btnGestionarUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnGestionarUsuarios.BackgroundImage = global::DevyClass.Properties.Resources.Diseño_sin_título__2_1;
-            this.btnGestionarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnGestionarUsuarios.Location = new System.Drawing.Point(23, 11);
-            this.btnGestionarUsuarios.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGestionarUsuarios.Name = "btnGestionarUsuarios";
-            this.btnGestionarUsuarios.Size = new System.Drawing.Size(115, 108);
-            this.btnGestionarUsuarios.TabIndex = 1;
-            this.btnGestionarUsuarios.Text = "Gestión de Usuarios";
-            this.btnGestionarUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnGestionarUsuarios.UseVisualStyleBackColor = false;
+            this.btnGestionarNiveles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGestionarNiveles.BackgroundImage = global::DevyClass.Properties.Resources.capas;
+            this.btnGestionarNiveles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGestionarNiveles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGestionarNiveles.Location = new System.Drawing.Point(20, 10);
+            this.btnGestionarNiveles.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGestionarNiveles.Name = "btnGestionarNiveles";
+            this.btnGestionarNiveles.Size = new System.Drawing.Size(115, 109);
+            this.btnGestionarNiveles.TabIndex = 2;
+            this.btnGestionarNiveles.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnGestionarNiveles.UseVisualStyleBackColor = false;
+            this.btnGestionarNiveles.Click += new System.EventHandler(this.btnGestionarNiveles_Click);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 121);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Gestión de Niveles";
             // 
             // UI_Administrador
             // 
@@ -341,13 +355,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panelContenido.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,7 +378,7 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelContenido;
-        private System.Windows.Forms.Button btnGestionarUsuarios;
+        private System.Windows.Forms.Button btnGestionarNiveles;
         private System.Windows.Forms.Panel panel4;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.Panel panel3;
@@ -373,5 +388,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
     }
 }

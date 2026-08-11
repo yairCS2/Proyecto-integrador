@@ -115,6 +115,12 @@
     <Compile Include="Formularios_UI\UI_EliminarUsuario.Designer.cs">
       <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios_UI\UI_GestionarNiveles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios_UI\UI_GestionarNiveles.Designer.cs">
+      <DependentUpon>UI_GestionarNiveles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios_UI_niveles\Modulo 1\Ganaste.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +153,7 @@
       <DependentUpon>Pregunta3.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuarioDB\ConsultasUsuario.cs" />
+    <Compile Include="UsuarioDB\ConsultasNivel.cs" />
     <Compile Include="Formularios_UI\UI_Administrador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_EliminarUsuario.resx">
       <DependentUpon>UI_EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios_UI\UI_GestionarNiveles.resx">
+      <DependentUpon>UI_GestionarNiveles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios_UI\UI_InicioSesion.resx">
       <DependentUpon>UI_InicioSesion.cs</DependentUpon>
@@ -413,6 +423,7 @@
     <Content Include="Resources\borrar_icon.png" />
     <None Include="Resources\borrar_icon1.png" />
     <None Include="Resources\Devy_computadora2.png" />
+    <None Include="Resources\capas.png" />
     <Content Include="Resources\cerrar-sesion_rojo.png" />
     <None Include="Resources\cerrar-sesion_rojo1.png" />
     <Content Include="Resources\configuracion.png" />
