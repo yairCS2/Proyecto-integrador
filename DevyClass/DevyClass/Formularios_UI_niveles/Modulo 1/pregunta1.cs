@@ -47,8 +47,10 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
             this.PerformLayout();
 
-            // Mismo factor que Nivel1 (1.7): el control llena panelPregunta.
-            Tema.EscalarHijos(this, 1.7F);
+            // OJO: aqui NO se escala. El escalado lo hace Nivel1.CambiarUC() despues
+            // de insertar este control en panelPregunta, porque los botones tienen
+            // Anchor=Bottom|Right y WinForms los desplaza al aplicar Dock=Fill.
+            // Escalar aqui y alla duplicaria el factor.
             Tema.EstilizarRaiz(this);
 
             Tema.Opcion(gunaButton2);   // "Un tipo de dato"

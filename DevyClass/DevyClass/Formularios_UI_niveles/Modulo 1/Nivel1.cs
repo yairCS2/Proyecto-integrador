@@ -43,11 +43,19 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
                     () => new Ganaste(UsuarioPreguntas)
             };
 
+            // Fase 2: pantalla completa y estilo Duolingo.
+            // OJO: el orden importa. PrepararEstilo() escala "panel3" con 1.7, y cada
+            // UserControl de pregunta se escala a si mismo con 1.7 en su constructor.
+            // Si la primera pregunta se cargara ANTES de esta llamada, su contenido
+            // recibiria las dos escalas (1.7 x 1.7 = 2.89): la pregunta se veia
+            // gigante y sus textos se salian del panel, mientras que Pregunta2,
+            // Pregunta3 y Ganaste (que se crean despues, al pulsar "Siguiente")
+            // salian normales. Escalando primero el marco y cargando despues el
+            // contenido, todas las pantallas quedan escaladas igual.
+            PrepararEstilo();
+
             // Muestra la primera pantalla (la pregunta 1).
             CambiarUC(preguntas[indiceActual]());
-
-            // Fase 2: pantalla completa y estilo Duolingo.
-            PrepararEstilo();
         }
 
         /// <summary>
@@ -57,7 +65,11 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         private void PrepararEstilo()
         {
             lbusuario.Text = "Módulo 1";
-            Tema.Titulo(lbusuario);
+            // OJO: el tamaño importa. Esta etiqueta se dibuja en Y=21 con 17 px de
+            // alto, justo encima de label3 (Y=38). Con Tema.Titulo() sin tamaño la
+            // fuente crecia a 14 pt (~24 px) y ambas se montaban una sobre otra.
+            // A 10 pt cabe en su caja y deja intacto el titulo de abajo.
+            Tema.Titulo(lbusuario, 10F);
             Tema.Titulo(label3, 15F);
 
             // Fondo blanco y cabecera gris clara (antes, el gris del sistema).
@@ -95,7 +107,20 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             panelPregunta.Controls.Clear();
 
             nuevoUC.Dock = DockStyle.Fill; // El control nuevo ocupa todo el panel.
+
+            // Antes de insertar: se suelta el anclaje de los hijos. Los botones vienen
+            // con Anchor=Bottom|Right y, al aplicar Dock=Fill, WinForms agranda el
+            // control de 585x285 a 994x484 moviendo los hijos anclados por el delta.
+            Tema.AnclarArribaIzquierda(nuevoUC);
+
             panelPregunta.Controls.Add(nuevoUC);
+
+            // Escalado DESPUES de insertar, con el panel ya en su tamaño definitivo:
+            // asi cada pantalla (pregunta1, Pregunta2, Pregunta3 y Ganaste) queda
+            // escalada exactamente una vez y en su sitio. Escalar dentro del
+            // constructor del UserControl lo hacia antes de que existiera el panel y
+            // la pregunta 1 acabava con doble escala (1.7 x 1.7 = 2.89).
+            Tema.EscalarHijos(nuevoUC, 1.7F);
         }
 
 

@@ -86,7 +86,10 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         {
             // Titulos (faltaba el acento de "Modulo").
             lbusuario.Text = "Módulo 1";
-            Tema.Titulo(lbusuario);
+            // OJO: tamaño explícito de 10 pt. Esta etiqueta vive en Y=10 con 17 px de
+            // alto y label3 arranca en Y=27; con Tema.Titulo() sin tamaño la fuente
+            // crecía a 14 pt (~24 px) y ambas se montaban una sobre otra.
+            Tema.Titulo(lbusuario, 10F);
             Tema.Titulo(lblNivelProgreso, 12F);
 
             // Fondo blanco y cabecera gris clara (antes, el gris del sistema).

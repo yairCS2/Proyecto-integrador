@@ -438,6 +438,27 @@ namespace DevyClass
             }
         }
 
+        /// <summary>
+        /// Deja todos los controles anclados arriba-izquierda (de forma recursiva).
+        ///
+        /// Las pantallas de preguntas se dibujan sobre un lienzo fijo de 585x285 que
+        /// luego se escala. Con Anchor=Bottom|Right, al insertar el UserControl con
+        /// Dock=Fill WinForms lo agranda de 585x285 a 994x484 y desplaza a los hijos
+        /// anclados por el delta: un boton de X=215 salia en X=622 y, al escalarlo,
+        /// en X=1057, con el borde derecho en 1654 dentro de un panel de 992.
+        /// Como el diseno usa posiciones absolutas, el anclaje no aporta nada aqui.
+        /// </summary>
+        public static void AnclarArribaIzquierda(Control contenedor)
+        {
+            if (EnDiseno) return;
+            if (contenedor == null) return;
+            foreach (Control c in contenedor.Controls)
+            {
+                c.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+                if (c.HasChildren) AnclarArribaIzquierda(c);
+            }
+        }
+
         private static void EscalarFuente(Control c, float factor)
         {
             Font f = c.Font;
@@ -677,7 +698,11 @@ namespace DevyClass
             b.Radius = 14;
             b.Animated = true;
             b.Cursor = Cursors.Hand;
-            b.Font = Fuente(Math.Max(11F, b.Font.Size), FontStyle.Bold);
+            // Tamanio fijo, no "el mayor entre el actual y 11". En el disenador las
+            // tres respuestas venian con fuentes distintas (una a 8.25 y dos a 12), y
+            // Math.Max solo subia la pequena: tras el escalado quedaban a 18.7 y 20.4
+            // pt y las tarjetas se veian de tamaños diferentes.
+            b.Font = Fuente(11F, FontStyle.Bold);
         }
 
         /// <summary> Pinta la opcion elegida (azul claro con borde azul). </summary>

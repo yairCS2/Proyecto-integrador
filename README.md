@@ -553,6 +553,10 @@ proyecto **compila con 0 errores y 0 warnings** tanto antes como después.
 
 | Corrección | Dónde |
 |---|---|
+| La pregunta del **Nivel 1 se veía gigante** (texto a 41 pt en vez de 24): `Nivel1` escalaba `panel3` con 1.7 y además el UserControl de la pregunta se escalaba solo, dando **1.7 × 1.7 = 2.89**. Pregunta 2, 3 y Ganaste solo se escalaban una vez | `Nivel1` (orden del constructor) |
+| Los **botones de respuesta se salían del panel** y se montaban sobre la imagen: tenían `Anchor=Bottom\|Right` y al aplicar `Dock=Fill` WinForms los desplazaba por el delta (X 365→773, borde derecho 1370 en un panel de 992) | `Nivel1.CambiarUC()` + `Tema.AnclarArribaIzquierda()` |
+| **"Módulo 1" se montaba encima** del título del nivel: la etiqueta crecía a 14 pt y desbordaba su caja de 17 px | `Nivel1.PrepararEstilo()` y `Modulo.PrepararEstilo()` |
+| Las 3 opciones de respuesta tenían **fuentes distintas** (18.7 y 20.4 pt) porque el designer usaba 8.25 y 12 pt, y `Math.Max(11, …)` solo subía la pequeña | `Tema.Opcion()` |
 | `\"Pensamiento\\n...\"` mostraba una **barra invertida literal** en pantalla en vez de un salto de línea | `UI_MenuPrincipal.RefrescarUI()` |
 | El menú lanzaba **`NullReferenceException`** si se abría sin usuario (constructor vacío del diseñador) | `UI_MenuPrincipal.RefrescarUI()` |
 | **El panel de administrador no validaba el rol**: solo se ocultaba el botón. Ahora los 4 formularios de admin rechazan a un usuario normal y se cierran | `Autenticacion/Permisos.cs` (nuevo) + los 4 formularios |
@@ -586,6 +590,9 @@ proyecto **compila con 0 errores y 0 warnings** tanto antes como después.
 - [ ] El texto dice «0/50 Niveles» pero la BD tiene 5 niveles y el mapa muestra 10.
 - [ ] La **XP no se guarda**: se calcula como `completados * 20` y las columnas
       `xp_necesaria` / `xp_otorgada` no se leen.
+- [ ] Las preguntas con texto largo se cortan por la derecha (ej. *«Un algoritmo debe
+      tener siempre un punto final, no puede repetir…»*) porque la etiqueta tiene
+      `AutoSize` de una sola línea y no cabe en el panel escalado.
 - [ ] Botón **«Eliminar Cuenta»** en Ajustes: está diseñado con estilo de peligro
       pero **no tiene evento asignado**, así que no hace nada.
 - [ ] Botón **«Logros»** vacío; `btnTemario`, `btnRendimiento` y el botón
