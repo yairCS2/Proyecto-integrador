@@ -189,12 +189,7 @@ namespace DevyClass
 
         private void txtCorreo_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtCorreo_Enter()
-        {
-           
+            // Reservado: aqui se podria validar el formato del correo mientras se escribe.
         }
 
         // Evento del icono del ojo: muestra u oculta las contrasenas.
@@ -223,10 +218,6 @@ namespace DevyClass
             UI_InicioSesion inicia = new UI_InicioSesion();
             this.Hide();
             inicia.Show();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
         }
 
         // Evento del icono de "generar contrasena": rellena ambos campos con una contrasena aleatoria.

@@ -1,4 +1,5 @@
-﻿using DevyClass.Base_de_datos_DevyClass_;
+﻿using DevyClass.Autenticacion;
+using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.UsuarioDB;
 using MySql.Data.MySqlClient;
 using System;
@@ -23,6 +24,10 @@ namespace DevyClass
         {
             UsuarioActual = usuario;
             InitializeComponent();
+
+            // Solo los administradores pueden agregar usuarios.
+            this.Shown += (s, e) => Permisos.ExigirAdministrador(this, UsuarioActual);
+
             OjoRegistro = false;
             // Las contrasenas inician ocultas con puntos.
             txtcontrasegura.PasswordChar = '•';

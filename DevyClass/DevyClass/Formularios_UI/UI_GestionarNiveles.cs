@@ -1,3 +1,4 @@
+using DevyClass.Autenticacion;
 using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.UsuarioDB;
 using System;
@@ -26,6 +27,10 @@ namespace DevyClass
         {
             InitializeComponent();
             UsuarioActual = usuario;
+
+            // Solo los administradores pueden crear, editar y borrar niveles.
+            this.Shown += (s, e) => Permisos.ExigirAdministrador(this, UsuarioActual);
+
             CargarModulos(); // Llena el ComboBox de modulos.
             CargarNiveles(); // Llena la tabla de niveles.
 

@@ -4,15 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Autenticacion;
 using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.Formularios_UI_niveles.Modulo_1;
 using Guna.UI.WinForms;
 using DevyClass.UsuarioDB;
-using Mysqlx.Notice;
 
 namespace DevyClass
 {
@@ -104,6 +103,14 @@ namespace DevyClass
         // Se usa al volver de un nivel para mostrar el progreso actualizado.
         public void RefrescarUI()
         {
+            // El constructor vacio (usado solo por el disenador) deja UsuarioActual en null.
+            // Sin esta proteccion, refrescar el menu sin sesion iniciada revienta con
+            // NullReferenceException.
+            if (UsuarioActual == null)
+            {
+                return;
+            }
+
             // se obtiene una frase motivadora aleatoria y se establece en el label correspondiente.
             lblFraseMotivadora.Text = ObtenerFraseAleatoria();
 
@@ -116,8 +123,8 @@ namespace DevyClass
             progressBar1.Value = Math.Min(100, completados * 2);
             // Actualiza la barra verde visible (la ProgressBar nativa quedo oculta).
             Tema.BarraProgreso(progressBar1);
-            // se verifica si el usuario es un administrador (ReferenciaTipo == 1) y se muestra el botón correspondiente si es así.
-            if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Visible = true;
+            // se verifica si el usuario es un administrador y se muestra el botón correspondiente si es así.
+            if (Permisos.EsAdministrador(UsuarioActual)) gunaButton1.Visible = true;
             // se muestra el nombre de usuario en el botón correspondiente.
             gunaButton8.Text = UsuarioActual.Username;
             // se muestra el porcentaje de niveles completados por el usuario.
@@ -136,7 +143,7 @@ namespace DevyClass
             int m1 = Math.Max(0, Math.Min(completados, 10));
             lblModulo1Porcentaje.Text = $"{m1 * 10}%";
             lblModulo1NivelActual.Text = $"{m1}/10 Niveles";
-            if (completados <= 10) lblModuloActual.Text = "Pensamiento\\nalgorítmico";
+            if (completados <= 10) lblModuloActual.Text = "Pensamiento" + Environment.NewLine + "algorítmico";
 
             // Modulo 2 (niveles 11-20): se calcula igual, con lo que no llegue se queda en 0.
             int m2 = Math.Max(0, Math.Min(completados - 10, 10));
@@ -171,7 +178,9 @@ namespace DevyClass
             return menu;
         }
 
-        // Constructor vacio (sin datos de usuario). Se usa solo en algunos casos de prueba.
+        // Constructor vacio (sin datos de usuario).
+        // Lo necesita el disenador de Visual Studio para poder abrir el formulario.
+        // En ejecucion no se usa: el menu siempre se crea con AbrirMenu(usuario).
         public UI_MenuPrincipal()
         {
             InitializeComponent();
@@ -179,33 +188,12 @@ namespace DevyClass
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            Console.WriteLine("Probando cosas...");
-
-            //cambios
+            RefrescarUI();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-    
+        // Evento reservado para la animacion de expandir/contraer la barra lateral.
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            //transicionMenu.Show(panel1);
-
-            //if (menuExpandido)
-            //{
-            //    panel1.Width = 50;
-            //    menuExpandido = false;
-            //}
-            //else
-            //{
-            //    panel1.Width = 200;
-            //    menuExpandido = true;
-            //}
         }
 
         private void btnTemario_Click(object sender, EventArgs e)
@@ -383,23 +371,12 @@ namespace DevyClass
             }
         }
 
-        // Boton del administrador: prueba la conexion a la base de datos.
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-            Conexion C = new Conexion();
-            C.verificarConecxion();
-        }
-
         // Boton del administrador: abre el panel de administrador.
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
             UI_Administrador u = new UI_Administrador(UsuarioActual);
             u.Show();
             this.Hide(); // el menu no debe asomar detras de la ventana
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
         }
 
         // Boton del usuario: abre los ajustes (editar nombre de usuario y contrasena).
@@ -417,11 +394,6 @@ namespace DevyClass
             UI_InicioSesion iniciar = new UI_InicioSesion();
             iniciar.Show();     // primero se muestra la nueva ventana...
             this.Close();       // ...y despues se cierra esta.
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

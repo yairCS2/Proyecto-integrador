@@ -111,7 +111,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             {
                 indiceActual--;
                 CambiarUC(preguntas[indiceActual]());
-                UsuarioPreguntas.progreso -= 25; // Reduce el progreso en 25%.
             }
 
             // "Finalizar" solo tiene sentido en la ultima pantalla (antes quedaba
@@ -129,7 +128,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
 
             indiceActual++;
             CambiarUC(preguntas[indiceActual]());
-            UsuarioPreguntas.progreso += 25; // Aumenta el progreso en 25%.
 
             // Al llegar a "Ganaste" se muestra el boton de guardar.
             gunaButton5.Visible = (indiceActual == preguntas.Length - 1);

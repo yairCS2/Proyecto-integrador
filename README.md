@@ -30,9 +30,10 @@
 8. [Base de datos](#-base-de-datos)
 9. [Cómo funciona por dentro](#-cómo-funciona-por-dentro)
 10. [Solución de problemas](#-solución-de-problemas)
-11. [Problemas conocidos / pendientes](#-problemas-conocidos--pendientes)
-12. [Avisos de seguridad](#-avisos-de-seguridad)
-13. [Créditos y licencias](#-créditos-y-licencias)
+11. [Correcciones aplicadas](#-correcciones-aplicadas)
+12. [Problemas conocidos / pendientes](#-problemas-conocidos--pendientes)
+13. [Avisos de seguridad](#-avisos-de-seguridad)
+14. [Créditos y licencias](#-créditos-y-licencias)
 
 ---
 
@@ -113,12 +114,11 @@ pero el juego aún no se puede jugar de principio a fin.
 | DLL | Versión | ¿Se usa? |
 |---|---|---|
 | `Guna.UI.dll` | (sin versión registrada) | ✅ **Sí** — botones, groupbox, progressbar, transiciones |
-| `Klik.Windows.Forms.EntryLib.V2.2005.dll` | 2.0.0.0 | ⚠️ Solo un `ELCalendar` decorativo en el menú, sin lógica. **Muerta** |
-| `Bunifu_UI_v1.5.3.dll` | 1.5.3 | ❌ **No se usa en absoluto** — solo está referenciada en el `.csproj` |
+| `Klik.Windows.Forms.EntryLib.V2.2005.dll` | 2.0.0.0 | ⚠️ Solo un `ELCalendar` decorativo en el menú, sin lógica |
 
-> Las tres van incluidas en el repositorio para que el proyecto compile al
-> clonarlo. Las dos últimas son librerías **comerciales con licencia** y
-> ambas son candidatas a eliminarse del proyecto.
+> Las dos van incluidas en el repositorio para que el proyecto compile al
+> clonarlo. Ambas son librerías **comerciales con licencia**; la de Klik es
+> candidata a eliminarse por no aportar funcionalidad.
 
 ---
 
@@ -270,7 +270,7 @@ Proyecto-integrador/
         │
         ├── Autenticacion/
         │   ├── ValidarContraseniaYUsuario.cs   ← login
-        │   └── RegistrarUsuario.cs             ← ⚠️ clase muerta (nunca se usa)
+        │   └── Permisos.cs                     ← control de acceso por rol (admin)
         │
         ├── Formularios_UI/          ← pantallas principales
         │   ├── UI_InicioSesion.cs        ← login
@@ -475,7 +475,6 @@ Las DLL de `libs/` no llegaron al clon. Verifica que existan:
 
 ```
 DevyClass/libs/Guna.UI.dll
-DevyClass/libs/Bunifu_UI_v1.5.3.dll
 DevyClass/libs/Klik.Windows.Forms.EntryLib.V2.2005.dll
 ```
 
@@ -495,15 +494,15 @@ Get-Service | Where-Object Name -like '*mysql*'
 escritas en el código (`DevyClass/DevyClass/ConexionBD/Conexion.cs`):
 
 ```csharp
-private string cadena  = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=;";    // sin contraseña
-private string cadena2 = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;"; // respaldo
+private const string cadena  = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=;";    // sin contraseña
+private const string cadena2 = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;"; // respaldo
 ```
 
 La app intenta la primera y, si falla, cae en la segunda. Si tu contraseña es
 otra, edita **`Pwd=`** en las dos líneas y recompila:
 
 ```csharp
-private string cadena  = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=tuClave;";
+private const string cadena = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=tuClave;";
 ```
 
 > Ambas claves están fijadas en el código fuente. Moverlas a `App.config` o a
@@ -539,9 +538,41 @@ Es lo esperado: `UI_MenuPrincipal.Niveles` solo contiene `typeof(Nivel1)`.
 
 ### ℹ️ Herramienta de diagnóstico incluida
 
-`Conexion.verificarConexion()` abre la BD y avisa si funciona. **Ojo:** su botón
-(`gunaButton1_Click`) nunca se conectó en el diseñador, así que no aparece en la
-interfaz. Para probarla, ábrela desde el depurador de Visual Studio.
+`Conexion.verificarConexion()` abre la BD y avisa si funciona. No hay ningún botón
+en la interfaz que la llame (se eliminó el handler que no estaba conectado), así
+que úsala desde el depurador de Visual Studio.
+
+---
+
+## ✅ Correcciones aplicadas
+
+Esta es la lista de lo que se corrigió en la última ronda de limpieza. El
+proyecto **compila con 0 errores y 0 warnings** tanto antes como después.
+
+### Bugs reales corregidos
+
+| Corrección | Dónde |
+|---|---|
+| `\"Pensamiento\\n...\"` mostraba una **barra invertida literal** en pantalla en vez de un salto de línea | `UI_MenuPrincipal.RefrescarUI()` |
+| El menú lanzaba **`NullReferenceException`** si se abría sin usuario (constructor vacío del diseñador) | `UI_MenuPrincipal.RefrescarUI()` |
+| **El panel de administrador no validaba el rol**: solo se ocultaba el botón. Ahora los 4 formularios de admin rechazan a un usuario normal y se cierran | `Autenticacion/Permisos.cs` (nuevo) + los 4 formularios |
+| `Console.WriteLine("Probando cosas...")` de depuración en el `Load` del menú | `UI_MenuPrincipal` |
+| Handlers que apuntaban a controles **inexistentes** (`panel7_Paint`, `panel1_Paint` y `dataGridView1_CellContentClick` en formularios sin esos controles) y un handler con firma inválida (`txtCorreo_Enter()`) | `UI_MenuPrincipal`, `UI_Registro`, `UI_Ajustes` |
+| El menú no refrescaba los datos al mostrarse; ahora sí | `UI_MenuPrincipal.Form1_Load()` |
+| Las cadenas de conexión se recreaban en cada instancia; ahora son `const` | `ConexionBD/Conexion.cs` |
+| Typo `verificarConecxion` → `verificarConexion` | `ConexionBD/Conexion.cs` |
+
+### Código muerto eliminado
+
+| Elemento | Motivo |
+|---|---|
+| `Autenticacion/RegistrarUsuario.cs` | **Nunca se instanciaba** y estaba mal: los 4 parámetros del `INSERT` se llenaban todos con `usuario`. El registro real vive en `ConsultasUsuario.RegistrarUsuario` |
+| `DevyClass/libs/Bunifu_UI_v1.5.3.dll` (≈0.23 MB) | Referenciada en el `.csproj` pero **sin un solo uso** en el código |
+| `using Mysqlx.Notice;` y `using System.Security.Cryptography.X509Certificates;` | `using` sobrantes, nada del proyecto los necesita |
+| `RespuestasCorrectas`, `Pregunta4Res` y `progreso` de `Nivel1RepuestasCorrectas` | Se escribían pero **nunca se leían**. El acierto real lo recalcula `Ganaste.CalcularAciertos()` |
+| `PreguntaActivada` (pregunta1) | Quedó huérfano al eliminar el contador que protegía |
+| `<Folder Include="LogicaC#\" />` | Apuntaba a una carpeta que no existe en el proyecto |
+| Bloques de código comentado (`panel1_Paint`, etc.) | Restos de una animación de la barra lateral que se abandonó |
 
 ---
 
@@ -559,24 +590,13 @@ interfaz. Para probarla, ábrela desde el depurador de Visual Studio.
       pero **no tiene evento asignado**, así que no hace nada.
 - [ ] Botón **«Logros»** vacío; `btnTemario`, `btnRendimiento` y el botón
       «Inicio» de la barra lateral tampoco hacen nada.
-- [ ] Autenticación: los formularios de administración son `public` y **no
-      validan el rol**; solo se oculta el botón.
 
-**Código muerto que conviene borrar**
+**Código muerto que queda**
 
-- `Autenticacion/RegistrarUsuario.cs` — **nunca se instancia** y además tiene un
-  bug: sus 4 parámetros se filling todos con `usuario`.
-- `Bunifu_UI_v1.5.3.dll` — referenciada pero **sin un solo uso**.
-- `ELCalendar` (Klik) — control decorativo sin código asociado.
-- En `Nivel1RepuestasCorrectas`: `RespuestasCorrectas`, `Pregunta4Res` y
-  `progreso` se escriben pero **nunca se leen**.
-- `using Mysqlx.Notice;` en el menú principal (no tiene nada que ver).
-- `<Folder Include="LogicaC#\" />` en el `.csproj` apunta a una carpeta inexistente.
+- `ELCalendar` (Klik) — control decorativo en el menú, sin código asociado.
 
 **Detalles menores**
 
-- En `UI_MenuPrincipal.cs` hay `"Pensamiento\\nalgorítmico"` con una barra invertida
-  literal que se ve en pantalla; debería ser un salto de línea.
 - El versionado está desalineado: el menú dice `DevyClass 1.1.0` pero
   `AssemblyVersion` es `1.0.0.0`.
 - En el diseñador, el botón de usuario tiene hardcodeado `gunaButton8.Text = "Alexis Flores"`.
@@ -601,8 +621,11 @@ Este proyecto es un **prototipo académico**. Antes de usarlo con datos reales:
    usuario `root` — el superusuario de la base. Lo ideal es un usuario
    dedicado con permisos mínimos, y leer la cadena desde `App.config`.
 
-3. **El acceso al panel de administrador no está protegido**: se decide
-   únicamente *ocultando un botón*. Cualquier formulario `public` es alcanzable.
+3. ~~El acceso al panel de administrador no está protegido~~ — **CORREGIDO.**
+   Ahora `Autenticacion/Permisos.cs` valida el rol en los 4 formularios de
+   administración: si el usuario no es administrador, muestra «Acceso denegado» y
+   cierra la ventana. Ojo: esto controla la interfaz, no el modelo de datos; un
+   `SELECT * FROM usuarios` directo a la base sigue devolviendo contraseñas.
 
 4. **El buscador de los grids** arma el `RowFilter` por concatenación de
    cadenas, escapando solo las comillas simples.

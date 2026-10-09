@@ -1,4 +1,5 @@
-﻿using DevyClass.Base_de_datos_DevyClass_;
+﻿using DevyClass.Autenticacion;
+using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.Formularios_UI;
 using DevyClass.UsuarioDB;
 using System;
@@ -25,6 +26,11 @@ namespace DevyClass
         {
             InitializeComponent();
             UsuarioActual = usuario;
+
+            // Solo los administradores pueden ver este panel. Se comprueba al mostrarse
+            // la ventana (no en el constructor, donde Close() todavia no serviria).
+            this.Shown += (s, e) => Permisos.ExigirAdministrador(this, UsuarioActual);
+
             CargarUsuarios(); // Llena la tabla con los usuarios al abrir el formulario.
 
             // Fase 2: pantalla completa y estilo Duolingo.

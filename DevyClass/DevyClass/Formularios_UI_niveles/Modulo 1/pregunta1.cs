@@ -19,7 +19,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         // Tema.OpcionElegida: tarjeta blanca y seleccion en azul claro).
 
         private Nivel1RepuestasCorrectas UsuarioPregunta; // Estado compartido del nivel.
-        bool PreguntaActivada = false; // Evita que se cuente mas de una vez la respuesta correcta.
 
         public pregunta1(Nivel1RepuestasCorrectas usuario)
         {
@@ -30,7 +29,6 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             PrepararEstilo();
 
             // Si el usuario ya habia elegido una opcion antes, se resalta para que se vea seleccionada.
-            if (usuario.Pregunta1Res == 2) PreguntaActivada = true;
             PintarSeleccion();
         }
 
@@ -83,17 +81,11 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
             PintarSeleccion();
         }
 
-        // Opcion 2 (la correcta): guarda la eleccion y suma una respuesta correcta la primera vez.
-        // OJO: el total de aciertos se recalcula en Ganaste a partir de las tres respuestas,
-        // este contador solo se mantiene por compatibilidad.
+        // Opcion 2 (la correcta): guarda la eleccion del usuario.
+        // El acierto se calcula despues en Ganaste.CalcularAciertos().
         private void gunaButton3_Click(object sender, EventArgs e)
         {
             UsuarioPregunta.Pregunta1Res = 2;
-            if (PreguntaActivada == false)
-            {
-                UsuarioPregunta.RespuestasCorrectas++; // Aumenta el contador de aciertos.
-                PreguntaActivada = true; // Marca que ya se conto (asi no cuenta dos veces).
-            }
             PintarSeleccion();
         }
 

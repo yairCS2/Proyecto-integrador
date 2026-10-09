@@ -17,10 +17,10 @@ namespace DevyClass.Base_de_datos_DevyClass_
     {
         // Cadena de conexion principal: servidor local (localhost), base de datos DevyClassBD,
         // usuario "root" y SIN contrasena.
-        private string cadena = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=;";
+        private const string cadena = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=;";
         // Cadena de conexion de respaldo: igual pero con contrasena "1234".
         // Se usa si la primera falla (por ejemplo, si la instalacion de MySQL tiene clave).
-        private string cadena2 = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;";
+        private const string cadena2 = "Server=localhost;Database=DevyClassBD;Uid=root;Pwd=1234;";
 
         // Devuelve una conexion lista para usarse.
         // Intenta con la cadena sin contrasena y, si eso falla, devuelve una con la de respaldo.
@@ -47,9 +47,10 @@ namespace DevyClass.Base_de_datos_DevyClass_
             }
         }
 
-        // Metodo de prueba: abre la conexion y muestra un mensaje si todo funciona.
-        // Se usa en el boton "verificar conexion" del menu principal (solo administradores).
-        public void verificarConecxion()
+        // Metodo de diagnostico: abre la conexion y muestra un mensaje si todo funciona.
+        // No hay ningun boton en la interfaz que lo llame; se usa a mano desde
+        // el depurador de Visual Studio para comprobar que MySQL responde.
+        public void verificarConexion()
         {
             try
             {

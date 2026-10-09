@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevyClass.Autenticacion;
 using DevyClass.Base_de_datos_DevyClass_;
 using DevyClass.UsuarioDB;
 
@@ -22,8 +23,12 @@ namespace DevyClass.Formularios_UI
         public UI_EliminarUsuario(DatosUsuario usuario)
         {
             InitializeComponent();
-            CargarUsuarios(); // Llena la tabla al abrir.
             UsuarioActual = usuario;
+
+            // Solo los administradores pueden eliminar usuarios.
+            this.Shown += (s, e) => Permisos.ExigirAdministrador(this, UsuarioActual);
+
+            CargarUsuarios(); // Llena la tabla al abrir.
 
             // Fase 2: pantalla completa y estilo Duolingo.
             PrepararEstilo();

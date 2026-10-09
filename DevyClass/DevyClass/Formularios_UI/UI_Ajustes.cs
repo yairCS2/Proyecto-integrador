@@ -105,31 +105,21 @@ namespace DevyClass
             return new string(chars.OrderBy(c => rnd.Next()).ToArray());
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
-
+        // Eventos de los paneles: reservados para personalizaciones futuras.
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
-
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void formAjustes_Load(object sender, EventArgs e)
