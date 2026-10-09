@@ -270,7 +270,7 @@ Proyecto-integrador/
         │
         ├── Autenticacion/
         │   ├── ValidarContraseniaYUsuario.cs   ← login
-        │   └── RegistrarUsuario.cs             ← ⚠️ clase muerta (nunca se usa)
+        │   └── RegistrarUsuario.cs            
         │
         ├── Formularios_UI/          ← pantallas principales
         │   ├── UI_InicioSesion.cs        ← login
@@ -294,8 +294,6 @@ Proyecto-integrador/
         └── Resources/                ← ~100 imágenes (PNG)
 ```
 
-> ⚠️ La carpeta `bin/`, `obj/` y `.vs/` **están deliberadamente fuera del
-> repositorio** (ver `.gitignore`). Se regeneran al compilar.
 
 ---
 
