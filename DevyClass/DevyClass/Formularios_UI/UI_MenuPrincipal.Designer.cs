@@ -214,7 +214,7 @@
             this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaButton6.Image = global::DevyClass.Properties.Resources.Inici;
+            this.gunaButton6.Image = global::DevyClass.Properties.Resources.casa;
             this.gunaButton6.ImageSize = new System.Drawing.Size(50, 50);
             this.gunaButton6.Location = new System.Drawing.Point(11, 22);
             this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);

@@ -310,6 +310,9 @@
   <data name="Inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Inici" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Inici.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

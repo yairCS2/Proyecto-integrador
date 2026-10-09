@@ -361,6 +361,7 @@
     <None Include="Resources\idea.form.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\casa.png" />
     <None Include="Resources\Inicio.png" />
   </ItemGroup>
   <ItemGroup>
