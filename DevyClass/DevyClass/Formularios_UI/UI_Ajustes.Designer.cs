@@ -170,7 +170,7 @@
             this.btnCerrarSesion.Radius = 5;
             this.btnCerrarSesion.Size = new System.Drawing.Size(218, 37);
             this.btnCerrarSesion.TabIndex = 7;
-            this.btnCerrarSesion.Text = "Cerrar Sesion";
+            this.btnCerrarSesion.Text = "Cerrar sesión";
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // label6
@@ -347,7 +347,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Configuracion de usuario";
+            this.label1.Text = "Configuración de usuario";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnregresar

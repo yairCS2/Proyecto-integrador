@@ -61,7 +61,7 @@
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(158, 41);
             this.lbtitulo.TabIndex = 55;
-            this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Text = "DevyClass";
             // 
             // label2
             // 

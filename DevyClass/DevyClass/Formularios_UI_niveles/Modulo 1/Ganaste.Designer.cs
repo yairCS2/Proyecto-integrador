@@ -41,7 +41,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(209, 37);
             this.label2.TabIndex = 29;
-            this.label2.Text = "!Ganasteeee";
+            this.label2.Text = "¡Ganaste!";
             // 
             // pictureBox1
             // 

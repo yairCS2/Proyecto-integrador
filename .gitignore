@@ -1,6 +1,126 @@
 ﻿################################################################################
-# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+# DevyClass - .gitignore
+# Proyecto: juego educativo de C# (WinForms + MySQL)
+# Docs de instalacion: README.md
 ################################################################################
 
-/DevyClass/DevyClass/.vs
-/DevyClass/.vs/DevyClass.slnx/FileContentIndex
+# ------------------------------------------------------------------------------
+# Visual Studio / IDE
+# ------------------------------------------------------------------------------
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vscode/
+.idea/
+*.DotSettings.user
+
+# ------------------------------------------------------------------------------
+# Archivos de compilacion y paquetes
+# ------------------------------------------------------------------------------
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+*.dll.mdb
+*.dll.config
+*.pdb
+*.exe
+*.exp
+*.lib
+*.nupkg
+*.snupkg
+TestResults/
+[Tt]est[Rr]esult*/
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+TestResult.xml
+
+# ------------------------------------------------------------------------------
+# NuGet
+# ------------------------------------------------------------------------------
+# NOTA: la carpeta DevyClass/packages/ SI se versiona a proposito.
+# Es un proyecto .NET Framework (packages.config) y asi el proyecto compila
+# sin necesidad de conexion a internet ni de ejecutar "nuget restore".
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ------------------------------------------------------------------------------
+# Librerias de UI de terceros (Guna.UI, Bunifu, Klik EntryLib)
+# ------------------------------------------------------------------------------
+# NOTA: la carpeta DevyClass/libs/ SI se versiona a proposito, para que el
+# proyecto compile al clonarlo sin pasos extra. Son librerias comerciales.
+*.nupkg.download
+*.crack
+*.patch
+*.key
+*.licx.bak
+
+# ------------------------------------------------------------------------------
+# Sistema operativo
+# ------------------------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ------------------------------------------------------------------------------
+# Archivos temporales y de depuracion
+# ------------------------------------------------------------------------------
+*.tmp
+*.log
+*.bak
+*.orig
+*.old
+*.rej
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# ------------------------------------------------------------------------------
+# Base de datos (no versionar dumps/respaldos locales)
+# ------------------------------------------------------------------------------
+*.sql
+!database/*.sql
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.ldf
+*.mdf
+
+# ------------------------------------------------------------------------------
+# Credenciales / configuracion local
+# ------------------------------------------------------------------------------
+# connectionStrings con usuario y contrasena de MySQL
+App.config.local
+Web.config.local
+*.env
+.env.local
+secrets.json

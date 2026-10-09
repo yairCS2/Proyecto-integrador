@@ -215,7 +215,7 @@
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(146, 40);
             this.lbtitulo.TabIndex = 73;
-            this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Text = "DevyClass";
             this.lbtitulo.Click += new System.EventHandler(this.lbtitulo_Click);
             // 
             // OjoContrasenia
@@ -340,7 +340,7 @@
             this.lbcorreo.Name = "lbcorreo";
             this.lbcorreo.Size = new System.Drawing.Size(125, 19);
             this.lbcorreo.TabIndex = 57;
-            this.lbcorreo.Text = "Correo electronico";
+            this.lbcorreo.Text = "Correo electrónico";
             // 
             // txtUsuario
             // 

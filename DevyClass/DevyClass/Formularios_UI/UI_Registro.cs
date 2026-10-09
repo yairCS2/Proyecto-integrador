@@ -30,6 +30,33 @@ namespace DevyClass
             txtconfirmarcontra.PasswordChar = '•';
             // El selector de fecha se muestra en formato corto (dia/mes/ano).
             dateTimePicker1.Format = DateTimePickerFormat.Short;
+            // La tecla Enter activa el boton "Registrarse" (mejor accesibilidad).
+            this.AcceptButton = btnregistro;
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+        }
+
+        /// <summary> Textos corregidos, escalado del diseno y estilo general. </summary>
+        private void PrepararEstilo()
+        {
+            // Marca y acentos (antes: "DeviClass", "inicia sesion", "Correo electronico").
+            lbtitulo.Text = "DevyClass";
+            linklbinicio.Text = "Inicia sesión";
+            lbcorreo.Text = "Correo electrónico";
+            Tema.Titulo(lbtitulo);
+
+            // El checkbox de notificaciones no esta conectado a nada: no se promete.
+            Tema.Ocultar(chknotificaciones);
+
+            this.PerformLayout();
+
+            // El diseno es pequeño para un monitor grande: se agranda y se centra.
+            Tema.EscalarHijos(this, 1.4F);
+            Tema.Aplicar(this, null, "DevyClass - Registro");
+
+            Tema.Boton(btnregistro, Tema.Rol.Primario);
+            OjoContrasenia.BringToFront();
         }
 
         // Genera una contrasena aleatoria que cumple los requisitos (letra, numero y especial).

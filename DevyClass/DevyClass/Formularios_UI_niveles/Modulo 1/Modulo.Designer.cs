@@ -584,7 +584,7 @@
             this.lbusuario.Name = "lbusuario";
             this.lbusuario.Size = new System.Drawing.Size(65, 17);
             this.lbusuario.TabIndex = 25;
-            this.lbusuario.Text = "Modulo 1";
+            this.lbusuario.Text = "Módulo 1";
             this.lbusuario.Click += new System.EventHandler(this.lbusuario_Click);
             // 
             // Modulo

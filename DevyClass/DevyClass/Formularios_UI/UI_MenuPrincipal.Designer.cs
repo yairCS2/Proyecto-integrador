@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI.Animation.Animation animation4 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_MenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
@@ -43,55 +43,53 @@
             this.transicionMenu = new Guna.UI.WinForms.GunaTransition(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.labelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label26 = new System.Windows.Forms.Label();
-            this.lblPorcentajeNiveles = new System.Windows.Forms.Label();
             this.lblNivelActual = new System.Windows.Forms.Label();
+            this.lblPorcentajeNiveles = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblModuloActual = new System.Windows.Forms.Label();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.lblModuloActual = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.lblModulo1Porcentaje = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblModulo1NivelActual = new System.Windows.Forms.Label();
-            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaProgressBar2 = new Guna.UI.WinForms.GunaProgressBar();
-            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.lblModulo2Porcentaje = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblModulo2NivelActual = new System.Windows.Forms.Label();
-            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();
-            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaProgressBar3 = new Guna.UI.WinForms.GunaProgressBar();
-            this.lblModulo3Porcentaje = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblModulo3NivelActual = new System.Windows.Forms.Label();
-            this.gunaImageButton3 = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaGroupBox4 = new Guna.UI.WinForms.GunaGroupBox();
-            this.lblModulo4Porcentaje = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblModulo4NivelActual = new System.Windows.Forms.Label();
-            this.gunaImageButton4 = new Guna.UI.WinForms.GunaImageButton();
-            this.gunaProgressBar4 = new Guna.UI.WinForms.GunaProgressBar();
             this.label19 = new System.Windows.Forms.Label();
+            this.gunaGroupBox4 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaProgressBar4 = new Guna.UI.WinForms.GunaProgressBar();
+            this.gunaImageButton4 = new Guna.UI.WinForms.GunaImageButton();
+            this.lblModulo4NivelActual = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblModulo4Porcentaje = new System.Windows.Forms.Label();
+            this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaImageButton3 = new Guna.UI.WinForms.GunaImageButton();
+            this.lblModulo3NivelActual = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblModulo3Porcentaje = new System.Windows.Forms.Label();
+            this.gunaProgressBar3 = new Guna.UI.WinForms.GunaProgressBar();
+            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.gunaProgressBar1 = new Guna.UI.WinForms.GunaProgressBar();
+            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
+            this.lblModulo2NivelActual = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblModulo2Porcentaje = new System.Windows.Forms.Label();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gunaProgressBar2 = new Guna.UI.WinForms.GunaProgressBar();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
+            this.lblModulo1NivelActual = new System.Windows.Forms.Label();
+            this.lblModulo1Porcentaje = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnSalir = new Guna.UI.WinForms.GunaButton();
-            this.lblBienvenida = new System.Windows.Forms.Label();
-            this.lblFraseMotivadora = new System.Windows.Forms.Label();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.lblFraseMotivadora = new System.Windows.Forms.Label();
+            this.lblBienvenida = new System.Windows.Forms.Label();
             this.elCalendar1 = new Klik.Windows.Forms.v1.EntryLib.ELCalendar();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblExperiencia = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblExperiencia = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -101,10 +99,10 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
-            this.gunaGroupBox1.SuspendLayout();
-            this.gunaGroupBox2.SuspendLayout();
-            this.gunaGroupBox3.SuspendLayout();
             this.gunaGroupBox4.SuspendLayout();
+            this.gunaGroupBox3.SuspendLayout();
+            this.gunaGroupBox2.SuspendLayout();
+            this.gunaGroupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.elCalendar1)).BeginInit();
             this.panel6.SuspendLayout();
@@ -129,7 +127,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 692);
+            this.panel1.Size = new System.Drawing.Size(274, 691);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -177,7 +175,7 @@
             this.gunaButton8.ForeColor = System.Drawing.Color.Black;
             this.gunaButton8.Image = global::DevyClass.Properties.Resources.Usuario;
             this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaButton8.Location = new System.Drawing.Point(22, 513);
+            this.gunaButton8.Location = new System.Drawing.Point(22, 486);
             this.gunaButton8.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton8.Name = "gunaButton8";
             this.gunaButton8.OnHoverBaseColor = System.Drawing.SystemColors.Control;
@@ -237,7 +235,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.transicionMenu.SetDecoration(this.label2, Guna.UI.Animation.DecorationType.None);
-            this.label2.Location = new System.Drawing.Point(166, 668);
+            this.label2.Location = new System.Drawing.Point(150, 663);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 13);
@@ -286,22 +284,22 @@
             // 
             this.transicionMenu.AnimationType = Guna.UI.Animation.AnimationType.Scale;
             this.transicionMenu.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.transicionMenu.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.transicionMenu.DefaultAnimation = animation1;
             // 
             // contextMenuStrip1
             // 
@@ -317,11 +315,6 @@
             this.labelToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.labelToolStripMenuItem.Text = "label";
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -336,37 +329,6 @@
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // progressBar1
-            // 
-            this.transicionMenu.SetDecoration(this.progressBar1, Guna.UI.Animation.DecorationType.None);
-            this.progressBar1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.progressBar1.Location = new System.Drawing.Point(20, 67);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(392, 33);
-            this.progressBar1.TabIndex = 0;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.label26, Guna.UI.Animation.DecorationType.None);
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(16, 22);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(146, 25);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Tu progreso ";
-            // 
-            // lblPorcentajeNiveles
-            // 
-            this.lblPorcentajeNiveles.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.lblPorcentajeNiveles, Guna.UI.Animation.DecorationType.None);
-            this.lblPorcentajeNiveles.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentajeNiveles.Location = new System.Drawing.Point(354, 23);
-            this.lblPorcentajeNiveles.Name = "lblPorcentajeNiveles";
-            this.lblPorcentajeNiveles.Size = new System.Drawing.Size(58, 25);
-            this.lblPorcentajeNiveles.TabIndex = 2;
-            this.lblPorcentajeNiveles.Text = "45%";
-            // 
             // lblNivelActual
             // 
             this.lblNivelActual.AutoSize = true;
@@ -380,6 +342,37 @@
             this.lblNivelActual.TabIndex = 3;
             this.lblNivelActual.Text = "Haz completado 4/10 Niveles";
             // 
+            // lblPorcentajeNiveles
+            // 
+            this.lblPorcentajeNiveles.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.lblPorcentajeNiveles, Guna.UI.Animation.DecorationType.None);
+            this.lblPorcentajeNiveles.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeNiveles.Location = new System.Drawing.Point(354, 23);
+            this.lblPorcentajeNiveles.Name = "lblPorcentajeNiveles";
+            this.lblPorcentajeNiveles.Size = new System.Drawing.Size(58, 25);
+            this.lblPorcentajeNiveles.TabIndex = 2;
+            this.lblPorcentajeNiveles.Text = "45%";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.label26, Guna.UI.Animation.DecorationType.None);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(16, 22);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(146, 25);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Tu progreso ";
+            // 
+            // progressBar1
+            // 
+            this.transicionMenu.SetDecoration(this.progressBar1, Guna.UI.Animation.DecorationType.None);
+            this.progressBar1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.progressBar1.Location = new System.Drawing.Point(20, 67);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(392, 33);
+            this.progressBar1.TabIndex = 0;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -392,18 +385,19 @@
             this.groupBox1.Size = new System.Drawing.Size(415, 217);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modulo en curso";
+            this.groupBox1.Text = "Módulo en curso";
             // 
-            // lblModuloActual
+            // pictureBox1
             // 
-            this.lblModuloActual.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.lblModuloActual, Guna.UI.Animation.DecorationType.None);
-            this.lblModuloActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModuloActual.Location = new System.Drawing.Point(33, 43);
-            this.lblModuloActual.Name = "lblModuloActual";
-            this.lblModuloActual.Size = new System.Drawing.Size(178, 58);
-            this.lblModuloActual.TabIndex = 4;
-            this.lblModuloActual.Text = "Variables y \r\ntipos de datos";
+            this.transicionMenu.SetDecoration(this.pictureBox1, Guna.UI.Animation.DecorationType.None);
+            this.pictureBox1.Image = global::DevyClass.Properties.Resources.Devy_corriendo;
+            this.pictureBox1.Location = new System.Drawing.Point(246, 43);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 140);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // gunaButton3
             // 
@@ -434,17 +428,16 @@
             this.gunaButton3.Text = "Continuar";
             this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
-            // pictureBox1
+            // lblModuloActual
             // 
-            this.transicionMenu.SetDecoration(this.pictureBox1, Guna.UI.Animation.DecorationType.None);
-            this.pictureBox1.Image = global::DevyClass.Properties.Resources.Devy_corriendo;
-            this.pictureBox1.Location = new System.Drawing.Point(246, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 140);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.lblModuloActual.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.lblModuloActual, Guna.UI.Animation.DecorationType.None);
+            this.lblModuloActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModuloActual.Location = new System.Drawing.Point(33, 43);
+            this.lblModuloActual.Name = "lblModuloActual";
+            this.lblModuloActual.Size = new System.Drawing.Size(178, 58);
+            this.lblModuloActual.TabIndex = 4;
+            this.lblModuloActual.Text = "Variables y \r\ntipos de datos";
             // 
             // panel5
             // 
@@ -461,272 +454,16 @@
             this.panel5.TabIndex = 14;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // gunaGroupBox1
+            // label19
             // 
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Black;
-            this.gunaGroupBox1.BorderSize = 1;
-            this.gunaGroupBox1.Controls.Add(this.gunaProgressBar2);
-            this.gunaGroupBox1.Controls.Add(this.gunaImageButton1);
-            this.gunaGroupBox1.Controls.Add(this.lblModulo1NivelActual);
-            this.gunaGroupBox1.Controls.Add(this.label1);
-            this.gunaGroupBox1.Controls.Add(this.lblModulo1Porcentaje);
-            this.gunaGroupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transicionMenu.SetDecoration(this.gunaGroupBox1, Guna.UI.Animation.DecorationType.None);
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(11, 60);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Radius = 8;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(174, 230);
-            this.gunaGroupBox1.TabIndex = 20;
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
-            this.gunaGroupBox1.Click += new System.EventHandler(this.gunaGroupBox1_Click);
-            // 
-            // lblModulo1Porcentaje
-            // 
-            this.lblModulo1Porcentaje.AutoSize = true;
-            this.lblModulo1Porcentaje.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo1Porcentaje, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo1Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo1Porcentaje.Location = new System.Drawing.Point(104, 147);
-            this.lblModulo1Porcentaje.Name = "lblModulo1Porcentaje";
-            this.lblModulo1Porcentaje.Size = new System.Drawing.Size(59, 24);
-            this.lblModulo1Porcentaje.TabIndex = 4;
-            this.lblModulo1Porcentaje.Text = "100%";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.label1, Guna.UI.Animation.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(20, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 48);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Pensamiento \r\nalgoritmico";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblModulo1NivelActual
-            // 
-            this.lblModulo1NivelActual.AutoSize = true;
-            this.lblModulo1NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo1NivelActual, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo1NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo1NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblModulo1NivelActual.Location = new System.Drawing.Point(24, 181);
-            this.lblModulo1NivelActual.Name = "lblModulo1NivelActual";
-            this.lblModulo1NivelActual.Size = new System.Drawing.Size(122, 24);
-            this.lblModulo1NivelActual.TabIndex = 17;
-            this.lblModulo1NivelActual.Text = "10/10 Niveles";
-            // 
-            // gunaImageButton1
-            // 
-            this.gunaImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transicionMenu.SetDecoration(this.gunaImageButton1, Guna.UI.Animation.DecorationType.None);
-            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton1.Image = global::DevyClass.Properties.Resources.Cerebro;
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton1.Location = new System.Drawing.Point(41, 6);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = null;
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Size = new System.Drawing.Size(86, 83);
-            this.gunaImageButton1.TabIndex = 16;
-            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
-            // 
-            // gunaProgressBar2
-            // 
-            this.gunaProgressBar2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaProgressBar2.BorderColor = System.Drawing.Color.Black;
-            this.gunaProgressBar2.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.transicionMenu.SetDecoration(this.gunaProgressBar2, Guna.UI.Animation.DecorationType.None);
-            this.gunaProgressBar2.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaProgressBar2.Location = new System.Drawing.Point(11, 153);
-            this.gunaProgressBar2.Name = "gunaProgressBar2";
-            this.gunaProgressBar2.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar2.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar2.Radius = 5;
-            this.gunaProgressBar2.Size = new System.Drawing.Size(93, 16);
-            this.gunaProgressBar2.TabIndex = 19;
-            // 
-            // gunaGroupBox2
-            // 
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Black;
-            this.gunaGroupBox2.BorderSize = 1;
-            this.gunaGroupBox2.Controls.Add(this.gunaProgressBar1);
-            this.gunaGroupBox2.Controls.Add(this.gunaImageButton2);
-            this.gunaGroupBox2.Controls.Add(this.lblModulo2NivelActual);
-            this.gunaGroupBox2.Controls.Add(this.label15);
-            this.gunaGroupBox2.Controls.Add(this.lblModulo2Porcentaje);
-            this.transicionMenu.SetDecoration(this.gunaGroupBox2, Guna.UI.Animation.DecorationType.None);
-            this.gunaGroupBox2.LineColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(191, 60);
-            this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Radius = 8;
-            this.gunaGroupBox2.Size = new System.Drawing.Size(174, 230);
-            this.gunaGroupBox2.TabIndex = 21;
-            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // lblModulo2Porcentaje
-            // 
-            this.lblModulo2Porcentaje.AutoSize = true;
-            this.lblModulo2Porcentaje.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo2Porcentaje, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo2Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo2Porcentaje.Location = new System.Drawing.Point(110, 147);
-            this.lblModulo2Porcentaje.Name = "lblModulo2Porcentaje";
-            this.lblModulo2Porcentaje.Size = new System.Drawing.Size(71, 25);
-            this.lblModulo2Porcentaje.TabIndex = 4;
-            this.lblModulo2Porcentaje.Text = "100%";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.label15, Guna.UI.Animation.DecorationType.None);
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(5, 91);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(169, 48);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Variables y tipos \r\nde datos";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblModulo2NivelActual
-            // 
-            this.lblModulo2NivelActual.AutoSize = true;
-            this.lblModulo2NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo2NivelActual, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo2NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo2NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblModulo2NivelActual.Location = new System.Drawing.Point(26, 181);
-            this.lblModulo2NivelActual.Name = "lblModulo2NivelActual";
-            this.lblModulo2NivelActual.Size = new System.Drawing.Size(122, 24);
-            this.lblModulo2NivelActual.TabIndex = 17;
-            this.lblModulo2NivelActual.Text = "10/10 Niveles";
-            // 
-            // gunaImageButton2
-            // 
-            this.gunaImageButton2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.transicionMenu.SetDecoration(this.gunaImageButton2, Guna.UI.Animation.DecorationType.None);
-            this.gunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton2.Image = global::DevyClass.Properties.Resources.variable1;
-            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton2.Location = new System.Drawing.Point(47, 6);
-            this.gunaImageButton2.Name = "gunaImageButton2";
-            this.gunaImageButton2.OnHoverImage = null;
-            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton2.Size = new System.Drawing.Size(86, 83);
-            this.gunaImageButton2.TabIndex = 16;
-            // 
-            // gunaProgressBar1
-            // 
-            this.gunaProgressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaProgressBar1.BorderColor = System.Drawing.Color.Black;
-            this.gunaProgressBar1.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.transicionMenu.SetDecoration(this.gunaProgressBar1, Guna.UI.Animation.DecorationType.None);
-            this.gunaProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaProgressBar1.Location = new System.Drawing.Point(11, 153);
-            this.gunaProgressBar1.Name = "gunaProgressBar1";
-            this.gunaProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar1.Radius = 5;
-            this.gunaProgressBar1.Size = new System.Drawing.Size(93, 16);
-            this.gunaProgressBar1.TabIndex = 19;
-            // 
-            // gunaGroupBox3
-            // 
-            this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox3.BorderColor = System.Drawing.Color.Black;
-            this.gunaGroupBox3.BorderSize = 1;
-            this.gunaGroupBox3.Controls.Add(this.gunaImageButton3);
-            this.gunaGroupBox3.Controls.Add(this.lblModulo3NivelActual);
-            this.gunaGroupBox3.Controls.Add(this.label6);
-            this.gunaGroupBox3.Controls.Add(this.lblModulo3Porcentaje);
-            this.gunaGroupBox3.Controls.Add(this.gunaProgressBar3);
-            this.transicionMenu.SetDecoration(this.gunaGroupBox3, Guna.UI.Animation.DecorationType.None);
-            this.gunaGroupBox3.LineColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.Location = new System.Drawing.Point(382, 60);
-            this.gunaGroupBox3.Name = "gunaGroupBox3";
-            this.gunaGroupBox3.Radius = 8;
-            this.gunaGroupBox3.Size = new System.Drawing.Size(174, 230);
-            this.gunaGroupBox3.TabIndex = 22;
-            this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // gunaProgressBar3
-            // 
-            this.gunaProgressBar3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaProgressBar3.BorderColor = System.Drawing.Color.Black;
-            this.gunaProgressBar3.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.transicionMenu.SetDecoration(this.gunaProgressBar3, Guna.UI.Animation.DecorationType.None);
-            this.gunaProgressBar3.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaProgressBar3.Location = new System.Drawing.Point(11, 153);
-            this.gunaProgressBar3.Name = "gunaProgressBar3";
-            this.gunaProgressBar3.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar3.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaProgressBar3.Radius = 5;
-            this.gunaProgressBar3.Size = new System.Drawing.Size(93, 16);
-            this.gunaProgressBar3.TabIndex = 11;
-            // 
-            // lblModulo3Porcentaje
-            // 
-            this.lblModulo3Porcentaje.AutoSize = true;
-            this.lblModulo3Porcentaje.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo3Porcentaje, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo3Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo3Porcentaje.Location = new System.Drawing.Point(110, 147);
-            this.lblModulo3Porcentaje.Name = "lblModulo3Porcentaje";
-            this.lblModulo3Porcentaje.Size = new System.Drawing.Size(59, 24);
-            this.lblModulo3Porcentaje.TabIndex = 4;
-            this.lblModulo3Porcentaje.Text = "100%";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.label6, Guna.UI.Animation.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(17, 91);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 48);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Estructura de \r\ncontrol";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblModulo3NivelActual
-            // 
-            this.lblModulo3NivelActual.AutoSize = true;
-            this.lblModulo3NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo3NivelActual, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo3NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo3NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblModulo3NivelActual.Location = new System.Drawing.Point(26, 181);
-            this.lblModulo3NivelActual.Name = "lblModulo3NivelActual";
-            this.lblModulo3NivelActual.Size = new System.Drawing.Size(122, 24);
-            this.lblModulo3NivelActual.TabIndex = 17;
-            this.lblModulo3NivelActual.Text = "10/10 Niveles";
-            // 
-            // gunaImageButton3
-            // 
-            this.gunaImageButton3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.transicionMenu.SetDecoration(this.gunaImageButton3, Guna.UI.Animation.DecorationType.None);
-            this.gunaImageButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton3.Image = global::DevyClass.Properties.Resources.Estructura;
-            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton3.Location = new System.Drawing.Point(45, 6);
-            this.gunaImageButton3.Name = "gunaImageButton3";
-            this.gunaImageButton3.OnHoverImage = null;
-            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton3.Size = new System.Drawing.Size(86, 83);
-            this.gunaImageButton3.TabIndex = 16;
+            this.label19.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.label19, Guna.UI.Animation.DecorationType.None);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(11, 15);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(108, 25);
+            this.label19.TabIndex = 24;
+            this.label19.Text = "Módulos:";
             // 
             // gunaGroupBox4
             // 
@@ -749,59 +486,6 @@
             this.gunaGroupBox4.TextLocation = new System.Drawing.Point(10, 8);
             this.gunaGroupBox4.Click += new System.EventHandler(this.gunaGroupBox4_Click);
             // 
-            // lblModulo4Porcentaje
-            // 
-            this.lblModulo4Porcentaje.AutoSize = true;
-            this.lblModulo4Porcentaje.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo4Porcentaje, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo4Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo4Porcentaje.Location = new System.Drawing.Point(116, 147);
-            this.lblModulo4Porcentaje.Name = "lblModulo4Porcentaje";
-            this.lblModulo4Porcentaje.Size = new System.Drawing.Size(59, 24);
-            this.lblModulo4Porcentaje.TabIndex = 4;
-            this.lblModulo4Porcentaje.Text = "100%";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.label10, Guna.UI.Animation.DecorationType.None);
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(37, 103);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 24);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Funciones";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblModulo4NivelActual
-            // 
-            this.lblModulo4NivelActual.AutoSize = true;
-            this.lblModulo4NivelActual.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblModulo4NivelActual, Guna.UI.Animation.DecorationType.None);
-            this.lblModulo4NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo4NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblModulo4NivelActual.Location = new System.Drawing.Point(32, 180);
-            this.lblModulo4NivelActual.Name = "lblModulo4NivelActual";
-            this.lblModulo4NivelActual.Size = new System.Drawing.Size(122, 24);
-            this.lblModulo4NivelActual.TabIndex = 17;
-            this.lblModulo4NivelActual.Text = "10/10 Niveles";
-            // 
-            // gunaImageButton4
-            // 
-            this.gunaImageButton4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.transicionMenu.SetDecoration(this.gunaImageButton4, Guna.UI.Animation.DecorationType.None);
-            this.gunaImageButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton4.Image = global::DevyClass.Properties.Resources.Estructura;
-            this.gunaImageButton4.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton4.Location = new System.Drawing.Point(47, 6);
-            this.gunaImageButton4.Name = "gunaImageButton4";
-            this.gunaImageButton4.OnHoverImage = null;
-            this.gunaImageButton4.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton4.Size = new System.Drawing.Size(86, 83);
-            this.gunaImageButton4.TabIndex = 16;
-            // 
             // gunaProgressBar4
             // 
             this.gunaProgressBar4.BackColor = System.Drawing.Color.Transparent;
@@ -817,84 +501,337 @@
             this.gunaProgressBar4.Size = new System.Drawing.Size(93, 16);
             this.gunaProgressBar4.TabIndex = 18;
             // 
-            // label19
+            // gunaImageButton4
             // 
-            this.label19.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.label19, Guna.UI.Animation.DecorationType.None);
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(11, 15);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(108, 25);
-            this.label19.TabIndex = 24;
-            this.label19.Text = "Modulos:";
+            this.gunaImageButton4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.transicionMenu.SetDecoration(this.gunaImageButton4, Guna.UI.Animation.DecorationType.None);
+            this.gunaImageButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton4.Image = global::DevyClass.Properties.Resources.Estructura;
+            this.gunaImageButton4.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton4.Location = new System.Drawing.Point(47, 6);
+            this.gunaImageButton4.Name = "gunaImageButton4";
+            this.gunaImageButton4.OnHoverImage = null;
+            this.gunaImageButton4.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton4.Size = new System.Drawing.Size(86, 83);
+            this.gunaImageButton4.TabIndex = 16;
+            // 
+            // lblModulo4NivelActual
+            // 
+            this.lblModulo4NivelActual.AutoSize = true;
+            this.lblModulo4NivelActual.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo4NivelActual, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo4NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo4NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblModulo4NivelActual.Location = new System.Drawing.Point(32, 180);
+            this.lblModulo4NivelActual.Name = "lblModulo4NivelActual";
+            this.lblModulo4NivelActual.Size = new System.Drawing.Size(122, 24);
+            this.lblModulo4NivelActual.TabIndex = 17;
+            this.lblModulo4NivelActual.Text = "10/10 Niveles";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.label10, Guna.UI.Animation.DecorationType.None);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(37, 103);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 24);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Funciones";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblModulo4Porcentaje
+            // 
+            this.lblModulo4Porcentaje.AutoSize = true;
+            this.lblModulo4Porcentaje.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo4Porcentaje, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo4Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo4Porcentaje.Location = new System.Drawing.Point(116, 147);
+            this.lblModulo4Porcentaje.Name = "lblModulo4Porcentaje";
+            this.lblModulo4Porcentaje.Size = new System.Drawing.Size(59, 24);
+            this.lblModulo4Porcentaje.TabIndex = 4;
+            this.lblModulo4Porcentaje.Text = "100%";
+            // 
+            // gunaGroupBox3
+            // 
+            this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox3.BorderColor = System.Drawing.Color.Black;
+            this.gunaGroupBox3.BorderSize = 1;
+            this.gunaGroupBox3.Controls.Add(this.gunaImageButton3);
+            this.gunaGroupBox3.Controls.Add(this.lblModulo3NivelActual);
+            this.gunaGroupBox3.Controls.Add(this.label6);
+            this.gunaGroupBox3.Controls.Add(this.lblModulo3Porcentaje);
+            this.gunaGroupBox3.Controls.Add(this.gunaProgressBar3);
+            this.transicionMenu.SetDecoration(this.gunaGroupBox3, Guna.UI.Animation.DecorationType.None);
+            this.gunaGroupBox3.LineColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox3.Location = new System.Drawing.Point(382, 60);
+            this.gunaGroupBox3.Name = "gunaGroupBox3";
+            this.gunaGroupBox3.Radius = 8;
+            this.gunaGroupBox3.Size = new System.Drawing.Size(174, 230);
+            this.gunaGroupBox3.TabIndex = 22;
+            this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // gunaImageButton3
+            // 
+            this.gunaImageButton3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.transicionMenu.SetDecoration(this.gunaImageButton3, Guna.UI.Animation.DecorationType.None);
+            this.gunaImageButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton3.Image = global::DevyClass.Properties.Resources.Estructura;
+            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton3.Location = new System.Drawing.Point(45, 6);
+            this.gunaImageButton3.Name = "gunaImageButton3";
+            this.gunaImageButton3.OnHoverImage = null;
+            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton3.Size = new System.Drawing.Size(86, 83);
+            this.gunaImageButton3.TabIndex = 16;
+            // 
+            // lblModulo3NivelActual
+            // 
+            this.lblModulo3NivelActual.AutoSize = true;
+            this.lblModulo3NivelActual.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo3NivelActual, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo3NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo3NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblModulo3NivelActual.Location = new System.Drawing.Point(26, 181);
+            this.lblModulo3NivelActual.Name = "lblModulo3NivelActual";
+            this.lblModulo3NivelActual.Size = new System.Drawing.Size(122, 24);
+            this.lblModulo3NivelActual.TabIndex = 17;
+            this.lblModulo3NivelActual.Text = "10/10 Niveles";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.label6, Guna.UI.Animation.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(17, 91);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 48);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Estructura de \r\ncontrol";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblModulo3Porcentaje
+            // 
+            this.lblModulo3Porcentaje.AutoSize = true;
+            this.lblModulo3Porcentaje.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo3Porcentaje, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo3Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo3Porcentaje.Location = new System.Drawing.Point(110, 147);
+            this.lblModulo3Porcentaje.Name = "lblModulo3Porcentaje";
+            this.lblModulo3Porcentaje.Size = new System.Drawing.Size(59, 24);
+            this.lblModulo3Porcentaje.TabIndex = 4;
+            this.lblModulo3Porcentaje.Text = "100%";
+            // 
+            // gunaProgressBar3
+            // 
+            this.gunaProgressBar3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaProgressBar3.BorderColor = System.Drawing.Color.Black;
+            this.gunaProgressBar3.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
+            this.transicionMenu.SetDecoration(this.gunaProgressBar3, Guna.UI.Animation.DecorationType.None);
+            this.gunaProgressBar3.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaProgressBar3.Location = new System.Drawing.Point(11, 153);
+            this.gunaProgressBar3.Name = "gunaProgressBar3";
+            this.gunaProgressBar3.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar3.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar3.Radius = 5;
+            this.gunaProgressBar3.Size = new System.Drawing.Size(93, 16);
+            this.gunaProgressBar3.TabIndex = 11;
+            // 
+            // gunaGroupBox2
+            // 
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Black;
+            this.gunaGroupBox2.BorderSize = 1;
+            this.gunaGroupBox2.Controls.Add(this.gunaProgressBar1);
+            this.gunaGroupBox2.Controls.Add(this.gunaImageButton2);
+            this.gunaGroupBox2.Controls.Add(this.lblModulo2NivelActual);
+            this.gunaGroupBox2.Controls.Add(this.label15);
+            this.gunaGroupBox2.Controls.Add(this.lblModulo2Porcentaje);
+            this.transicionMenu.SetDecoration(this.gunaGroupBox2, Guna.UI.Animation.DecorationType.None);
+            this.gunaGroupBox2.LineColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.Location = new System.Drawing.Point(191, 60);
+            this.gunaGroupBox2.Name = "gunaGroupBox2";
+            this.gunaGroupBox2.Radius = 8;
+            this.gunaGroupBox2.Size = new System.Drawing.Size(174, 230);
+            this.gunaGroupBox2.TabIndex = 21;
+            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // gunaProgressBar1
+            // 
+            this.gunaProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaProgressBar1.BorderColor = System.Drawing.Color.Black;
+            this.gunaProgressBar1.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
+            this.transicionMenu.SetDecoration(this.gunaProgressBar1, Guna.UI.Animation.DecorationType.None);
+            this.gunaProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaProgressBar1.Location = new System.Drawing.Point(11, 153);
+            this.gunaProgressBar1.Name = "gunaProgressBar1";
+            this.gunaProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar1.Radius = 5;
+            this.gunaProgressBar1.Size = new System.Drawing.Size(93, 16);
+            this.gunaProgressBar1.TabIndex = 19;
+            // 
+            // gunaImageButton2
+            // 
+            this.gunaImageButton2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.transicionMenu.SetDecoration(this.gunaImageButton2, Guna.UI.Animation.DecorationType.None);
+            this.gunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton2.Image = global::DevyClass.Properties.Resources.variable1;
+            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton2.Location = new System.Drawing.Point(47, 6);
+            this.gunaImageButton2.Name = "gunaImageButton2";
+            this.gunaImageButton2.OnHoverImage = null;
+            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton2.Size = new System.Drawing.Size(86, 83);
+            this.gunaImageButton2.TabIndex = 16;
+            // 
+            // lblModulo2NivelActual
+            // 
+            this.lblModulo2NivelActual.AutoSize = true;
+            this.lblModulo2NivelActual.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo2NivelActual, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo2NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo2NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblModulo2NivelActual.Location = new System.Drawing.Point(26, 181);
+            this.lblModulo2NivelActual.Name = "lblModulo2NivelActual";
+            this.lblModulo2NivelActual.Size = new System.Drawing.Size(122, 24);
+            this.lblModulo2NivelActual.TabIndex = 17;
+            this.lblModulo2NivelActual.Text = "10/10 Niveles";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.label15, Guna.UI.Animation.DecorationType.None);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(5, 91);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(169, 48);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Variables y tipos \r\nde datos";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblModulo2Porcentaje
+            // 
+            this.lblModulo2Porcentaje.AutoSize = true;
+            this.lblModulo2Porcentaje.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo2Porcentaje, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo2Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo2Porcentaje.Location = new System.Drawing.Point(110, 147);
+            this.lblModulo2Porcentaje.Name = "lblModulo2Porcentaje";
+            this.lblModulo2Porcentaje.Size = new System.Drawing.Size(71, 25);
+            this.lblModulo2Porcentaje.TabIndex = 4;
+            this.lblModulo2Porcentaje.Text = "100%";
+            // 
+            // gunaGroupBox1
+            // 
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.Black;
+            this.gunaGroupBox1.BorderSize = 1;
+            this.gunaGroupBox1.Controls.Add(this.label3);
+            this.gunaGroupBox1.Controls.Add(this.gunaProgressBar2);
+            this.gunaGroupBox1.Controls.Add(this.gunaImageButton1);
+            this.gunaGroupBox1.Controls.Add(this.lblModulo1NivelActual);
+            this.gunaGroupBox1.Controls.Add(this.lblModulo1Porcentaje);
+            this.gunaGroupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transicionMenu.SetDecoration(this.gunaGroupBox1, Guna.UI.Animation.DecorationType.None);
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(11, 60);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Radius = 8;
+            this.gunaGroupBox1.Size = new System.Drawing.Size(174, 230);
+            this.gunaGroupBox1.TabIndex = 20;
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            this.gunaGroupBox1.Click += new System.EventHandler(this.gunaGroupBox1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.label3, Guna.UI.Animation.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(51, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 29);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Inicio";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gunaProgressBar2
+            // 
+            this.gunaProgressBar2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaProgressBar2.BorderColor = System.Drawing.Color.Black;
+            this.gunaProgressBar2.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
+            this.transicionMenu.SetDecoration(this.gunaProgressBar2, Guna.UI.Animation.DecorationType.None);
+            this.gunaProgressBar2.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaProgressBar2.Location = new System.Drawing.Point(11, 153);
+            this.gunaProgressBar2.Name = "gunaProgressBar2";
+            this.gunaProgressBar2.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar2.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaProgressBar2.Radius = 5;
+            this.gunaProgressBar2.Size = new System.Drawing.Size(93, 16);
+            this.gunaProgressBar2.TabIndex = 19;
+            // 
+            // gunaImageButton1
+            // 
+            this.gunaImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transicionMenu.SetDecoration(this.gunaImageButton1, Guna.UI.Animation.DecorationType.None);
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::DevyClass.Properties.Resources.Cerebro;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(41, 6);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(86, 83);
+            this.gunaImageButton1.TabIndex = 16;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
+            // 
+            // lblModulo1NivelActual
+            // 
+            this.lblModulo1NivelActual.AutoSize = true;
+            this.lblModulo1NivelActual.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo1NivelActual, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo1NivelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo1NivelActual.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblModulo1NivelActual.Location = new System.Drawing.Point(24, 181);
+            this.lblModulo1NivelActual.Name = "lblModulo1NivelActual";
+            this.lblModulo1NivelActual.Size = new System.Drawing.Size(122, 24);
+            this.lblModulo1NivelActual.TabIndex = 17;
+            this.lblModulo1NivelActual.Text = "10/10 Niveles";
+            // 
+            // lblModulo1Porcentaje
+            // 
+            this.lblModulo1Porcentaje.AutoSize = true;
+            this.lblModulo1Porcentaje.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblModulo1Porcentaje, Guna.UI.Animation.DecorationType.None);
+            this.lblModulo1Porcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModulo1Porcentaje.Location = new System.Drawing.Point(104, 147);
+            this.lblModulo1Porcentaje.Name = "lblModulo1Porcentaje";
+            this.lblModulo1Porcentaje.Size = new System.Drawing.Size(59, 24);
+            this.lblModulo1Porcentaje.TabIndex = 4;
+            this.lblModulo1Porcentaje.Text = "100%";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.gunaButton1);
             this.panel4.Controls.Add(this.lblFraseMotivadora);
             this.panel4.Controls.Add(this.lblBienvenida);
-            this.panel4.Controls.Add(this.btnSalir);
             this.transicionMenu.SetDecoration(this.panel4, Guna.UI.Animation.DecorationType.None);
             this.panel4.Location = new System.Drawing.Point(-1, -1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1093, 117);
             this.panel4.TabIndex = 14;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.AnimationHoverSpeed = 0.07F;
-            this.btnSalir.AnimationSpeed = 0.03F;
-            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
-            this.btnSalir.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.BorderColor = System.Drawing.Color.Black;
-            this.btnSalir.BorderSize = 1;
-            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.transicionMenu.SetDecoration(this.btnSalir, Guna.UI.Animation.DecorationType.None);
-            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSalir.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Image = global::DevyClass.Properties.Resources.cancelar;
-            this.btnSalir.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSalir.Location = new System.Drawing.Point(1053, 4);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnSalir.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSalir.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSalir.OnHoverImage = null;
-            this.btnSalir.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSalir.Radius = 8;
-            this.btnSalir.Size = new System.Drawing.Size(37, 35);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "-";
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // lblBienvenida
-            // 
-            this.lblBienvenida.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.lblBienvenida, Guna.UI.Animation.DecorationType.None);
-            this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.Location = new System.Drawing.Point(25, 23);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(421, 33);
-            this.lblBienvenida.TabIndex = 4;
-            this.lblBienvenida.Text = "!Hola \"nombre\" Bienvenido👋";
-            this.lblBienvenida.Click += new System.EventHandler(this.label29_Click);
-            // 
-            // lblFraseMotivadora
-            // 
-            this.lblFraseMotivadora.AutoSize = true;
-            this.lblFraseMotivadora.BackColor = System.Drawing.Color.Transparent;
-            this.transicionMenu.SetDecoration(this.lblFraseMotivadora, Guna.UI.Animation.DecorationType.None);
-            this.lblFraseMotivadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFraseMotivadora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFraseMotivadora.Location = new System.Drawing.Point(29, 64);
-            this.lblFraseMotivadora.Name = "lblFraseMotivadora";
-            this.lblFraseMotivadora.Size = new System.Drawing.Size(274, 18);
-            this.lblFraseMotivadora.TabIndex = 4;
-            this.lblFraseMotivadora.Text = "Sigue aprendiendo y consigue tus metas";
             // 
             // gunaButton1
             // 
@@ -925,6 +862,31 @@
             this.gunaButton1.Text = "Opciones de Admin";
             this.gunaButton1.Visible = false;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
+            // 
+            // lblFraseMotivadora
+            // 
+            this.lblFraseMotivadora.AutoSize = true;
+            this.lblFraseMotivadora.BackColor = System.Drawing.Color.Transparent;
+            this.transicionMenu.SetDecoration(this.lblFraseMotivadora, Guna.UI.Animation.DecorationType.None);
+            this.lblFraseMotivadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFraseMotivadora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblFraseMotivadora.Location = new System.Drawing.Point(29, 64);
+            this.lblFraseMotivadora.Name = "lblFraseMotivadora";
+            this.lblFraseMotivadora.Size = new System.Drawing.Size(274, 18);
+            this.lblFraseMotivadora.TabIndex = 4;
+            this.lblFraseMotivadora.Text = "Sigue aprendiendo y consigue tus metas";
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.lblBienvenida, Guna.UI.Animation.DecorationType.None);
+            this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.Location = new System.Drawing.Point(25, 23);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(421, 33);
+            this.lblBienvenida.TabIndex = 4;
+            this.lblBienvenida.Text = "!Hola \"nombre\" Bienvenido👋";
+            this.lblBienvenida.Click += new System.EventHandler(this.label29_Click);
             // 
             // elCalendar1
             // 
@@ -966,17 +928,28 @@
             this.panel6.Size = new System.Drawing.Size(304, 316);
             this.panel6.TabIndex = 14;
             // 
-            // label17
+            // pictureBox3
             // 
-            this.label17.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.label17, Guna.UI.Animation.DecorationType.None);
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 14);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(184, 50);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Experiencia por \r\nnivel:";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
+            this.transicionMenu.SetDecoration(this.pictureBox3, Guna.UI.Animation.DecorationType.None);
+            this.pictureBox3.Image = global::DevyClass.Properties.Resources.Devy_saludando;
+            this.pictureBox3.Location = new System.Drawing.Point(180, 182);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(120, 130);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblExperiencia
+            // 
+            this.lblExperiencia.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.lblExperiencia, Guna.UI.Animation.DecorationType.None);
+            this.lblExperiencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExperiencia.Location = new System.Drawing.Point(115, 60);
+            this.lblExperiencia.Name = "lblExperiencia";
+            this.lblExperiencia.Size = new System.Drawing.Size(69, 29);
+            this.lblExperiencia.TabIndex = 4;
+            this.lblExperiencia.Text = "0 XP";
             // 
             // label12
             // 
@@ -991,28 +964,17 @@
             this.label12.TabIndex = 3;
             this.label12.Text = "!Sigue asi, \r\nlo estas haciendo\r\ngenial¡\r\n";
             // 
-            // lblExperiencia
+            // label17
             // 
-            this.lblExperiencia.AutoSize = true;
-            this.transicionMenu.SetDecoration(this.lblExperiencia, Guna.UI.Animation.DecorationType.None);
-            this.lblExperiencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExperiencia.Location = new System.Drawing.Point(115, 60);
-            this.lblExperiencia.Name = "lblExperiencia";
-            this.lblExperiencia.Size = new System.Drawing.Size(69, 29);
-            this.lblExperiencia.TabIndex = 4;
-            this.lblExperiencia.Text = "0 XP";
-            // 
-            // pictureBox3
-            // 
-            this.transicionMenu.SetDecoration(this.pictureBox3, Guna.UI.Animation.DecorationType.None);
-            this.pictureBox3.Image = global::DevyClass.Properties.Resources.Devy_saludando;
-            this.pictureBox3.Location = new System.Drawing.Point(180, 182);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
+            this.label17.AutoSize = true;
+            this.transicionMenu.SetDecoration(this.label17, Guna.UI.Animation.DecorationType.None);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(20, 14);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(184, 50);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Experiencia por \r\nnivel:";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // panel2
             // 
@@ -1038,11 +1000,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 692);
-            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.transicionMenu.SetDecoration(this, Guna.UI.Animation.DecorationType.None);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UI_MenuPrincipal";
@@ -1063,14 +1023,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.gunaGroupBox1.ResumeLayout(false);
-            this.gunaGroupBox1.PerformLayout();
-            this.gunaGroupBox2.ResumeLayout(false);
-            this.gunaGroupBox2.PerformLayout();
-            this.gunaGroupBox3.ResumeLayout(false);
-            this.gunaGroupBox3.PerformLayout();
             this.gunaGroupBox4.ResumeLayout(false);
             this.gunaGroupBox4.PerformLayout();
+            this.gunaGroupBox3.ResumeLayout(false);
+            this.gunaGroupBox3.PerformLayout();
+            this.gunaGroupBox2.ResumeLayout(false);
+            this.gunaGroupBox2.PerformLayout();
+            this.gunaGroupBox1.ResumeLayout(false);
+            this.gunaGroupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.elCalendar1)).EndInit();
@@ -1092,7 +1052,6 @@
         private Guna.UI.WinForms.GunaTransition transicionMenu;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem labelToolStripMenuItem;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI.WinForms.GunaButton gunaButton6;
         private Guna.UI.WinForms.GunaButton gunaButton7;
         private Guna.UI.WinForms.GunaButton gunaButton8;
@@ -1108,7 +1067,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.Label lblFraseMotivadora;
         private System.Windows.Forms.Label lblBienvenida;
-        private Guna.UI.WinForms.GunaButton btnSalir;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label19;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox4;
@@ -1133,7 +1091,6 @@
         private Guna.UI.WinForms.GunaProgressBar gunaProgressBar2;
         private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
         private System.Windows.Forms.Label lblModulo1NivelActual;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblModulo1Porcentaje;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -1144,6 +1101,7 @@
         private System.Windows.Forms.Label lblPorcentajeNiveles;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

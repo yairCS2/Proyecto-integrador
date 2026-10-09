@@ -30,6 +30,24 @@ namespace DevyClass
             OjoContrasenia.Image = Properties.Resources.ojo_cerrado;
             rdbUsuarioNromal.Checked = true; // Por defecto el tipo seleccionado es "usuario normal".
             dateTimePicker1.Format = DateTimePickerFormat.Short;
+            // La tecla Enter activa el boton "Agregar" (mejor accesibilidad).
+            this.AcceptButton = btnregistro;
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+        }
+
+        /// <summary> Escala el diseno (panel1 tenia Dock=Fill) y lo centra en pantalla. </summary>
+        private void PrepararEstilo()
+        {
+            Tema.Titulo(lbtitulo);
+            this.PerformLayout();
+
+            Tema.Escalar(panel1, 1.4F);
+            Tema.Aplicar(this, panel1, "DevyClass - Agregar usuario");
+
+            Tema.Boton(btnregistro, Tema.Rol.Primario);
+            OjoContrasenia.BringToFront();
         }
 
         // Genera una contrasena aleatoria que cumple los requisitos (letra, numero y especial).
@@ -65,8 +83,8 @@ namespace DevyClass
         private void btnSalir_Click(object sender, EventArgs e)
         {
             UI_Administrador accederF1 = new UI_Administrador(UsuarioActual);
-            this.Close();
-            accederF1.ShowDialog();
+            accederF1.Show();   // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -78,8 +96,8 @@ namespace DevyClass
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             UI_Administrador a = new UI_Administrador(UsuarioActual);
-            this.Close();
-            a.Show();
+            a.Show();           // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
         }
 
         private void rdbUsuarioNromal_CheckedChanged(object sender, EventArgs e)
@@ -143,7 +161,20 @@ namespace DevyClass
 
             //Insertamos a la base de datos 
             int tipo = rbAdministrador.Checked ? 1 : 2; // 1 = Admin, 2 = Normal (segun el radio seleccionado).
-            int nivel = int.Parse(txtNivelInicial.Text.Trim()); // Nivel en el que empezara el usuario.
+
+            // Nivel en el que empezara el usuario. Se valida con TryParse para que no
+            // reviente con FormatException si escriben letras (el try de abajo no lo cubria).
+            if (!int.TryParse(txtNivelInicial.Text.Trim(), out int nivel))
+            {
+                MessageBox.Show("El nivel inicial debe ser un número (0 = sin niveles completados).", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (nivel < 0 || nivel > 50)
+            {
+                MessageBox.Show("El nivel inicial debe estar entre 0 y 50.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             try
             {

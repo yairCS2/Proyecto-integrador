@@ -56,7 +56,7 @@
             this.gunaButton1.ImageSize = new System.Drawing.Size(40, 40);
             this.gunaButton1.Location = new System.Drawing.Point(296, 83);
             this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.LightCoral;
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.LightSteelBlue;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverImage = null;
@@ -89,7 +89,7 @@
             this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
             this.gunaButton8.Location = new System.Drawing.Point(67, 83);
             this.gunaButton8.Name = "gunaButton8";
-            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.LightCoral;
+            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.LightSteelBlue;
             this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton8.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunaButton8.OnHoverImage = null;

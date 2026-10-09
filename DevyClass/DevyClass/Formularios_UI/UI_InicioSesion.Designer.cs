@@ -94,12 +94,12 @@
             // 
             this.lbtituloseguridad.AutoSize = true;
             this.lbtituloseguridad.BackColor = System.Drawing.Color.LightBlue;
-            this.lbtituloseguridad.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtituloseguridad.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.lbtituloseguridad.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbtituloseguridad.Location = new System.Drawing.Point(77, 0);
             this.lbtituloseguridad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtituloseguridad.Name = "lbtituloseguridad";
-            this.lbtituloseguridad.Size = new System.Drawing.Size(167, 15);
+            this.lbtituloseguridad.Size = new System.Drawing.Size(137, 12);
             this.lbtituloseguridad.TabIndex = 1;
             this.lbtituloseguridad.Text = "Tu informacion esta protegida";
             // 
@@ -145,7 +145,7 @@
             this.btninicia.Name = "btninicia";
             this.btninicia.Size = new System.Drawing.Size(217, 32);
             this.btninicia.TabIndex = 32;
-            this.btninicia.Text = "Inicia Sesion";
+            this.btninicia.Text = "Iniciar sesión";
             this.btninicia.UseVisualStyleBackColor = false;
             this.btninicia.Click += new System.EventHandler(this.btninicia_Click);
             // 
@@ -217,9 +217,9 @@
             this.lbtitulo.Location = new System.Drawing.Point(178, 45);
             this.lbtitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbtitulo.Name = "lbtitulo";
-            this.lbtitulo.Size = new System.Drawing.Size(158, 41);
+            this.lbtitulo.Size = new System.Drawing.Size(166, 41);
             this.lbtitulo.TabIndex = 22;
-            this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Text = "DevyClass";
             this.lbtitulo.Click += new System.EventHandler(this.lbtitulo_Click);
             // 
             // linkLabel1

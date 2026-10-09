@@ -168,7 +168,6 @@
             this.domainUpDown3.Items.Add("1");
             this.domainUpDown3.Items.Add("2");
             this.domainUpDown3.Items.Add("3");
-            this.domainUpDown3.Items.Add("4");
             this.domainUpDown3.Location = new System.Drawing.Point(24, 221);
             this.domainUpDown3.Name = "domainUpDown3";
             this.domainUpDown3.Size = new System.Drawing.Size(52, 31);

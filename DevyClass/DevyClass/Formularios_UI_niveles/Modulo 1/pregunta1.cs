@@ -15,35 +15,57 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
     // El usuario elige una de las opciones y esa eleccion se guarda en Nivel1RepuestasCorrectas.
     public partial class pregunta1 : UserControl
     {
+        // Colores antiguos de las opciones (ahora los maneja Tema.Opcion /
+        // Tema.OpcionElegida: tarjeta blanca y seleccion en azul claro).
 
         private Nivel1RepuestasCorrectas UsuarioPregunta; // Estado compartido del nivel.
         bool PreguntaActivada = false; // Evita que se cuente mas de una vez la respuesta correcta.
+
         public pregunta1(Nivel1RepuestasCorrectas usuario)
         {
             InitializeComponent();
             UsuarioPregunta = usuario;
 
-            // Si el usuario ya habia elegido una opcion antes, se pinta de negro para que se vea seleccionada.
-            switch (usuario.Pregunta1Res)
-            {
-                case 1:
-                    gunaButton3.BackColor = Color.Black;
-                    PreguntaActivada = true;
-                    break;
-                case 2:
-                    gunaButton2.BackColor = Color.Black;
-                    PreguntaActivada = true;
-                    break;
-                case 3:
-                    gunaButton8.BackColor = Color.Black;
-                    PreguntaActivada = true;
-                    break;
-                default:
-                    break;
-            }
+            // Fase 2: estilo Duolingo (mismo escalado que Nivel1 para llenar el panel).
+            PrepararEstilo();
+
+            // Si el usuario ya habia elegido una opcion antes, se resalta para que se vea seleccionada.
+            if (usuario.Pregunta1Res == 2) PreguntaActivada = true;
+            PintarSeleccion();
         }
 
+        /// <summary>
+        /// Corrige los acentos, agranda el diseno al tamano del panel de Nivel1
+        /// y convierte las tres respuestas en tarjetas tipo Duolingo.
+        /// </summary>
+        private void PrepararEstilo()
+        {
+            label2.Text = "Ejercicio 1 · Opción múltiple";
+            label1.Text = "¿Cuál de estas opciones describe mejor un algoritmo?";
+            this.BackColor = Tema.Blanco;
 
+            Tema.Titulo(label1, 13F);   // la pregunta
+            Tema.Titulo(label2, 11F);   // el rotulo del ejercicio
+
+            this.PerformLayout();
+
+            // Mismo factor que Nivel1 (1.7): el control llena panelPregunta.
+            Tema.EscalarHijos(this, 1.7F);
+            Tema.EstilizarRaiz(this);
+
+            Tema.Opcion(gunaButton2);   // "Un tipo de dato"
+            Tema.Opcion(gunaButton3);   // "Una secuencia ordenada de pasos..."
+            Tema.Opcion(gunaButton8);   // "Un lenguaje de programacion"
+        }
+
+        // Pinta las tres opciones: la elegida se marca con azul claro y las demas
+        // quedan como tarjeta blanca con borde (antes: azules solidos en los dos casos).
+        private void PintarSeleccion()
+        {
+            Tema.OpcionElegida(gunaButton8, UsuarioPregunta.Pregunta1Res == 1);
+            Tema.OpcionElegida(gunaButton3, UsuarioPregunta.Pregunta1Res == 2);
+            Tema.OpcionElegida(gunaButton2, UsuarioPregunta.Pregunta1Res == 3);
+        }
 
         private void pregunta1_Load(object sender, EventArgs e)
         {
@@ -58,9 +80,12 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
         private void gunaButton8_Click(object sender, EventArgs e)
         {
             UsuarioPregunta.Pregunta1Res = 1;
+            PintarSeleccion();
         }
 
         // Opcion 2 (la correcta): guarda la eleccion y suma una respuesta correcta la primera vez.
+        // OJO: el total de aciertos se recalcula en Ganaste a partir de las tres respuestas,
+        // este contador solo se mantiene por compatibilidad.
         private void gunaButton3_Click(object sender, EventArgs e)
         {
             UsuarioPregunta.Pregunta1Res = 2;
@@ -69,13 +94,14 @@ namespace DevyClass.Formularios_UI_niveles.Modulo_1
                 UsuarioPregunta.RespuestasCorrectas++; // Aumenta el contador de aciertos.
                 PreguntaActivada = true; // Marca que ya se conto (asi no cuenta dos veces).
             }
-            
+            PintarSeleccion();
         }
 
         // Opcion 3 (incorrecta): solo guarda la eleccion del usuario.
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             UsuarioPregunta.Pregunta1Res = 3;
+            PintarSeleccion();
         }
     }
 }

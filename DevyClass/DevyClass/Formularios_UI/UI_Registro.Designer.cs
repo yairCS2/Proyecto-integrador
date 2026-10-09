@@ -199,7 +199,7 @@
             this.lbcorreo.Name = "lbcorreo";
             this.lbcorreo.Size = new System.Drawing.Size(125, 19);
             this.lbcorreo.TabIndex = 28;
-            this.lbcorreo.Text = "Correo electronico";
+            this.lbcorreo.Text = "Correo electrónico";
             // 
             // lbusuario
             // 
@@ -243,7 +243,7 @@
             this.lbtitulo.Name = "lbtitulo";
             this.lbtitulo.Size = new System.Drawing.Size(158, 41);
             this.lbtitulo.TabIndex = 53;
-            this.lbtitulo.Text = "DeviClass";
+            this.lbtitulo.Text = "DevyClass";
             // 
             // pictureBox1
             // 

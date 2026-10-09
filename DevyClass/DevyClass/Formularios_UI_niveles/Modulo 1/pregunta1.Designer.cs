@@ -57,7 +57,7 @@
             this.gunaButton2.ImageSize = new System.Drawing.Size(40, 40);
             this.gunaButton2.Location = new System.Drawing.Point(215, 213);
             this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.LightCoral;
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.LightSteelBlue;
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverImage = null;
@@ -90,7 +90,7 @@
             this.gunaButton3.ImageSize = new System.Drawing.Size(40, 40);
             this.gunaButton3.Location = new System.Drawing.Point(215, 147);
             this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.LightCoral;
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.LightSteelBlue;
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton3.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunaButton3.OnHoverImage = null;
@@ -123,7 +123,7 @@
             this.gunaButton8.ImageSize = new System.Drawing.Size(40, 40);
             this.gunaButton8.Location = new System.Drawing.Point(215, 82);
             this.gunaButton8.Name = "gunaButton8";
-            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.LightCoral;
+            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.LightSteelBlue;
             this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton8.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunaButton8.OnHoverImage = null;
@@ -156,7 +156,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(274, 24);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Ejercicio 1 · Opcion multiple";
+            this.label2.Text = "Ejercicio 1 · Opción múltiple";
             // 
             // pictureBox1
             // 

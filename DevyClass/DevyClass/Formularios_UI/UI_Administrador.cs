@@ -26,6 +26,23 @@ namespace DevyClass
             InitializeComponent();
             UsuarioActual = usuario;
             CargarUsuarios(); // Llena la tabla con los usuarios al abrir el formulario.
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+        }
+
+        /// <summary>
+        /// Estilo general. Aqui no se centra el contenido: los paneles tienen Dock
+        /// (barra lateral + area de tabla) y por si solos llenan la pantalla completa.
+        /// </summary>
+        private void PrepararEstilo()
+        {
+            Tema.Aplicar(this, null, "DevyClass - Administración", centrar: false);
+
+            Tema.Boton(button2, Tema.Rol.Primario);            // Agregar Usuario
+            Tema.Boton(button1, Tema.Rol.Peligroso);           // Eliminar Usuario
+            Tema.Boton(btnGestionarNiveles, Tema.Rol.Secundario);
+            Tema.Boton(gunaButton1, Tema.Rol.ContornoPeligroso); // Salir de admin
         }
 
         // Carga todos los usuarios de la base de datos y los muestra en el DataGridView.
@@ -59,11 +76,6 @@ namespace DevyClass
             }
         }
 
-        private void UI_Administrador_Load(object sender, EventArgs e)
-        {
-
-
-        }
         // Muestra un panel y oculta los otros (navegacion entre vistas del form).
         private void MostrarPanel(Panel panel)
         {
@@ -73,20 +85,11 @@ namespace DevyClass
             panel.Visible = true;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void UI_Administrador_Load(object sender, EventArgs e)
         {
-            MostrarPanel(panelBienvenida); // Al abrir, se muestra el panel de bienvenida.
-        }
-
-        // Boton "Salir": cierra el formulario del administrador.
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        // Boton "Gestionar usuarios": cambia al panel de gestion de usuarios.
-        private void btnGestionarUsuarios_Click(object sender, EventArgs e)
-        {
+            // Al abrir se muestra directamente la vista de gestion (busqueda + tabla de
+            // usuarios). Antes los dos paneles quedaban visibles al mismo tiempo porque
+            // los dos tienen Dock=Fill y este Load no hacia nada.
             MostrarPanel(panelGestionarUsuarios);
         }
 
@@ -98,35 +101,12 @@ namespace DevyClass
             gestionarNiveles.Show();
         }
 
-        // Boton "Agregar usuario": abre el formulario para crear un usuario nuevo.
-        private void btnAgregarUsuario_Click(object sender, EventArgs e)
-        {
-            UI_AgregarUsuario adduser = new UI_AgregarUsuario(UsuarioActual);
-            adduser.Show();
-        }
-
-     
+        // Boton "Salir de admin": regresa al menu principal.
+        // Antes creaba un UI_MenuPrincipal nuevo sin mostrarlo, con lo que la ventana
+        // desaparecia y la app quedaba viva sin ninguna ventana visible.
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal(UsuarioActual);
-            this.Close();
-
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            UI_MenuPrincipal accederF1 = new UI_MenuPrincipal();
-            this.Close();
-            accederF1.Close();
-        }
-
-        private void btnAgregarUsuario_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnSalir_Click_1(object sender, EventArgs e)
-        {
+            UI_MenuPrincipal.AbrirMenu(UsuarioActual);
             this.Close();
         }
 
@@ -147,16 +127,16 @@ namespace DevyClass
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             UI_EliminarUsuario eliminar = new UI_EliminarUsuario(UsuarioActual);
-            this.Close();
-            eliminar.Show();
+            eliminar.Show();    // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
         }
 
         // Boton "Eliminar usuario": abre el formulario para eliminar usuarios.
         private void button1_Click(object sender, EventArgs e)
         {
             UI_EliminarUsuario eliminar = new UI_EliminarUsuario(UsuarioActual);
-            this.Close();
-            eliminar.Show();
+            eliminar.Show();    // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
         }
 
         // Icono "Agregar usuario": abre el formulario para agregar usuarios.

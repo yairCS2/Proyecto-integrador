@@ -24,6 +24,21 @@ namespace DevyClass.Formularios_UI
             InitializeComponent();
             CargarUsuarios(); // Llena la tabla al abrir.
             UsuarioActual = usuario;
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+        }
+
+        /// <summary> Escala el bloque de contenido y lo centra en pantalla. </summary>
+        private void PrepararEstilo()
+        {
+            Tema.Titulo(lbtitulo);
+            this.PerformLayout();
+
+            Tema.EscalarHijos(this, 1.3F);
+            Tema.Aplicar(this, null, "DevyClass - Eliminar usuario");
+
+            Tema.Boton(gunaButton1, Tema.Rol.Peligroso); // Eliminar Usuario
         }
 
         // Carga todos los usuarios de la base de datos en el DataGridView.

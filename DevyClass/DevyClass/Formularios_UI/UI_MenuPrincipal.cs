@@ -57,7 +57,47 @@ namespace DevyClass
         {
             InitializeComponent();
             UsuarioActual = usuario;
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+
             RefrescarUI();
+        }
+
+        /// <summary>
+        /// Aplica el tema una sola vez al abrir el menu: agranda el diseno original
+        /// (1364x692) al tamano de la pantalla, lo centra y pinta botones/colores.
+        /// </summary>
+        private void PrepararEstilo()
+        {
+
+            // Colores: la barra lateral era azul CornflowerBlue y el contenido gris
+            // del sistema. Ahora: barra lateral blanca, cabecera blanca y contenido
+            // gris muy claro, para que las tarjetas y botones blancos resalten.
+            panel1.BackColor = Tema.Blanco;
+            panel2.BackColor = Tema.FondoGris;
+            panel4.BackColor = Tema.Blanco;
+
+            this.PerformLayout();
+
+            // El diseno original es pequeño para un monitor grande.
+            Tema.EscalarHijos(this, 1.3F);
+
+            // panel1 (barra lateral) y panel2 (contenido) se mueven juntos con la misma
+            // distancia, asi el bloque queda centrado sin descuadrar nada.
+            Tema.Aplicar(this, null, "DevyClass - Menú principal");
+
+            Tema.Boton(gunaButton3, Tema.Rol.Primario);            // Continuar
+            Tema.Boton(gunaButton6, Tema.Rol.Fantasma);            // Inicio
+            Tema.Boton(gunaButton8, Tema.Rol.Fantasma);            // usuario
+            Tema.Boton(gunaButton7, Tema.Rol.ContornoPeligroso);   // Cerrar sesión
+            Tema.Boton(gunaButton1, Tema.Rol.Secundario);          // Opciones de Admin              // ✕ de la ventana
+
+            // Tarjeta de progreso: blanca con borde redondeado. Se hace al final
+            // para que la esquina redondeada se calcule con el tamano ya escalado.
+            Tema.Tarjeta(panel3, Tema.Blanco, Tema.Borde);
+
+            Tema.BarraProgreso(progressBar1); // barra verde de niveles (reemplaza la nativa)
         }
 
         // Refresca toda la informacion del menu con los datos del usuario actual.
@@ -70,68 +110,44 @@ namespace DevyClass
             // Se configura la barra de progreso y los labels según el último nivel del usuario.
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
-            // El progreso se calcula como nivel * 2 (el maximo de niveles es 50 -> 100%).
-            progressBar1.Value = UsuarioActual.UltimoNivel * 2 ?? 0;
+            // UltimoNivel = niveles completados (NULL = 0). Se limita a 100 porque
+            // Value fuera de rango lanza ArgumentOutOfRangeException.
+            int completados = UsuarioActual.UltimoNivel ?? 0;
+            progressBar1.Value = Math.Min(100, completados * 2);
+            // Actualiza la barra verde visible (la ProgressBar nativa quedo oculta).
+            Tema.BarraProgreso(progressBar1);
             // se verifica si el usuario es un administrador (ReferenciaTipo == 1) y se muestra el botón correspondiente si es así.
             if (UsuarioActual.ReferenciaTipo == 1) gunaButton1.Visible = true;
             // se muestra el nombre de usuario en el botón correspondiente.
             gunaButton8.Text = UsuarioActual.Username;
             // se muestra el porcentaje de niveles completados por el usuario.
-            lblPorcentajeNiveles.Text = $"{UsuarioActual.UltimoNivel * 2 ?? 0}%";
+            lblPorcentajeNiveles.Text = $"{Math.Min(100, completados * 2)}%";
             // se muestra el progreso del usuario en términos de niveles completados.
-            lblNivelActual.Text = $"Haz completado {UsuarioActual.UltimoNivel ?? 0}/50 Niveles";
+            lblNivelActual.Text = $"Haz completado {completados}/50 Niveles";
             // Bienvenida personalizada con el nombre de usuario.
-            lblBienvenida.Text = $"!Hola, {UsuarioActual.Username} Bienvenido!";
+            lblBienvenida.Text = $"¡Hola, {UsuarioActual.Username} Bienvenido!";
             // se muestra la experiencia acumulada del usuario (cada nivel vale 20 XP).
-            lblExperiencia.Text = $"{(UsuarioActual.UltimoNivel) * 20 ?? 0} XP";
+            lblExperiencia.Text = $"{completados * 20} XP";
 
-            // se configura la información de los módulos según el último nivel del usuario.
             // Modulo 1 (niveles 1-10): "Pensamiento algoritmico".
-            if (UsuarioActual.UltimoNivel <= 10)
-            {
-                if (UsuarioActual.UltimoNivel != 10)
-                {
-                    lblModulo1Porcentaje.Text = $"{(UsuarioActual.UltimoNivel % 10) * 10 ?? 0}%";
-                    lblModulo1NivelActual.Text = $"{UsuarioActual.UltimoNivel % 10 ?? 0}/10 Niveles";
-                }
-                lblModuloActual.Text = $"Pensamiento\nalgoritmico";
-            }
-            // Modulo 2 (niveles 11-20).
-            if (UsuarioActual.UltimoNivel > 10 && UsuarioActual.UltimoNivel <= 20)
-            {
-                lblModulo2Porcentaje.Text = $"{(UsuarioActual.UltimoNivel % 10) * 10 ?? 0}%";
-                lblModulo2NivelActual.Text = $"{UsuarioActual.UltimoNivel % 10 ?? 0}/10 Niveles";
-            }
-            else
-            {
-                // Si aun no llega al modulo 2, se muestra 0%.
-                lblModulo2Porcentaje.Text = $"0%";
-                lblModulo2NivelActual.Text = $"0/10 Niveles";
-            }
+            // Antes: si el usuario tenia exactamente 10 niveles no se actualizaba nada
+            // (los labels se quedaban con el texto del diseñador) y el resto de modulos
+            // usaba un if/else con las dos ramas iguales (codigo muerto).
+            int m1 = Math.Max(0, Math.Min(completados, 10));
+            lblModulo1Porcentaje.Text = $"{m1 * 10}%";
+            lblModulo1NivelActual.Text = $"{m1}/10 Niveles";
+            if (completados <= 10) lblModuloActual.Text = "Pensamiento\\nalgorítmico";
 
-            // Modulo 3 (niveles 21-30). Por ahora siempre muestra 0%.
-            if (UsuarioActual.UltimoNivel > 20 && UsuarioActual.UltimoNivel <= 30)
-            {
-                lblModulo3Porcentaje.Text = $"0%";
-                lblModulo3NivelActual.Text = $"0/10 Niveles";
-            }
-            else
-            {
-                lblModulo3Porcentaje.Text = $"0%";
-                lblModulo3NivelActual.Text = $"0/10 Niveles";
-            }
+            // Modulo 2 (niveles 11-20): se calcula igual, con lo que no llegue se queda en 0.
+            int m2 = Math.Max(0, Math.Min(completados - 10, 10));
+            lblModulo2Porcentaje.Text = $"{m2 * 10}%";
+            lblModulo2NivelActual.Text = $"{m2}/10 Niveles";
 
-            // Modulo 4 (niveles 31-40). Por ahora siempre muestra 0%.
-            if (UsuarioActual.UltimoNivel > 30 && UsuarioActual.UltimoNivel <= 40)
-            {
-                lblModulo4Porcentaje.Text = $"0%";
-                lblModulo4NivelActual.Text = $"0/10 Niveles";
-            }
-            else
-            {
-                lblModulo4Porcentaje.Text = $"0%";
-                lblModulo4NivelActual.Text = $"0/10 Niveles";
-            }
+            // Modulo 3 (niveles 21-30) y Modulo 4 (niveles 31-40): aun no tienen contenido.
+            lblModulo3Porcentaje.Text = "0%";
+            lblModulo3NivelActual.Text = "0/10 Niveles";
+            lblModulo4Porcentaje.Text = "0%";
+            lblModulo4NivelActual.Text = "0/10 Niveles";
         }
 
         // Reutiliza el menu principal abierto (si existe) y lo actualiza con el usuario actual.
@@ -206,8 +222,8 @@ namespace DevyClass
         private void btnregresar_Click(object sender, EventArgs e)
         {
             UI_InicioSesion accederUI = new UI_InicioSesion();
-            this.Close();
-            accederUI.Show();
+            accederUI.Show();   // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
             UsuarioActual.BorrarDatos(); // Limpia los datos del usuario en memoria.
         }
 
@@ -274,6 +290,7 @@ namespace DevyClass
         {
             Modulo nivel1 = new Modulo(UsuarioActual);
             nivel1.Show();
+            this.Hide(); // el menu no debe asomar detras de la ventana centrada
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -311,7 +328,7 @@ namespace DevyClass
         {
             Modulo nivel1 = new Modulo(UsuarioActual);
             nivel1.Show();
-
+            this.Hide(); // el menu no debe asomar detras de la ventana centrada
         }
 
         private void gunaGroupBox4_Click(object sender, EventArgs e)
@@ -322,18 +339,22 @@ namespace DevyClass
         // Boton "Continuar": abre el nivel que le corresponde al usuario segun su ultimo nivel.
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            if (UsuarioActual == null)
+            {
+                MessageBox.Show("Usuario no inicializado.");
+                return;
+            }
+
+            // UltimoNivel = niveles completados (NULL = 0), asi que el nivel que le toca
+            // jugar es el siguiente. Antes se usaba UltimoNivel directo y, como el
+            // registro guardaba 1, el boton siempre decia "No hay mas niveles".
             int indice = UsuarioActual.UltimoNivel ?? 0;
 
             // Verifica que el indice este dentro de la lista de niveles disponibles.
             if (indice < 0 || indice >= Niveles.Length)
             {
-                MessageBox.Show("No hay más niveles disponibles.");
-                return;
-            }
-
-            if (UsuarioActual == null)
-            {
-                MessageBox.Show("Usuario no inicializado.");
+                MessageBox.Show("Has completado todos los niveles disponibles por ahora.",
+                    "Niveles", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -349,6 +370,7 @@ namespace DevyClass
                 }
 
                 pantallaNivel.Show();
+                this.Hide(); // el menu no debe asomar detras de la ventana centrada
             }
             catch (MissingMethodException mex)
             {
@@ -373,6 +395,7 @@ namespace DevyClass
         {
             UI_Administrador u = new UI_Administrador(UsuarioActual);
             u.Show();
+            this.Hide(); // el menu no debe asomar detras de la ventana
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -384,6 +407,7 @@ namespace DevyClass
         {
             UI_Ajustes accedeerformAjustes = new UI_Ajustes(UsuarioActual);
             accedeerformAjustes.Show();
+            this.Hide(); // el menu no debe asomar detras de la ventana centrada
         }
 
         // Boton "Cerrar sesion": limpia los datos del usuario y vuelve al inicio de sesion.
@@ -391,8 +415,13 @@ namespace DevyClass
         {
             UsuarioActual.BorrarDatos();
             UI_InicioSesion iniciar = new UI_InicioSesion();
-            this.Close();
-            iniciar.Show();
+            iniciar.Show();     // primero se muestra la nueva ventana...
+            this.Close();       // ...y despues se cierra esta.
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

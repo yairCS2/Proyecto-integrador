@@ -28,6 +28,24 @@ namespace DevyClass
             UsuarioActual = usuario;
             CargarModulos(); // Llena el ComboBox de modulos.
             CargarNiveles(); // Llena la tabla de niveles.
+
+            // Fase 2: pantalla completa y estilo Duolingo.
+            PrepararEstilo();
+        }
+
+        /// <summary> Escala el bloque de contenido y lo centra en pantalla. </summary>
+        private void PrepararEstilo()
+        {
+            Tema.Titulo(labelTitulo);
+            this.PerformLayout();
+
+            Tema.EscalarHijos(this, 1.3F);
+            Tema.Aplicar(this, null, "DevyClass - Gestionar niveles");
+
+            Tema.Boton(btnAgregar, Tema.Rol.Primario);
+            Tema.Boton(btnGuardar, Tema.Rol.Primario);
+            Tema.Boton(btnEliminar, Tema.Rol.Peligroso);
+            Tema.Boton(btnLimpiar, Tema.Rol.Secundario);
         }
 
         // Llena el ComboBox con los modulos disponibles de la base de datos.

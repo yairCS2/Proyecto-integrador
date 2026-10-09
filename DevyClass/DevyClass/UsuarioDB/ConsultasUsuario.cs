@@ -103,7 +103,10 @@ namespace DevyClass.Base_de_datos_DevyClass_
                     cmd.Parameters.AddWithValue("@FechaNac", fechaNacimiento);
                     cmd.Parameters.AddWithValue("@Contrasena", contrasena); 
                     cmd.Parameters.AddWithValue("@tipo", tipo);
-                    cmd.Parameters.AddWithValue("@Nivel", nivel);
+                    // nivel 0 (o negativo) significa "sin niveles completados".
+                    // ultimo_nivel tiene FOREIGN KEY a niveles(id_nivel), por lo que el valor 0
+                    // se rechaza con el error 1452: se guarda NULL, que si esta permitido.
+                    cmd.Parameters.AddWithValue("@Nivel", nivel <= 0 ? (object)DBNull.Value : nivel);
 
                     return cmd.ExecuteNonQuery();
                 }
@@ -143,10 +146,12 @@ namespace DevyClass.Base_de_datos_DevyClass_
             {
                 // JOIN: une "usuarios" con "tipo_usuario" (para el tipo) y con "niveles"
                 // (para saber el nombre del nivel actual).
+                // LEFT JOIN: los usuarios con ultimo_nivel NULL (nadie ha completado niveles)
+                // tambien deben aparecer; con un JOIN interno no se mostraban en el panel.
                 string query = @"SELECT usuarios.id_usuarios, usuarios.username, usuarios.correo, usuarios.fecha, 
                           tipo_usuario.tipo, niveles.id_nivel, niveles.nombre
                           FROM usuarios 
-                          JOIN niveles ON usuarios.ultimo_nivel = niveles.id_nivel
+                          LEFT JOIN niveles ON usuarios.ultimo_nivel = niveles.id_nivel
                           JOIN tipo_usuario ON usuarios.referencia_tipo = tipo_usuario.id_tipo";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))

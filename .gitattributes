@@ -1,0 +1,46 @@
+# ============================================================================
+#  DevyClass - .gitattributes
+#  Evita que Git "arregle" o corrompa archivos binarios y documenta los
+#  finales de linea del proyecto (Windows / Visual Studio).
+# ============================================================================
+
+# --- Por defecto: estandar LF en el repositorio, CRLF al trabajar en Windows ---
+*               text=auto
+
+# --- Archivos de texto de este proyecto: CRLF en Windows (comportamiento de VS)
+*.cs            text eol=crlf
+*.csproj        text eol=crlf
+*.slnx          text eol=crlf
+*.config        text eol=crlf
+*.sql           text eol=crlf
+*.md            text eol=crlf
+.gitignore      text eol=crlf
+
+# --- Archivos que SIEMPRE deben ser binarios (nunca aplicar conversión) ---
+# Sin esto, Git intenta tratar los .exe/.dll como texto y los daña.
+*.exe           binary
+*.dll           binary
+*.pdb           binary
+*.db            binary
+*.cache         binary
+*.mpack         binary
+*.resources     binary
+*.resx          text eol=crlf
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.ico           binary
+*.bmp           binary
+*.suo           binary
+
+# --- Generados por Visual Studio / MSBuild: nunca se versionan ---
+*.csproj.user   text eol=crlf
+.vs/**          -text
+bin/**          -text
+obj/**          -text
+
+# --- Normalización de finales de línea en repositorios ---
+*.sh            text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf

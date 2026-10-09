@@ -30,10 +30,48 @@ namespace DevyClass
             txtUserName.Text = UsuarioActual.Username;
             txtConfirmarContrasena.Text = UsuarioActual.Contrasena;
 
-            // Color de fondo general del panel1 (estilo oscuro de la app).
-            panel1.BackColor = ColorTranslator.FromHtml("#1A2233");
-            panel2.BackColor = ColorTranslator.FromHtml("#1E2A38");
-            panel3.BackColor = ColorTranslator.FromHtml("#1E2A38");
+            // Fase 2: pantalla completa y estilo Duolingo (se deja el fondo oscuro atras).
+            PrepararEstilo();
+        }
+
+        /// <summary>
+        /// Cambia el tema oscuro original (#1A2233) por la paleta clara, agranda el
+        /// diseno y centra el panel1 (que ocupaba toda la ventana) como un escenario.
+        /// </summary>
+        private void PrepararEstilo()
+        {
+            panel1.BackColor = Tema.Fondo;
+
+            // Titulos y etiquetas: el texto era blanco/azul claro para fondo oscuro.
+            label1.Text = "Configuración de usuario";
+            label1.ForeColor = Tema.TextoOscuro;
+            Tema.Titulo(label1);
+            Tema.Titulo(label2, 13F);
+            Tema.Campo(label3);
+            Tema.Campo(label4);
+            Tema.Campo(label5);
+            Tema.Campo(label6);
+            Tema.Campo(label8);
+
+            // Rotulos de botones.
+            gunaButton3.Text = "Editar datos";
+            btnCerrarSesion.Text = "Cerrar sesión";
+
+            this.PerformLayout();
+
+            // panel1 tenia Dock=Fill: se desancla, se agranda y se centra en pantalla.
+            Tema.Escalar(panel1, 1.4F);
+            Tema.Aplicar(this, panel1, "DevyClass - Ajustes");
+
+            // Tarjetas: DESPUES de escalar, porque la esquina redondeada se calcula
+            // con el tamano final (si no, recortaria el contenido).
+            Tema.Tarjeta(panel2, Tema.FondoGris, Tema.Borde);
+            Tema.Tarjeta(panel3, Tema.FondoGris, Tema.Borde);
+
+            Tema.Boton(btnregresar, Tema.Rol.Secundario);
+            Tema.Boton(gunaButton3, Tema.Rol.Primario);               // Editar datos
+            Tema.Boton(btnCerrarSesion, Tema.Rol.ContornoPeligroso);  // Cerrar sesión
+            Tema.Boton(gunaButton2, Tema.Rol.Peligroso);              // Eliminar cuenta
         }
 
         // Boton "Regresar": vuelve al menu principal.
@@ -184,8 +222,8 @@ namespace DevyClass
         {
             UsuarioActual.BorrarDatos(); // Elimina los datos del usuario en memoria.
             UI_InicioSesion accederUsesion = new UI_InicioSesion();
-            this.Close();
-            accederUsesion.Show();
+            accederUsesion.Show();  // primero se muestra la nueva ventana...
+            this.Close();           // ...y despues se cierra esta.
         }
 
         private void txtCorreo_TextChanged(object sender, EventArgs e)
